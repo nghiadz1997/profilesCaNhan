@@ -1,77 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nguyễn Trọng Nghĩa | Chuyên viên Quản trị Thiết bị & CSVC - CĐ Bách Khoa Nam Sài Gòn</title>
-  
-  <!-- Meta SEO & Social Sharing -->
-  <meta name="description" content="Trang hồ sơ năng lực & giới thiệu bản thân của Nguyễn Trọng Nghĩa - Chuyên viên Quản trị Thiết bị & CSVC tại Trường Cao Đẳng Bách Khoa Nam Sài Gòn. Cử nhân Công nghệ Thông tin.">
-  <meta name="keywords" content="Nguyễn Trọng Nghĩa, Quản trị thiết bị, Cao Đẳng Bách Khoa Nam Sài Gòn, IT Support, IT Professional, Portfolio, CSVC">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060c18">
+  <meta name="description" content="Hồ sơ Nguyễn Trọng Nghĩa - Chuyên viên Quản trị Thiết bị & CSVC tại Trường Cao Đẳng Bách Khoa Nam Sài Gòn. Cử nhân Công nghệ Thông tin.">
+  <meta name="keywords" content="Nguyễn Trọng Nghĩa, Chuyên viên Cao Đẳng Bách Khoa Nam Sài Gòn, Quản trị thiết bị, IT Support, CSVC, Profile">
   <meta name="author" content="Nguyễn Trọng Nghĩa">
-  <meta property="og:title" content="Nguyễn Trọng Nghĩa | Profile & Năng Lực Công Tác">
-  <meta property="og:description" content="Giới thiệu hồ sơ bản thân, quá trình công tác, bằng cấp chuyên môn và hình ảnh hoạt động tại Trường Cao Đẳng Bách Khoa Nam Sài Gòn.">
+  <title>Nguyễn Trọng Nghĩa | Chuyên Viên Trường Cao Đẳng Bách Khoa Nam Sài Gòn</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nguyễn Trọng Nghĩa | Chuyên Viên Trường CĐ Bách Khoa Nam Sài Gòn">
+  <meta property="og:description" content="Khám phá hồ sơ năng lực, quá trình công tác và dấu ấn chuyên môn của Nguyễn Trọng Nghĩa.">
   <meta property="og:image" content="avatar.jpg">
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
 
-  <!-- Google Fonts: Plus Jakarta Sans, Outfit, JetBrains Mono -->
+  <!-- Google Fonts: Viaoda Libre (Editorial Serif) & Outfit / Plus Jakarta Sans (Modern Condensed Display) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Viaoda+Libre&display=swap" rel="stylesheet">
   
-  <!-- Font Awesome 6.5.0 -->
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     /* =========================================================
-       LUXURY OCEAN BLUE THEME - DESIGN SYSTEM
+       LUXURY EDITORIAL THEME (Inspired by mccongdanh.com)
+       PALETTE: DEEP MIDNIGHT NAVY, OCEAN SAPPHIRE, ELECTRIC CYAN, CHAMPAGNE GOLD
        ========================================================= */
     :root {
-      --bg-dark: #030712;
-      --bg-deep: #070e1e;
-      --bg-card: rgba(10, 24, 50, 0.65);
-      --bg-card-hover: rgba(15, 34, 68, 0.85);
-      --bg-glass: rgba(255, 255, 255, 0.04);
+      color-scheme: dark;
+      --color-bg: #050a17;
+      --color-bg-alt: #0a1329;
+      --color-text: #f4f6fa;
+      --color-muted: #9aa8c2;
+      --color-sub: #cbd5e1;
       
-      --primary: #00f2fe;         /* Cyan điện quang cực sáng */
-      --primary-light: #4facfe;   /* Xanh biển nhạt rực rỡ */
-      --secondary: #0284c7;       /* Sapphire xanh biển sâu */
-      --accent: #38bdf8;          /* Sky Blue neon */
-      --glow-blue: rgba(0, 242, 254, 0.35);
-      --glow-royal: rgba(37, 99, 235, 0.45);
+      --color-primary: #00f2fe;        /* Electric Cyan */
+      --color-sapphire: #0284c7;       /* Ocean Sapphire Blue */
+      --color-sapphire-dark: #034f84;
+      --color-gold: #d4af37;           /* Champagne Gold Accent */
+      --color-gold-light: #f3e5ab;
       
-      --text-main: #f8fafc;       /* Trắng bạch kim */
-      --text-muted: #94a3b8;      /* Xám bạc dịu mắt */
-      --text-sub: #cbd5e1;        /* Xám bạc nổi */
+      --color-light-bg: #f8fafc;
+      --color-light-text: #0f172a;
+      --color-light-muted: #475569;
       
-      --border-color: rgba(56, 189, 248, 0.16);
-      --border-hover: rgba(0, 242, 254, 0.45);
+      --font-display: "Outfit", "Plus Jakarta Sans", sans-serif;
+      --font-copy: "Viaoda Libre", Georgia, serif;
+      --font-sans: "Plus Jakarta Sans", sans-serif;
       
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 22px;
-      --radius-full: 9999px;
-      
-      --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-      --shadow-glow: 0 0 25px rgba(0, 242, 254, 0.25);
-      --shadow-ocean: 0 20px 50px rgba(4, 15, 38, 0.7);
-
-      --font-heading: 'Outfit', sans-serif;
-      --font-body: 'Plus Jakarta Sans', sans-serif;
-      --font-mono: 'JetBrains Mono', monospace;
-      
-      --transition-fast: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-      --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      --page-gutter: clamp(1.25rem, 5vw, 6rem);
+      --content-width: 1560px;
+      --transition-smooth: 500ms cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    /* Reset & Base Setup */
     *, *::before, *::after {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       -webkit-tap-highlight-color: transparent;
     }
 
@@ -81,1011 +71,1225 @@
     }
 
     body {
-      font-family: var(--font-body);
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      line-height: 1.7;
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-copy);
+      line-height: 1.65;
       overflow-x: hidden;
-      min-height: 100vh;
-      position: relative;
+      min-width: 320px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
     ::selection {
-      background: var(--primary);
+      background: var(--color-primary);
       color: #030712;
     }
 
-    /* Background Ambient Canvas & Lights */
+    /* Ambient Canvas */
     #ambient-canvas {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: -2;
+      z-index: -10;
       pointer-events: none;
+      opacity: 0.7;
     }
 
-    .ocean-lights {
-      position: fixed;
-      top: 0;
-      left: 0;
+    /* =========================================================
+       1. HERO SECTION (EDITORIAL FULL-BLEED)
+       ========================================================= */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100dvh;
+      overflow: hidden;
+      isolation: isolate;
+      background: var(--color-bg);
+      display: flex;
+      align-items: center;
+    }
+
+    .hero__backdrop {
+      position: absolute;
+      inset: 0;
       width: 100%;
       height: 100%;
-      z-index: -1;
-      pointer-events: none;
-      overflow: hidden;
+      object-fit: cover;
+      object-position: center;
+      z-index: -3;
+      filter: brightness(0.3) saturate(1.2);
+      transform: scale(1.04);
+      transition: transform 10s ease-out;
     }
 
-    .ocean-glow-orb {
+    .hero:hover .hero__backdrop {
+      transform: scale(1.08);
+    }
+
+    .hero__shade {
       position: absolute;
-      border-radius: 50%;
-      filter: blur(130px);
-      opacity: 0.45;
-      animation: floatOrb 20s ease-in-out infinite alternate;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg, rgba(5, 10, 23, 0.94) 0%, rgba(5, 10, 23, 0.45) 50%, rgba(5, 10, 23, 0.92) 100%),
+        linear-gradient(180deg, rgba(5, 10, 23, 0.3) 0%, rgba(5, 10, 23, 0.1) 50%, rgba(5, 10, 23, 0.95) 100%);
     }
 
-    .orb-1 {
-      width: 550px;
-      height: 550px;
-      background: radial-gradient(circle, #0284c7 0%, transparent 70%);
-      top: -120px;
-      left: 8%;
-    }
-
-    .orb-2 {
-      width: 650px;
-      height: 650px;
-      background: radial-gradient(circle, #00f2fe 0%, transparent 70%);
-      top: 40%;
-      right: -150px;
-      animation-delay: -6s;
-    }
-
-    .orb-3 {
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle, #1d4ed8 0%, transparent 70%);
-      bottom: -120px;
-      left: 20%;
-      animation-delay: -12s;
-    }
-
-    @keyframes floatOrb {
-      0% { transform: translate(0, 0) scale(1); }
-      50% { transform: translate(50px, 35px) scale(1.08); }
-      100% { transform: translate(-35px, -45px) scale(0.95); }
-    }
-
-    /* Container Utility */
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-
-    /* Typography Utilities */
-    h1, h2, h3, h4, h5 {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .gradient-text {
-      background: linear-gradient(135deg, #ffffff 10%, #67e8f9 50%, #00f2fe 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-    }
-
-    .gradient-blue {
-      background: linear-gradient(135deg, #38bdf8 0%, #00f2fe 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    /* =========================================================
-       NAVIGATION BAR (Responsive Glassmorphism)
-       ========================================================= */
-    .navbar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      background: rgba(3, 7, 18, 0.88);
-      border-bottom: 1px solid var(--border-color);
-      transition: var(--transition-fast);
-    }
-
-    .navbar .container {
-      max-width: 1340px;
-      padding: 0 1.25rem;
-    }
-
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 74px;
-      gap: 15px;
-    }
-
-    .brand-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text-main);
-      font-family: var(--font-heading);
-      font-weight: 800;
-      font-size: 1.18rem;
-      letter-spacing: 0.5px;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    .brand-badge {
-      width: 38px;
-      height: 38px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, #0284c7, #00f2fe);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #030712;
-      font-weight: 800;
-      font-size: 1.1rem;
-      box-shadow: 0 0 18px rgba(0, 242, 254, 0.4);
-      flex-shrink: 0;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: clamp(0.75rem, 1.4vw, 1.45rem);
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-link {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.92rem;
-      font-weight: 600;
-      transition: var(--transition-fast);
+    .hero__inner {
       position: relative;
-      padding: 6px 0;
-      white-space: nowrap;
-      letter-spacing: 0.2px;
-    }
-
-    .nav-link:hover, .nav-link.active {
-      color: var(--primary);
-    }
-
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--primary), var(--secondary));
-      transition: width 0.3s ease;
-      border-radius: 2px;
-    }
-
-    .nav-link:hover::after, .nav-link.active::after {
-      width: 100%;
-    }
-
-    .nav-cta {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-shrink: 0;
-    }
-
-    .btn-quick-contact {
-      background: linear-gradient(135deg, #0284c7 0%, #00f2fe 100%);
-      color: #030712;
-      font-weight: 700;
-      font-size: 0.86rem;
-      padding: 8px 18px;
-      border-radius: var(--radius-full);
-      text-decoration: none;
-      transition: var(--transition-fast);
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 4px 18px rgba(0, 242, 254, 0.35);
-      white-space: nowrap;
-    }
-
-    .btn-quick-contact:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 24px rgba(0, 242, 254, 0.55);
-      color: #000;
-    }
-
-    /* Mobile Menu Hamburger Button */
-    .menu-toggle {
-      display: none;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border-color);
-      color: var(--text-main);
-      font-size: 1.25rem;
-      width: 42px;
-      height: 42px;
-      border-radius: 10px;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: var(--transition-fast);
-    }
-
-    .menu-toggle:hover {
-      background: rgba(0, 242, 254, 0.15);
-      color: var(--primary);
-      border-color: var(--primary);
-    }
-
-    /* Mobile Drawer Menu */
-    .mobile-menu-drawer {
-      display: none;
-      position: fixed;
-      top: 74px;
-      left: 0;
-      width: 100%;
-      background: rgba(3, 7, 18, 0.98);
-      backdrop-filter: blur(28px);
-      -webkit-backdrop-filter: blur(28px);
-      border-bottom: 1px solid var(--border-color);
-      padding: 1.5rem 2rem 2rem;
-      z-index: 999;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
-      transform: translateY(-110%);
-      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .mobile-menu-drawer.open {
-      transform: translateY(0);
-    }
-
-    .mobile-nav-links {
-      list-style: none;
+      width: min(100%, var(--content-width));
+      min-height: 100vh;
+      min-height: 100dvh;
+      margin: 0 auto;
+      padding: clamp(2rem, 6vh, 4.5rem) var(--page-gutter) clamp(2.5rem, 6vh, 4rem);
       display: flex;
       flex-direction: column;
-      gap: 1.25rem;
+      justify-content: space-between;
     }
 
-    .mobile-nav-link {
-      color: var(--text-sub);
-      text-decoration: none;
-      font-size: 1.1rem;
-      font-weight: 600;
+    /* Decorative Gold / Cyan Line */
+    .hero__inner::before {
+      content: "";
+      position: absolute;
+      top: clamp(2.5rem, 6vh, 4.5rem);
+      left: var(--page-gutter);
+      width: clamp(4rem, 8vw, 8.5rem);
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-primary), var(--color-sapphire));
+      transform-origin: left;
+      animation: line-in 900ms 180ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    @keyframes line-in {
+      from { transform: scaleX(0); opacity: 0; }
+      to { transform: scaleX(1); opacity: 1; }
+    }
+
+    /* Top Left Headline */
+    .hero__headline {
+      position: absolute;
+      top: clamp(6.5rem, 18vh, 12rem);
+      left: var(--page-gutter);
+      z-index: 2;
+      width: min(42vw, 42rem);
+    }
+
+    .hero__role {
+      margin: 0 0 clamp(0.75rem, 2vh, 1.4rem);
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      font-size: clamp(0.95rem, 1.8vw, 1.4rem);
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: clamp(3.2rem, 8.5vw, 7.2rem);
+      font-weight: 900;
+      line-height: 0.92;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 span {
+      display: block;
+    }
+
+    .hero h1 span:first-child {
+      background: linear-gradient(135deg, #00f2fe 0%, #0284c7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero h1 span:last-child {
+      color: #ffffff;
+      margin-top: 0.1em;
+      white-space: nowrap;
+    }
+
+    .hero__opening {
+      width: min(32vw, 29rem);
+      margin: clamp(1.4rem, 3vh, 2.5rem) 0 0;
+      color: var(--color-muted);
+      font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+      line-height: 1.6;
+      text-shadow: 0 2px 1rem rgba(0, 0, 0, 0.8);
+      animation: copy-in 850ms 300ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    @keyframes copy-in {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Center Portrait Frame */
+    .hero__portrait-frame {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: 50%;
+      width: clamp(20rem, 36vw, 42rem);
+      height: min(90vh, 58rem);
+      transform: translateX(-50%);
+      pointer-events: none;
       display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .hero__portrait {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 28px 28px 0 0;
+      border: 2px solid rgba(0, 242, 254, 0.25);
+      border-bottom: none;
+      box-shadow: 0 0 50px rgba(0, 242, 254, 0.25), 0 2rem 4rem rgba(0, 0, 0, 0.7);
+      filter: contrast(1.05);
+    }
+
+    /* Top Right Introduction */
+    .hero__introduction {
+      position: absolute;
+      top: clamp(8.5rem, 23vh, 15rem);
+      right: var(--page-gutter);
+      z-index: 2;
+      width: min(28vw, 26rem);
+      text-align: right;
+      animation: copy-in 850ms 360ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .hero__name {
+      margin: 0 0 1rem;
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 2.2vw, 2.1rem);
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+    }
+
+    .hero__unit-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      background: rgba(0, 242, 254, 0.1);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero__copy {
+      margin: 0;
+      color: var(--color-muted);
+      font-size: clamp(0.98rem, 1.2vw, 1.2rem);
+      line-height: 1.65;
+    }
+
+    /* Bottom Right CTA Pill */
+    .hero__cta {
+      position: absolute;
+      right: var(--page-gutter);
+      bottom: clamp(2rem, 7vh, 4.5rem);
+      z-index: 3;
+      display: inline-flex;
       align-items: center;
-      gap: 12px;
-      padding: 8px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    .mobile-nav-link i {
-      color: var(--primary);
-      width: 24px;
-    }
-
-    /* =========================================================
-       HERO PROFILE HEADER
-       ========================================================= */
-    .hero-section {
-      padding: 4.5rem 0 3.5rem;
-      position: relative;
-    }
-
-    .hero-card {
-      background: var(--bg-card);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      padding: 3.5rem 3rem;
-      position: relative;
-      box-shadow: var(--shadow-ocean);
-      overflow: hidden;
+      gap: 1.25rem;
+      min-height: 3.75rem;
+      padding: 0.35rem 0.35rem 0.35rem 1.75rem;
+      border: 1px solid rgba(0, 242, 254, 0.5);
+      border-radius: 999px;
+      background: linear-gradient(135deg, #0284c7 0%, #00f2fe 100%);
+      color: #030712;
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      font-weight: 800;
+      white-space: nowrap;
+      box-shadow: 0 1rem 3rem rgba(0, 242, 254, 0.35);
       transition: var(--transition-smooth);
     }
 
-    .hero-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, transparent, #00f2fe, #38bdf8, #2563eb, transparent);
+    .hero__cta:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 1.2rem 3.5rem rgba(0, 242, 254, 0.55);
     }
 
-    .hero-content {
+    .hero__cta-icon {
       display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 3.5rem;
-      align-items: center;
-    }
-
-    /* Avatar Frame with Glowing Rotating Wave */
-    .avatar-wrapper {
-      position: relative;
-      width: 200px;
-      height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .avatar-glow-ring {
-      position: absolute;
-      inset: -8px;
+      width: 3.1rem;
+      aspect-ratio: 1;
+      place-items: center;
       border-radius: 50%;
-      background: conic-gradient(from 0deg, #00f2fe, #0284c7, #38bdf8, #2563eb, #00f2fe);
-      animation: rotateRing 8s linear infinite;
-      filter: blur(8px);
-      opacity: 0.85;
+      background: #030712;
+      color: #00f2fe;
+      font-family: Arial, sans-serif;
+      font-size: 1.25rem;
+      transition: transform 240ms ease;
     }
 
-    .avatar-glow-border {
-      position: absolute;
-      inset: -4px;
-      border-radius: 50%;
-      background: conic-gradient(from 0deg, #00f2fe, #0284c7, #38bdf8, #2563eb, #00f2fe);
-      animation: rotateRing 8s linear infinite;
-    }
-
-    @keyframes rotateRing {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    .avatar-image {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #081126;
-      z-index: 2;
-      background-color: #0b192e;
-      transition: transform 0.4s ease;
-    }
-
-    .avatar-wrapper:hover .avatar-image {
-      transform: scale(1.03);
-    }
-
-    /* Verified VIP Badge */
-    .vip-verified-badge {
-      position: absolute;
-      bottom: 8px;
-      right: 8px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #00f2fe, #0284c7);
-      color: #030712;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.15rem;
-      border: 3px solid #081126;
-      z-index: 3;
-      box-shadow: 0 0 18px rgba(0, 242, 254, 0.7);
-    }
-
-    /* Hero Text Details */
-    .status-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: rgba(0, 242, 254, 0.1);
-      border: 1px solid rgba(0, 242, 254, 0.3);
-      padding: 7px 18px;
-      border-radius: var(--radius-full);
-      font-size: 0.84rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 1.25rem;
-      font-family: var(--font-mono);
-      letter-spacing: 0.5px;
-    }
-
-    .status-dot {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background-color: #10b981;
-      box-shadow: 0 0 10px #10b981, 0 0 20px #10b981;
-      animation: pulseDot 2s infinite;
-    }
-
-    @keyframes pulseDot {
-      0% { opacity: 0.5; transform: scale(0.9); }
-      50% { opacity: 1; transform: scale(1.25); }
-      100% { opacity: 0.5; transform: scale(0.9); }
-    }
-
-    .hero-name {
-      font-size: clamp(2.2rem, 5vw, 3.4rem);
-      margin-bottom: 0.65rem;
-      line-height: 1.2;
-    }
-
-    .hero-role-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: clamp(1.05rem, 2.3vw, 1.35rem);
-      color: var(--accent);
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-      min-height: 38px;
-    }
-
-    .hero-role-icon {
-      color: var(--primary);
-      font-size: 1.3rem;
-    }
-
-    #typing-text {
-      border-right: 2px solid var(--primary);
-      padding-right: 5px;
-      animation: blinkCursor 0.8s infinite;
-      white-space: nowrap;
-    }
-
-    @keyframes blinkCursor {
-      0%, 100% { border-color: transparent; }
-      50% { border-color: var(--primary); }
-    }
-
-    .hero-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 2rem;
-    }
-
-    .hero-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      padding: 7px 15px;
-      border-radius: var(--radius-sm);
-      font-size: 0.9rem;
-      color: var(--text-sub);
-      transition: var(--transition-fast);
-    }
-
-    .hero-tag i {
-      color: var(--primary);
-    }
-
-    .hero-tag:hover {
-      background: rgba(0, 242, 254, 0.12);
-      border-color: var(--primary);
-      color: #fff;
-    }
-
-    /* Action Buttons in Hero */
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .btn-luxury {
-      background: linear-gradient(135deg, #00f2fe 0%, #0284c7 100%);
-      color: #030712;
-      font-weight: 700;
-      padding: 12px 28px;
-      border-radius: var(--radius-full);
-      text-decoration: none;
-      font-size: 0.95rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      transition: var(--transition-fast);
-      box-shadow: 0 4px 20px rgba(0, 242, 254, 0.4);
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn-luxury:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 30px rgba(0, 242, 254, 0.65);
-      color: #000;
-    }
-
-    .btn-outline-ocean {
-      background: rgba(10, 24, 48, 0.8);
-      color: var(--primary);
-      border: 1px solid var(--border-color);
-      font-weight: 600;
-      padding: 12px 24px;
-      border-radius: var(--radius-full);
-      text-decoration: none;
-      font-size: 0.95rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      transition: var(--transition-fast);
-      cursor: pointer;
-    }
-
-    .btn-outline-ocean:hover {
-      background: rgba(0, 242, 254, 0.12);
-      border-color: var(--primary);
-      transform: translateY(-2px);
-      color: #fff;
-      box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
-    }
-
-    .btn-icon-pill {
-      width: 46px;
-      height: 46px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border-color);
-      color: var(--text-main);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      text-decoration: none;
-      transition: var(--transition-fast);
-      cursor: pointer;
-    }
-
-    .btn-icon-pill:hover {
-      background: var(--primary);
-      color: #030712;
-      border-color: var(--primary);
-      transform: translateY(-3px);
-      box-shadow: 0 0 18px var(--glow-blue);
+    .hero__cta:hover .hero__cta-icon {
+      transform: translateX(3px);
     }
 
     /* =========================================================
-       HIGHLIGHT STATS BANNER
+       2. PROFILE & FACTS SECTION (SPLIT-SCREEN EDITORIAL)
        ========================================================= */
-    .stats-section {
-      padding: 1rem 0 3.5rem;
+    .profile {
+      position: relative;
+      min-height: 100vh;
+      background: linear-gradient(118deg, #0a1329 0%, #060c1c 58%, #091530 100%);
+      color: var(--color-text);
+      border-top: 4px solid var(--color-primary);
+      padding: clamp(5.5rem, 9vh, 8rem) 0 clamp(6rem, 10vh, 9rem);
     }
 
-    .stats-grid {
+    .profile__inner {
+      width: min(100%, var(--content-width));
+      margin: 0 auto;
+      padding: 0 var(--page-gutter);
+    }
+
+    .profile__composition {
+      position: relative;
+      display: grid;
+      z-index: 1;
+      grid-template-columns: minmax(26rem, 0.9fr) minmax(32rem, 1.1fr);
+      gap: clamp(3.5rem, 6vw, 7.5rem);
+      align-items: start;
+    }
+
+    /* Left Sticky Visual */
+    .profile__visual {
+      position: sticky;
+      top: 3rem;
+      min-height: min(58rem, calc(100vh - 6rem));
+      margin: 0;
+      isolation: isolate;
+    }
+
+    .profile__portrait-plane {
+      position: absolute;
+      z-index: -1;
+      inset: 3.5rem 4% 0 0;
+      overflow: hidden;
+      background: #0f1c3d;
+      border-top: 4px solid var(--color-primary);
+      border-radius: 20px;
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+    }
+
+    .profile__portrait-plane::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 20%;
+      background: linear-gradient(180deg, var(--color-sapphire), var(--color-primary));
+    }
+
+    .profile__portrait-plane::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 2.5rem;
+      width: 45%;
+      height: 0.5rem;
+      background: var(--color-primary);
+    }
+
+    .profile__visual img {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: 0;
+      width: min(100%, 38rem);
+      height: 94%;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 20px;
+      filter: drop-shadow(0 1.8rem 2.2rem rgba(0, 0, 0, 0.6));
+    }
+
+    /* Right Content */
+    .profile__content {
+      min-width: 0;
+      padding-top: clamp(1rem, 4vh, 3rem);
+    }
+
+    .profile__full-name {
+      margin: 0 0 1rem;
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 5vw, 4.4rem);
+      font-weight: 900;
+      line-height: 0.95;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, #ffffff 40%, #00f2fe 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .profile__position-title {
+      font-family: var(--font-sans);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 2.5rem;
+    }
+
+    /* Facts Grid */
+    .profile__facts dl {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(1.2rem, 2.5vw, 2.5rem);
+      margin: 0 0 clamp(4rem, 7vh, 6rem);
+      padding-top: 1.75rem;
+      border-top: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    .profile__fact dt {
+      margin-bottom: 0.6rem;
+      color: var(--color-muted);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .profile__fact dd {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+      font-weight: 800;
+      line-height: 1;
+      color: #fff;
+    }
+
+    .profile__fact dd span {
+      margin-left: 0.3rem;
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .profile__fact--text dd {
+      font-size: 1.15rem;
+      line-height: 1.4;
+      font-family: var(--font-sans);
+      font-weight: 600;
+    }
+
+    /* Achievements / Milestones Timeline */
+    .achievements h3 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 800;
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+
+    .achievements ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border-left: 2px solid rgba(0, 242, 254, 0.25);
+    }
+
+    .achievements li {
+      position: relative;
+      padding-left: 2.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .achievements li::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--color-bg);
+      border: 2px solid var(--color-primary);
+      box-shadow: 0 0 10px var(--color-primary);
+    }
+
+    .achievements li.featured::before {
+      background: var(--color-primary);
+      transform: scale(1.3);
+    }
+
+    .achievements time {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin-bottom: 0.35rem;
+      background: rgba(0, 242, 254, 0.1);
+      padding: 2px 10px;
+      border-radius: 4px;
+    }
+
+    .achievements h4 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.35rem;
+    }
+
+    .achievements p {
+      color: var(--color-muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    /* =========================================================
+       3. EXPERTISE SECTION (KỸ NĂNG & 4 LOẠI HÌNH TRỌNG TÂM)
+       ========================================================= */
+    .expertise {
+      position: relative;
+      background: #040814;
+      padding: clamp(5.5rem, 9vh, 8.5rem) 0 clamp(6rem, 10vh, 9.5rem);
+      border-top: 1px solid rgba(56, 189, 248, 0.15);
+    }
+
+    .expertise__inner {
+      width: min(100%, var(--content-width));
+      margin: 0 auto;
+      padding: 0 var(--page-gutter);
+    }
+
+    .expertise__main {
+      display: grid;
+      grid-template-columns: minmax(30rem, 1.15fr) minmax(24rem, 0.85fr);
+      gap: clamp(4rem, 7vw, 8rem);
+      align-items: center;
+      margin-bottom: clamp(4rem, 8vh, 6.5rem);
+    }
+
+    .expertise__eyebrow {
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .expertise h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+      font-weight: 900;
+      line-height: 0.95;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+
+    .expertise h2 span {
+      color: var(--color-primary);
+    }
+
+    .expertise__copy p {
+      color: var(--color-muted);
+      font-size: clamp(1.05rem, 1.4vw, 1.28rem);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .expertise__stats {
+      display: flex;
+      gap: clamp(2rem, 5vw, 4.5rem);
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    .expertise__stats dt {
+      font-family: var(--font-display);
+      font-size: clamp(2.6rem, 4.5vw, 4rem);
+      font-weight: 900;
+      color: var(--color-primary);
+      line-height: 1;
+    }
+
+    .expertise__stats dd {
+      margin: 0.4rem 0 0;
+      color: var(--color-text);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .expertise__visual {
+      position: relative;
+      margin: 0;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(0, 242, 254, 0.2);
+      box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.7);
+    }
+
+    .expertise__visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .expertise__visual:hover img {
+      transform: scale(1.04);
+    }
+
+    /* 4 Major Skill Pillars Grid */
+    .expertise__skills {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.5rem;
     }
 
-    .stat-card {
-      background: var(--bg-card);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-md);
-      padding: 1.75rem 1.5rem;
-      text-align: center;
+    .expertise__skill {
+      background: rgba(10, 20, 42, 0.7);
+      border: 1px solid rgba(56, 189, 248, 0.18);
+      border-radius: 20px;
+      padding: 2.25rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 220px;
+      transition: var(--transition-smooth);
       position: relative;
       overflow: hidden;
-      transition: var(--transition-smooth);
     }
 
-    .stat-card:hover {
+    .expertise__skill::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--color-sapphire), var(--color-primary));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .expertise__skill:hover {
+      background: rgba(14, 28, 60, 0.9);
+      border-color: var(--color-primary);
       transform: translateY(-6px);
-      border-color: var(--primary);
-      box-shadow: 0 15px 35px rgba(0, 242, 254, 0.18);
+      box-shadow: 0 1.25rem 2.5rem rgba(0, 242, 254, 0.2);
     }
 
-    .stat-icon {
-      font-size: 2rem;
-      color: var(--primary);
-      margin-bottom: 0.75rem;
-      display: inline-block;
+    .expertise__skill:hover::before {
+      opacity: 1;
+    }
+
+    .expertise__skill-number {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      opacity: 0.65;
+    }
+
+    .expertise__skill h3 {
+      font-family: var(--font-display);
+      font-size: 1.28rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 1.25rem 0 0.5rem;
+      line-height: 1.3;
+    }
+
+    .expertise__skill p {
+      font-size: 0.95rem;
+      color: var(--color-muted);
+      line-height: 1.5;
+    }
+
+    .expertise__skill-mark {
+      align-self: flex-end;
+      font-size: 1.5rem;
+      color: var(--color-primary);
       transition: transform 0.3s ease;
     }
 
-    .stat-card:hover .stat-icon {
-      transform: scale(1.15) rotate(5deg);
-    }
-
-    .stat-number {
-      font-size: 2.2rem;
-      font-weight: 800;
-      color: #fff;
-      font-family: var(--font-heading);
-      margin-bottom: 0.25rem;
-    }
-
-    .stat-label {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      font-weight: 500;
+    .expertise__skill:hover .expertise__skill-mark {
+      transform: rotate(45deg);
     }
 
     /* =========================================================
-       SECTION CARDS & GENERAL LAYOUT
+       4. ACTIVITY & GALLERY SHOWCASE (VOICE / ACTIVITIES)
        ========================================================= */
-    .section-wrapper {
-      margin-bottom: 3.5rem;
-    }
-
-    .luxury-card {
-      background: var(--bg-card);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      padding: 2.75rem;
-      box-shadow: var(--shadow-soft);
+    .activities {
       position: relative;
-      overflow: hidden;
-      transition: var(--transition-smooth);
+      background: #060c1c;
+      padding: clamp(5rem, 8vh, 7.5rem) 0;
+      border-top: 1px solid rgba(56, 189, 248, 0.15);
     }
 
-    .luxury-card:hover {
-      border-color: var(--border-hover);
-      box-shadow: 0 15px 45px rgba(4, 15, 38, 0.8), 0 0 30px rgba(0, 242, 254, 0.12);
+    .activities__inner {
+      width: min(100%, var(--content-width));
+      margin: 0 auto;
+      padding: 0 var(--page-gutter);
     }
 
-    .section-header {
+    .activities__header {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      margin-bottom: 2rem;
-      padding-bottom: 1.25rem;
-      border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+      align-items: flex-end;
+      margin-bottom: 3rem;
       flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .section-title {
-      font-size: 1.65rem;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .section-title-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: rgba(0, 242, 254, 0.1);
-      border: 1px solid rgba(0, 242, 254, 0.25);
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.25rem;
-    }
-
-    .section-badge {
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      color: var(--accent);
-      background: rgba(56, 189, 248, 0.1);
-      border: 1px solid rgba(56, 189, 248, 0.2);
-      padding: 5px 14px;
-      border-radius: var(--radius-full);
-      font-weight: 600;
-    }
-
-    /* =========================================================
-       ABOUT ME SECTION
-       ========================================================= */
-    .about-lead {
-      font-size: 1.12rem;
-      color: var(--text-sub);
-      line-height: 1.9;
-      margin-bottom: 2rem;
-    }
-
-    .about-quote-box {
-      background: linear-gradient(135deg, rgba(2, 132, 199, 0.12) 0%, rgba(0, 242, 254, 0.05) 100%);
-      border-left: 4px solid var(--primary);
-      border-radius: 0 var(--radius-md) var(--radius-md) 0;
-      padding: 1.5rem 1.75rem;
-      margin-bottom: 2.25rem;
-      position: relative;
-    }
-
-    .about-quote-text {
-      font-style: italic;
-      color: #e2e8f0;
-      font-size: 1.05rem;
-      font-weight: 500;
-    }
-
-    .about-pillars {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
     }
 
-    .pillar-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: var(--radius-md);
-      padding: 1.5rem;
-      transition: var(--transition-fast);
-    }
-
-    .pillar-card:hover {
-      background: rgba(0, 242, 254, 0.06);
-      border-color: rgba(0, 242, 254, 0.3);
-      transform: translateY(-4px);
-    }
-
-    .pillar-icon {
-      font-size: 1.6rem;
-      color: var(--primary);
-      margin-bottom: 0.75rem;
-    }
-
-    .pillar-title {
-      font-size: 1.05rem;
-      color: #fff;
-      margin-bottom: 0.4rem;
-    }
-
-    .pillar-desc {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-
-    /* =========================================================
-       TWO COLUMNS: WORK EXPERIENCE & COMPLETED EDUCATION
-       ========================================================= */
-    .two-cols-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-bottom: 3.5rem;
-    }
-
-    /* Modern Oceanic Timeline */
-    .timeline {
-      position: relative;
-      padding-left: 28px;
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      top: 8px;
-      bottom: 8px;
-      left: 7px;
-      width: 2px;
-      background: linear-gradient(180deg, var(--primary) 0%, rgba(56, 189, 248, 0.2) 100%);
-    }
-
-    .timeline-node {
-      position: relative;
-      margin-bottom: 2rem;
-    }
-
-    .timeline-node:last-child {
-      margin-bottom: 0;
-    }
-
-    .timeline-dot {
-      position: absolute;
-      left: -28px;
-      top: 6px;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: var(--bg-dark);
-      border: 3px solid var(--primary);
-      box-shadow: 0 0 12px var(--primary);
-      transition: var(--transition-fast);
-    }
-
-    .timeline-node:hover .timeline-dot {
-      background: var(--primary);
-      transform: scale(1.25);
-    }
-
-    .timeline-card-inner {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      border-radius: var(--radius-md);
-      padding: 1.5rem;
-      transition: var(--transition-fast);
-    }
-
-    .timeline-node:hover .timeline-card-inner {
-      background: rgba(0, 242, 254, 0.05);
-      border-color: rgba(0, 242, 254, 0.25);
-      transform: translateX(4px);
-    }
-
-    .timeline-role {
-      font-size: 1.15rem;
-      color: #fff;
+    .activities__eyebrow {
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
       font-weight: 700;
-      margin-bottom: 0.35rem;
-    }
-
-    .timeline-place {
-      font-size: 0.92rem;
-      color: var(--accent);
-      font-weight: 600;
-      margin-bottom: 0.4rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .timeline-time {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-family: var(--font-mono);
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      background: rgba(255, 255, 255, 0.04);
-      padding: 4px 10px;
-      border-radius: var(--radius-sm);
-      margin-bottom: 0.85rem;
-    }
-
-    .badge-status-tag {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      padding: 2px 8px;
-      border-radius: 4px;
-      background: rgba(16, 185, 129, 0.15);
-      color: #10b981;
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      margin-left: 8px;
-    }
-
-    .timeline-bullets {
-      list-style: none;
-      padding-left: 0;
-      font-size: 0.92rem;
-      color: var(--text-sub);
-    }
-
-    .timeline-bullets li {
-      position: relative;
-      padding-left: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
       margin-bottom: 0.5rem;
     }
 
-    .timeline-bullets li::before {
-      content: '✦';
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: var(--primary);
-      font-size: 0.85rem;
+    .activities h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4.2rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1;
     }
 
-    /* =========================================================
-       PHOTO & ACTIVITY GALLERY SECTION (NEW!)
-       ========================================================= */
-    .gallery-filter-bar {
+    .activities h2 span {
+      color: var(--color-primary);
+    }
+
+    .activities__filter {
       display: flex;
-      align-items: center;
       gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 2rem;
     }
 
-    .filter-btn {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: var(--text-sub);
+    .filter-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      color: var(--color-muted);
       padding: 8px 18px;
-      border-radius: var(--radius-full);
+      border-radius: 999px;
+      font-family: var(--font-sans);
       font-size: 0.88rem;
       font-weight: 600;
       cursor: pointer;
-      transition: var(--transition-fast);
+      transition: var(--transition-smooth);
     }
 
-    .filter-btn:hover, .filter-btn.active {
-      background: var(--primary);
+    .filter-pill:hover, .filter-pill.active {
+      background: var(--color-primary);
       color: #030712;
-      border-color: var(--primary);
+      border-color: var(--color-primary);
       box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
     }
 
-    .gallery-grid {
+    .gallery-masonry {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
     }
 
-    .gallery-item {
+    .gallery-card {
       position: relative;
-      border-radius: var(--radius-md);
+      border-radius: 20px;
       overflow: hidden;
-      border: 1px solid var(--border-color);
-      background: #081126;
-      aspect-ratio: 4 / 3;
+      aspect-ratio: 16 / 11;
+      border: 1px solid rgba(56, 189, 248, 0.2);
       cursor: pointer;
-      transition: var(--transition-smooth);
+      background: #081329;
     }
 
-    .gallery-item img {
+    .gallery-card img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.5s ease;
+      transition: transform 0.6s ease;
     }
 
-    .gallery-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 20%, rgba(3, 7, 18, 0.92) 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 1.25rem;
-      opacity: 0.9;
-      transition: var(--transition-fast);
-    }
-
-    .gallery-item:hover {
-      transform: translateY(-6px);
-      border-color: var(--primary);
-      box-shadow: 0 15px 35px rgba(0, 242, 254, 0.25);
-    }
-
-    .gallery-item:hover img {
+    .gallery-card:hover img {
       transform: scale(1.08);
     }
 
-    .gallery-item:hover .gallery-overlay {
-      opacity: 1;
-      background: linear-gradient(180deg, rgba(0, 242, 254, 0.1) 0%, rgba(3, 7, 18, 0.95) 100%);
+    .gallery-card__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 30%, rgba(5, 10, 23, 0.94) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.75rem;
+      transition: opacity 0.3s ease;
     }
 
-    .gallery-tag {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--primary);
+    .gallery-card__tag {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--color-primary);
       background: rgba(0, 242, 254, 0.15);
-      border: 1px solid rgba(0, 242, 254, 0.3);
       padding: 3px 10px;
-      border-radius: var(--radius-full);
+      border-radius: 999px;
       display: inline-block;
       align-self: flex-start;
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery-card__title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.25rem;
+    }
+
+    .gallery-card__desc {
+      font-size: 0.95rem;
+      color: var(--color-muted);
+      line-height: 1.4;
+    }
+
+    /* =========================================================
+       5. COLLABORATION / UNIT NETWORK SHOWCASE
+       ========================================================= */
+    .collaborations {
+      background: #040814;
+      padding: clamp(5rem, 8vh, 7rem) 0;
+      border-top: 1px solid rgba(56, 189, 248, 0.15);
+    }
+
+    .collaborations__inner {
+      width: min(100%, var(--content-width));
+      margin: 0 auto;
+      padding: 0 var(--page-gutter);
+    }
+
+    .collaborations__headline {
+      text-align: center;
+      max-width: 48rem;
+      margin: 0 auto 3.5rem;
+    }
+
+    .collaborations__headline p {
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .collaborations__headline h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+      font-weight: 900;
+      color: #fff;
+    }
+
+    .collab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .collab-card {
+      background: rgba(10, 20, 42, 0.6);
+      border: 1px solid rgba(56, 189, 248, 0.18);
+      border-radius: 18px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: var(--transition-smooth);
+    }
+
+    .collab-card:hover {
+      background: rgba(14, 28, 60, 0.85);
+      border-color: var(--color-primary);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 242, 254, 0.2);
+    }
+
+    .collab-icon {
+      font-size: 2.2rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .collab-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
       margin-bottom: 0.4rem;
     }
 
-    .gallery-title {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 0.2rem;
+    .collab-desc {
+      font-size: 0.92rem;
+      color: var(--color-muted);
     }
 
-    .gallery-desc {
-      font-size: 0.82rem;
-      color: var(--text-muted);
+    /* =========================================================
+       6. CLOSING SECTION (LỜI KẾT & SIGNATURE)
+       ========================================================= */
+    .closing {
+      position: relative;
+      min-height: 90vh;
+      background: #050a17;
+      border-top: 1px solid rgba(56, 189, 248, 0.2);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .closing__backdrop {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.2) saturate(1.3);
+      z-index: -2;
+    }
+
+    .closing__inner {
+      width: min(100%, var(--content-width));
+      margin: 0 auto;
+      padding: clamp(5rem, 9vh, 8rem) var(--page-gutter);
+      display: grid;
+      grid-template-columns: minmax(30rem, 1.2fr) minmax(22rem, 0.8fr);
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .closing__eyebrow {
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .closing h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 1.75rem;
+    }
+
+    .closing__copy p {
+      color: var(--color-muted);
+      font-size: clamp(1.05rem, 1.35vw, 1.25rem);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .closing__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 0.35rem 0.35rem 0.35rem 1.75rem;
+      border: 1px solid rgba(0, 242, 254, 0.5);
+      border-radius: 999px;
+      background: linear-gradient(135deg, #0284c7 0%, #00f2fe 100%);
+      color: #030712;
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      font-weight: 800;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: var(--transition-smooth);
+      box-shadow: 0 1rem 3rem rgba(0, 242, 254, 0.35);
+    }
+
+    .closing__cta:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 1.25rem 3.5rem rgba(0, 242, 254, 0.55);
+    }
+
+    .closing__cta-icon {
+      display: grid;
+      width: 3.1rem;
+      aspect-ratio: 1;
+      place-items: center;
+      border-radius: 50%;
+      background: #030712;
+      color: #00f2fe;
+      font-size: 1.2rem;
+    }
+
+    .closing__signature-box {
+      text-align: right;
+    }
+
+    .closing__signature {
+      font-family: var(--font-copy);
+      font-style: italic;
+      font-size: clamp(1.6rem, 2.5vw, 2.4rem);
       line-height: 1.4;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+    }
+
+    .closing__author {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .closing__org {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: var(--color-muted);
+    }
+
+    /* =========================================================
+       7. FLOATING SITE DOCK (EXACT mccongdanh.com NAVIGATION)
+       ========================================================= */
+    .site-dock {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 999;
+      background: rgba(5, 12, 28, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      border-radius: 999px;
+      padding: 6px 10px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(0, 242, 254, 0.25);
+      transition: var(--transition-smooth);
+    }
+
+    .site-dock__menu {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .site-dock__menu a, 
+    .site-dock__menu button {
+      background: transparent;
+      border: none;
+      color: var(--color-muted);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .site-dock__menu a:hover,
+    .site-dock__menu button:hover {
+      color: #ffffff;
+      background: rgba(0, 242, 254, 0.12);
+    }
+
+    .site-dock__menu .dock-home {
+      padding: 8px 12px;
+      font-size: 1.1rem;
+      color: var(--color-primary);
+    }
+
+    .site-dock__menu .dock-music {
+      background: rgba(0, 242, 254, 0.1);
+      border: 1px solid rgba(0, 242, 254, 0.25);
+      color: var(--color-primary);
+    }
+
+    .site-dock__menu .dock-music.playing {
+      background: rgba(0, 242, 254, 0.2);
+      border-color: var(--color-primary);
+      color: #fff;
+    }
+
+    .site-dock__menu .dock-contact-btn {
+      background: linear-gradient(135deg, #0284c7, #00f2fe);
+      color: #030712;
+      font-weight: 800;
+      padding: 8px 20px;
+      box-shadow: 0 4px 15px rgba(0, 242, 254, 0.4);
+    }
+
+    .site-dock__menu .dock-contact-btn:hover {
+      transform: scale(1.05);
+      color: #000;
+    }
+
+    /* Floating Zalo Button at bottom right */
+    .zalo-fixed-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 998;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0284c7, #00f2fe);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #030712;
+      box-shadow: 0 0 25px rgba(0, 242, 254, 0.5);
+      transition: var(--transition-smooth);
+    }
+
+    .zalo-fixed-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 35px rgba(0, 242, 254, 0.8);
+    }
+
+    .zalo-fixed-btn svg {
+      width: 28px;
+      height: 28px;
+      fill: #030712;
+    }
+
+    /* =========================================================
+       8. CONTACT MODAL (mccongdanh dialog style)
+       ========================================================= */
+    .booking-modal {
+      border: 1px solid rgba(0, 242, 254, 0.35);
+      border-radius: 28px;
+      background: rgba(5, 12, 28, 0.96);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      color: var(--color-text);
+      padding: clamp(2rem, 5vw, 3.5rem);
+      max-width: 600px;
+      width: 90%;
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 242, 254, 0.25);
+      margin: auto;
+    }
+
+    .booking-modal::backdrop {
+      background: rgba(3, 7, 18, 0.85);
+      backdrop-filter: blur(10px);
+    }
+
+    .booking-modal__close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-smooth);
+    }
+
+    .booking-modal__close:hover {
+      background: var(--color-primary);
+      color: #030712;
+    }
+
+    .booking-modal__eyebrow {
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    .booking-modal h2 {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+
+    .booking-modal__copy {
+      color: var(--color-muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .booking-modal__actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .booking-link-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 14px;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: var(--transition-smooth);
+    }
+
+    .booking-link-btn:hover {
+      background: rgba(0, 242, 254, 0.15);
+      border-color: var(--color-primary);
+      transform: translateY(-2px);
+    }
+
+    .booking-modal__thanks {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      margin-top: 1rem;
     }
 
     /* Lightbox Modal */
@@ -1094,29 +1298,24 @@
       inset: 0;
       background: rgba(3, 7, 18, 0.94);
       backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
       z-index: 10000;
       display: none;
       align-items: center;
       justify-content: center;
       padding: 2rem;
-      opacity: 0;
-      transition: opacity 0.3s ease;
     }
 
     .lightbox-modal.active {
       display: flex;
-      opacity: 1;
     }
 
     .lightbox-content {
       max-width: 900px;
       width: 100%;
       background: rgba(8, 17, 38, 0.95);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-lg);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 24px;
       overflow: hidden;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 242, 254, 0.2);
       position: relative;
     }
 
@@ -1124,7 +1323,6 @@
       width: 100%;
       max-height: 65vh;
       object-fit: cover;
-      display: block;
     }
 
     .lightbox-caption {
@@ -1132,14 +1330,14 @@
     }
 
     .lightbox-caption h3 {
-      font-size: 1.35rem;
+      font-family: var(--font-display);
+      font-size: 1.4rem;
       color: #fff;
-      margin-bottom: 0.35rem;
+      margin-bottom: 0.4rem;
     }
 
     .lightbox-caption p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
+      color: var(--color-muted);
     }
 
     .lightbox-close {
@@ -1157,1348 +1355,400 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: var(--transition-fast);
-      z-index: 10;
-    }
-
-    .lightbox-close:hover {
-      background: var(--primary);
-      color: #030712;
     }
 
     /* =========================================================
-       SKILLS SECTION (Interactive Progress Bars)
+       RESPONSIVE BREAKPOINTS
        ========================================================= */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.75rem 2.5rem;
+    @media (max-width: 1100px) {
+      .hero h1 { font-size: clamp(2.8rem, 6.5vw, 5.5rem); }
+      .hero__headline { width: 48vw; }
+      .hero__introduction { width: 34vw; }
+      .profile__composition { grid-template-columns: 1fr; }
+      .profile__visual { position: relative; top: 0; min-height: 450px; }
+      .expertise__main { grid-template-columns: 1fr; }
+      .expertise__skills { grid-template-columns: repeat(2, 1fr); }
+      .gallery-masonry { grid-template-columns: repeat(2, 1fr); }
+      .closing__inner { grid-template-columns: 1fr; }
+      .closing__signature-box { text-align: left; }
     }
 
-    .skill-block {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: var(--radius-md);
-      padding: 1.25rem 1.5rem;
-      transition: var(--transition-fast);
-    }
-
-    .skill-block:hover {
-      background: rgba(0, 242, 254, 0.05);
-      border-color: rgba(0, 242, 254, 0.25);
-      transform: translateY(-2px);
-    }
-
-    .skill-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.75rem;
-    }
-
-    .skill-name {
-      font-size: 0.96rem;
-      font-weight: 600;
-      color: var(--text-main);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .skill-name i {
-      color: var(--primary);
-      font-size: 1.1rem;
-      width: 20px;
-      text-align: center;
-    }
-
-    .skill-percent {
-      font-family: var(--font-mono);
-      font-weight: 700;
-      color: var(--primary);
-      font-size: 0.95rem;
-    }
-
-    .progress-track {
-      width: 100%;
-      height: 9px;
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: var(--radius-full);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .progress-fill {
-      height: 100%;
-      width: 0%;
-      background: linear-gradient(90deg, #0284c7 0%, #00f2fe 100%);
-      border-radius: var(--radius-full);
-      box-shadow: 0 0 12px var(--primary);
-      transition: width 1.8s cubic-bezier(0.16, 1, 0.3, 1);
-      position: relative;
-    }
-
-    .progress-fill::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 8px;
-      background: #ffffff;
-      border-radius: 50%;
-      box-shadow: 0 0 10px #fff, 0 0 15px var(--primary);
-    }
-
-    /* =========================================================
-       PROJECTS & HIGHLIGHTS SECTION
-       ========================================================= */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-    }
-
-    .project-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(56, 189, 248, 0.16);
-      border-radius: var(--radius-md);
-      padding: 2.25rem 2rem;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      overflow: hidden;
-      transition: var(--transition-smooth);
-    }
-
-    .project-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: linear-gradient(90deg, var(--secondary), var(--primary));
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-8px);
-      border-color: var(--primary);
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 242, 254, 0.2);
-      background: rgba(10, 26, 52, 0.7);
-    }
-
-    .project-card:hover::before {
-      opacity: 1;
-    }
-
-    .project-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1.5rem;
-    }
-
-    .project-icon-box {
-      width: 58px;
-      height: 58px;
-      border-radius: 16px;
-      background: linear-gradient(135deg, rgba(2, 132, 199, 0.2), rgba(0, 242, 254, 0.15));
-      border: 1px solid rgba(0, 242, 254, 0.35);
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.75rem;
-      box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .project-card:hover .project-icon-box {
-      transform: scale(1.1) rotate(-6deg);
-    }
-
-    .project-badge {
-      font-size: 0.78rem;
-      font-family: var(--font-mono);
-      color: var(--accent);
-      background: rgba(56, 189, 248, 0.1);
-      padding: 4px 10px;
-      border-radius: var(--radius-full);
-      border: 1px solid rgba(56, 189, 248, 0.2);
-    }
-
-    .project-title {
-      font-size: 1.3rem;
-      color: #fff;
-      margin-bottom: 0.75rem;
-    }
-
-    .project-desc {
-      font-size: 0.94rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-      margin-bottom: 1.75rem;
-    }
-
-    .project-btn {
-      align-self: flex-start;
-      background: rgba(0, 242, 254, 0.1);
-      border: 1px solid rgba(0, 242, 254, 0.3);
-      color: var(--primary);
-      font-weight: 600;
-      padding: 10px 22px;
-      border-radius: var(--radius-full);
-      text-decoration: none;
-      font-size: 0.9rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: var(--transition-fast);
-    }
-
-    .project-btn:hover {
-      background: var(--primary);
-      color: #030712;
-      box-shadow: 0 0 20px rgba(0, 242, 254, 0.45);
-      transform: translateX(4px);
-    }
-
-    /* =========================================================
-       CONTACT HUB & CONNECT SECTION
-       ========================================================= */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .contact-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: var(--radius-md);
-      padding: 1.75rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      text-decoration: none;
-      color: var(--text-main);
-      transition: var(--transition-smooth);
-      position: relative;
-    }
-
-    .contact-card:hover {
-      background: rgba(0, 242, 254, 0.08);
-      border-color: var(--primary);
-      transform: translateY(-6px);
-      box-shadow: 0 15px 35px rgba(0, 242, 254, 0.2);
-    }
-
-    .contact-card-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: rgba(0, 242, 254, 0.1);
-      border: 1px solid rgba(0, 242, 254, 0.3);
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.35rem;
-      margin-bottom: 1rem;
-      transition: var(--transition-fast);
-    }
-
-    .contact-card:hover .contact-card-icon {
-      background: var(--primary);
-      color: #030712;
-      transform: scale(1.1);
-    }
-
-    .contact-card-title {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      margin-bottom: 0.35rem;
-    }
-
-    .contact-card-value {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #fff;
-      font-family: var(--font-mono);
-      word-break: break-all;
-    }
-
-    /* =========================================================
-       FOOTER (Elegant Oceanic Dark)
-       ========================================================= */
-    footer {
-      background: rgba(2, 6, 18, 0.95);
-      border-top: 1px solid var(--border-color);
-      padding: 3.5rem 0 2rem;
-      margin-top: 5rem;
-      position: relative;
-    }
-
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    .footer-brand {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .footer-brand-title {
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: #fff;
-    }
-
-    .footer-brand-sub {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 1.25rem;
-    }
-
-    .footer-link-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.15rem;
-      text-decoration: none;
-      transition: var(--transition-fast);
-    }
-
-    .footer-link-icon:hover {
-      background: var(--primary);
-      color: #030712;
-      border-color: var(--primary);
-      transform: translateY(-3px);
-      box-shadow: 0 0 15px var(--glow-blue);
-    }
-
-    .footer-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-    }
-
-    /* =========================================================
-       FLOATING INTERACTIVE WIDGETS (MUSIC, ZALO & BACK TO TOP)
-       ========================================================= */
-    /* Luxury Navbar Music Button */
-    .btn-nav-music {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border-color);
-      color: var(--primary);
-      font-weight: 600;
-      font-size: 0.85rem;
-      padding: 7px 14px;
-      border-radius: var(--radius-full);
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      cursor: pointer;
-      transition: var(--transition-fast);
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    .btn-nav-music:hover {
-      background: rgba(0, 242, 254, 0.12);
-      border-color: var(--primary);
-      color: #fff;
-      box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
-    }
-
-    .btn-nav-music.playing {
-      background: rgba(0, 242, 254, 0.16);
-      border-color: var(--primary);
-      color: #fff;
-      box-shadow: 0 0 18px rgba(0, 242, 254, 0.45);
-    }
-
-    .btn-nav-music.playing #navMusicIcon {
-      animation: spinMusicIcon 4s linear infinite;
-    }
-
-    @keyframes spinMusicIcon {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    .nav-sound-wave {
-      display: none;
-      align-items: flex-end;
-      gap: 2.5px;
-      height: 14px;
-    }
-
-    .btn-nav-music.playing .nav-sound-wave {
-      display: flex;
-    }
-
-    .nav-sound-wave span {
-      width: 2.5px;
-      background: var(--primary);
-      border-radius: 2px;
-      height: 4px;
-    }
-
-    .btn-nav-music.playing .nav-sound-wave span:nth-child(1) { animation: waveBar 0.8s infinite ease-in-out alternate; }
-    .btn-nav-music.playing .nav-sound-wave span:nth-child(2) { animation: waveBar 1.1s infinite ease-in-out alternate 0.2s; }
-    .btn-nav-music.playing .nav-sound-wave span:nth-child(3) { animation: waveBar 0.7s infinite ease-in-out alternate 0.4s; }
-
-    @keyframes waveBar {
-      0% { height: 3px; }
-      100% { height: 13px; }
-    }
-
-    /* Floating Zalo Button */
-    .zalo-float {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 998;
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-    }
-
-    .zalo-label {
-      background: rgba(8, 17, 38, 0.9);
-      backdrop-filter: blur(12px);
-      border: 1px solid var(--border-color);
-      color: var(--primary);
-      padding: 8px 16px;
-      border-radius: var(--radius-full) 0 0 var(--radius-full);
-      font-weight: 700;
-      font-size: 0.88rem;
-      box-shadow: var(--shadow-soft);
-      transition: var(--transition-fast);
-    }
-
-    .zalo-btn-circle {
-      width: 54px;
-      height: 54px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #0284c7 0%, #00f2fe 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #030712;
-      position: relative;
-      box-shadow: 0 0 25px rgba(0, 242, 254, 0.5);
-      transition: var(--transition-fast);
-    }
-
-    .zalo-btn-circle::before, .zalo-btn-circle::after {
-      content: '';
-      position: absolute;
-      inset: -6px;
-      border-radius: 50%;
-      border: 2px solid var(--primary);
-      animation: zaloPulse 2s infinite linear;
-    }
-
-    .zalo-btn-circle::after {
-      animation-delay: 1s;
-    }
-
-    @keyframes zaloPulse {
-      0% { transform: scale(0.9); opacity: 1; }
-      100% { transform: scale(1.5); opacity: 0; }
-    }
-
-    .zalo-float:hover .zalo-btn-circle {
-      transform: scale(1.1);
-      box-shadow: 0 0 35px rgba(0, 242, 254, 0.8);
-    }
-
-    .zalo-icon-svg {
-      width: 28px;
-      height: 28px;
-      fill: #030712;
-    }
-
-    /* Scroll To Top Button */
-    .scroll-top-btn {
-      position: fixed;
-      bottom: 92px;
-      right: 26px;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: rgba(8, 17, 38, 0.85);
-      backdrop-filter: blur(10px);
-      border: 1px solid var(--border-color);
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      cursor: pointer;
-      z-index: 997;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(15px);
-      transition: var(--transition-fast);
-    }
-
-    .scroll-top-btn.show {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    .scroll-top-btn:hover {
-      background: var(--primary);
-      color: #030712;
-      border-color: var(--primary);
-      box-shadow: 0 0 20px var(--glow-blue);
-    }
-
-    /* Toast Alert */
-    .luxury-toast {
-      position: fixed;
-      top: 24px;
-      right: 24px;
-      background: rgba(8, 17, 38, 0.95);
-      backdrop-filter: blur(16px);
-      border: 1px solid var(--primary);
-      border-radius: var(--radius-md);
-      padding: 14px 22px;
-      color: #fff;
-      font-size: 0.92rem;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 242, 254, 0.3);
-      z-index: 10001;
-      transform: translateX(120%);
-      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .luxury-toast.active {
-      transform: translateX(0);
-    }
-
-    .toast-icon {
-      color: var(--primary);
-      font-size: 1.25rem;
-    }
-
-    /* Scroll Animation Reveal Classes */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .fade-up.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* =========================================================
-       RESPONSIVE BREAKPOINTS (Mobile, Tablet/iPad, Laptop, PC)
-       ========================================================= */
-    /* Laptop & Desktop Vừa (<= 1199px) */
-    @media (max-width: 1199px) {
-      .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    /* iPad, Tablets & Màn hình laptop vừa (<= 1024px) */
-    @media (max-width: 1024px) {
-      .nav-links {
-        display: none;
-      }
-      .menu-toggle {
-        display: flex;
-      }
-      .mobile-menu-drawer {
-        display: block;
-      }
-      .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 2.25rem;
-      }
-      .avatar-wrapper {
-        margin: 0 auto;
-      }
-      .hero-role-wrapper, .hero-tags, .hero-actions {
-        justify-content: center;
-      }
-      .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .two-cols-grid {
-        grid-template-columns: 1fr;
-      }
-      .about-pillars {
-        grid-template-columns: 1fr;
-      }
-      .skills-grid {
-        grid-template-columns: 1fr;
-      }
-      .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    /* Tablet nhỏ & Điện thoại màn hình rộng (<= 768px) */
     @media (max-width: 768px) {
-      .hero-card {
-        padding: 2.5rem 1.5rem;
-      }
-      .luxury-card {
-        padding: 2rem 1.25rem;
-      }
-      .stats-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-      }
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-      .btn-nav-music .music-pill-label {
-        display: none;
-      }
-      .btn-nav-music {
-        padding: 8px 12px;
-      }
-      .zalo-label {
-        display: none;
-      }
-      .zalo-float {
-        bottom: 20px;
-        right: 14px;
-      }
-      .zalo-btn-circle {
-        width: 48px;
-        height: 48px;
-      }
-      .scroll-top-btn {
-        bottom: 78px;
-        right: 16px;
-      }
-    }
-
-    /* Điện thoại di động nhỏ (<= 576px) */
-    @media (max-width: 576px) {
-      .container {
-        padding: 0 1rem;
-      }
-      .hero-section {
-        padding: 2.5rem 0 2rem;
-      }
-      .avatar-wrapper {
-        width: 160px;
-        height: 160px;
-      }
-      .vip-verified-badge {
-        width: 34px;
-        height: 34px;
-        font-size: 1rem;
-      }
-      .hero-name {
-        font-size: 2rem;
-      }
-      .hero-role-wrapper {
-        font-size: 1rem;
-      }
-      .stats-grid {
-        grid-template-columns: 1fr;
-      }
-      .hero-actions {
-        flex-direction: column;
-        width: 100%;
-      }
-      .hero-actions a, .hero-actions button {
-        width: 100%;
-        justify-content: center;
-      }
-      .hero-actions .btn-icon-pill {
-        width: 48px;
-      }
-      .footer-content {
-        flex-direction: column;
-        text-align: center;
-      }
-      .footer-links {
-        justify-content: center;
-      }
-      .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-      }
+      .hero__inner { padding-top: 5rem; }
+      .hero__headline { position: relative; top: 0; left: 0; width: 100%; margin-bottom: 2rem; }
+      .hero__opening { width: 100%; }
+      .hero__portrait-frame { position: relative; width: 100%; height: 420px; left: auto; transform: none; margin: 2rem 0; }
+      .hero__introduction { position: relative; top: 0; right: 0; width: 100%; text-align: left; margin-bottom: 2rem; }
+      .hero__cta { position: relative; bottom: 0; right: 0; width: 100%; justify-content: center; }
+      .profile__facts dl { grid-template-columns: 1fr; gap: 1.5rem; }
+      .expertise__skills { grid-template-columns: 1fr; }
+      .gallery-masonry { grid-template-columns: 1fr; }
+      .booking-modal__actions { grid-template-columns: 1fr; }
+      .site-dock { width: calc(100% - 24px); justify-content: center; }
+      .site-dock__menu a:not(.dock-home), .site-dock__menu button:not(.dock-contact-btn) { display: none; }
+      .site-dock__menu { width: 100%; justify-content: space-around; }
+      .zalo-fixed-btn { display: none; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Dynamic Ambient Ocean Background Canvas -->
+  <!-- Background Ambient Particles -->
   <canvas id="ambient-canvas"></canvas>
 
-  <!-- Glowing Underwater Light Orbs -->
-  <div class="ocean-lights">
-    <div class="ocean-glow-orb orb-1"></div>
-    <div class="ocean-glow-orb orb-2"></div>
-    <div class="ocean-glow-orb orb-3"></div>
-  </div>
+  <main>
 
-  <!-- =========================================================
-       NAVIGATION BAR
-       ========================================================= -->
-  <header class="navbar">
-    <div class="container nav-inner">
-      <a href="#" class="brand-logo">
-        <span class="brand-badge">N</span>
-        <span>TRỌNG NGHĨA<span class="gradient-blue">.IT</span></span>
-      </a>
+    <!-- =========================================================
+         1. HERO SECTION (EDITORIAL FULL-BLEED)
+         ========================================================= -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <!-- Backdrop Image -->
+      <img class="hero__backdrop" src="images/truong_nam_sai_gon.jpg" alt="Trường Cao Đẳng Bách Khoa Nam Sài Gòn" width="1672" height="941" fetchpriority="high">
+      <div class="hero__shade" aria-hidden="true"></div>
 
-      <!-- Desktop Navigation Links -->
-      <ul class="nav-links">
-        <li><a href="#about" class="nav-link">Giới thiệu</a></li>
-        <li><a href="#experience" class="nav-link">Công tác</a></li>
-        <li><a href="#education" class="nav-link">Bằng cấp</a></li>
-        <li><a href="#gallery" class="nav-link">Hoạt động</a></li>
-        <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
-        <li><a href="#projects" class="nav-link">Dự án</a></li>
-        <li><a href="#contact" class="nav-link">Liên hệ</a></li>
-      </ul>
-
-      <div class="nav-cta">
-        <button onclick="toggleMusic()" class="btn-nav-music" id="navMusicBtn" title="Bật / Dừng nhạc nền Lofi thư giãn">
-          <i class="fas fa-music" id="navMusicIcon"></i>
-          <span class="music-pill-label" id="navMusicText">Nhạc Lofi</span>
-          <div class="nav-sound-wave" id="navSoundWave">
-            <span></span><span></span><span></span>
-          </div>
-        </button>
-
-        <a href="#contact" class="btn-quick-contact">
-          <i class="fas fa-paper-plane"></i>
-          <span>Kết nối ngay</span>
-        </a>
-        <button class="menu-toggle" id="menuToggleBtn" title="Mở danh mục điều hướng">
-          <i class="fas fa-bars" id="menuToggleIcon"></i>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- Mobile Drawer Menu -->
-  <div class="mobile-menu-drawer" id="mobileMenuDrawer">
-    <ul class="mobile-nav-links">
-      <li><a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-user-astronaut"></i> Giới thiệu bản thân</a></li>
-      <li><a href="#experience" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-building"></i> Quá trình công tác</a></li>
-      <li><a href="#education" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-graduation-cap"></i> Trình độ & Bằng cấp</a></li>
-      <li><a href="#gallery" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-images"></i> Hình ảnh hoạt động</a></li>
-      <li><a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-sliders"></i> Kỹ năng chuyên môn</a></li>
-      <li><a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-rocket"></i> Dự án & Hoạt động</a></li>
-      <li><a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-address-book"></i> Thông tin liên hệ</a></li>
-    </ul>
-  </div>
-
-  <!-- =========================================================
-       HERO PROFILE HEADER
-       ========================================================= -->
-  <section class="hero-section container">
-    <div class="hero-card fade-up">
-      <div class="hero-content">
+      <div class="hero__inner">
         
-        <!-- Glowing Avatar with VIP verification -->
-        <div class="avatar-wrapper">
-          <div class="avatar-glow-ring"></div>
-          <div class="avatar-glow-border"></div>
-          <img 
-            src="avatar.jpg" 
-            alt="Nguyễn Trọng Nghĩa" 
-            class="avatar-image" 
-            id="userAvatar"
-            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80';"
-          >
-          <div class="vip-verified-badge" title="Chuyên viên công tác chính thức">
-            <i class="fas fa-check"></i>
-          </div>
-        </div>
-
-        <!-- Hero Details -->
-        <div class="hero-info">
-          <div class="status-pill">
-            <span class="status-dot"></span>
-            <span>CHUYÊN VIÊN TRƯỜNG CAO ĐẲNG BÁCH KHOA NAM SÀI GÒN</span>
-          </div>
-
-          <h1 class="hero-name">
-            <span class="gradient-text">Nguyễn Trọng Nghĩa</span>
+        <!-- Left Headline -->
+        <header class="hero__headline">
+          <p class="hero__role">Chuyên Viên Trường CĐ Bách Khoa Nam Sài Gòn</p>
+          <h1 id="hero-title">
+            <span>CHUYÊN VIÊN</span>
+            <span>TRỌNG NGHĨA</span>
           </h1>
+          <p class="hero__opening">
+            Trước tiên, Trọng Nghĩa trân trọng cảm ơn Quý Thầy Cô, Quý Đồng nghiệp và các bạn sinh viên đã dành thời gian ghé thăm hồ sơ. Mỗi ngày làm việc tại nhà trường là một cơ hội để tôi cống hiến cho môi trường học tập hiện đại, an toàn và thông minh.
+          </p>
+        </header>
 
-          <div class="hero-role-wrapper">
-            <i class="fas fa-terminal hero-role-icon"></i>
-            <span id="typing-text"></span>
-          </div>
-
-          <!-- Quick Tags -->
-          <div class="hero-tags">
-            <span class="hero-tag">
-              <i class="fas fa-building-columns"></i> CĐ Bách Khoa Nam Sài Gòn
-            </span>
-            <span class="hero-tag">
-              <i class="fas fa-briefcase"></i> Phòng Quản trị Thiết bị – CSVC
-            </span>
-            <span class="hero-tag">
-              <i class="fas fa-user-graduate"></i> Cử nhân CNTT - ĐH Trà Vinh
-            </span>
-            <span class="hero-tag">
-              <i class="fas fa-map-marker-alt"></i> TP. Hồ Chí Minh
-            </span>
-          </div>
-
-          <!-- Hero Action Buttons -->
-          <div class="hero-actions">
-            <a href="https://zalo.me/0917912210" target="_blank" class="btn-luxury">
-              <i class="fas fa-comment-dots"></i> Nhắn tin Zalo
-            </a>
-
-            <button onclick="toggleMusic(true)" class="btn-outline-ocean" id="heroMusicBtn">
-              <i class="fas fa-music"></i> Bật nhạc thư giãn
-            </button>
-
-            <a href="#gallery" class="btn-outline-ocean">
-              <i class="fas fa-images"></i> Xem hoạt động
-            </a>
-
-            <button onclick="copyProfileLink()" class="btn-icon-pill" title="Sao chép liên kết trang">
-              <i class="fas fa-share-nodes"></i>
-            </button>
-
-            <a href="mailto:trongnghia@nsg.edu.vn" class="btn-icon-pill" title="Gửi thư điện tử">
-              <i class="fas fa-envelope"></i>
-            </a>
-
-            <a href="tel:0917912210" class="btn-icon-pill" title="Gọi trực tiếp">
-              <i class="fas fa-phone"></i>
-            </a>
-          </div>
+        <!-- Center Portrait Frame -->
+        <div class="hero__portrait-frame" aria-hidden="true">
+          <img class="hero__portrait" src="avatar.jpg" alt="Nguyễn Trọng Nghĩa - Chuyên viên CĐ Bách Khoa Nam Sài Gòn" width="1000" height="1500" fetchpriority="high" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=80';">
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================
-       HIGHLIGHT STATS BANNER
-       ========================================================= -->
-  <section class="stats-section container">
-    <div class="stats-grid">
-      <div class="stat-card fade-up">
-        <i class="fas fa-server stat-icon"></i>
-        <div class="stat-number">100+</div>
-        <div class="stat-label">Thiết bị & Phòng máy Quản trị</div>
-      </div>
-
-      <div class="stat-card fade-up">
-        <i class="fas fa-certificate stat-icon"></i>
-        <div class="stat-number">100%</div>
-        <div class="stat-label">Hoàn thành Cử nhân & Bằng cấp CNTT</div>
-      </div>
-
-      <div class="stat-card fade-up">
-        <i class="fas fa-shield-check stat-icon"></i>
-        <div class="stat-number">99.9%</div>
-        <div class="stat-label">Hệ thống mạng & CSVC vận hành ổn định</div>
-      </div>
-
-      <div class="stat-card fade-up">
-        <i class="fas fa-headset stat-icon"></i>
-        <div class="stat-number">24/7</div>
-        <div class="stat-label">Hỗ trợ kỹ thuật nhà trường kịp thời</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================
-       MAIN CONTENT CONTAINER
-       ========================================================= -->
-  <main class="container">
-
-    <!-- GIỚI THIỆU BẢN THÂN (ABOUT ME) -->
-    <section id="about" class="section-wrapper">
-      <div class="luxury-card fade-up">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-title-icon"><i class="fas fa-user-astronaut"></i></span>
-            <span>Giới thiệu bản thân</span>
-          </h2>
-          <span class="section-badge">BIO & PROFILE</span>
-        </div>
-
-        <p class="about-lead">
-          Tôi là <strong class="gradient-blue">Nguyễn Trọng Nghĩa</strong> – Cán bộ chuyên môn công nghệ thông tin, hiện đang công tác chính thức tại <strong>Phòng Quản trị Thiết bị – Cơ sở vật chất của Trường Cao Đẳng Bách Khoa Nam Sài Gòn</strong>. Đã hoàn thành chương trình đào tạo Cử nhân Công nghệ Thông tin tại Trường Đại học Trà Vinh và Cao đẳng Tin học ứng dụng tại Trường Cao Đẳng Bách Khoa Nam Sài Gòn.
-        </p>
-
-        <p style="color: var(--text-muted); font-size: 1.02rem; line-height: 1.85; margin-bottom: 2rem;">
-          Với tinh thần trách nhiệm cao và niềm đam mê nghiên cứu kỹ thuật số, tôi đảm nhiệm công tác quản trị, bảo dưỡng hệ thống mạng, hạ tầng thiết bị giảng đường và phòng thực hành máy tính toàn trường. Mục tiêu nghề nghiệp của tôi là chuẩn hóa hạ tầng cơ sở vật chất, số hóa quản lý thiết bị và mang đến môi trường giáo dục công nghệ hiện đại, tiện ích nhất cho toàn thể cán bộ, giảng viên và sinh viên.
-        </p>
-
-        <div class="about-quote-box">
-          <p class="about-quote-text">
-            <i class="fas fa-quote-left" style="color: var(--primary); margin-right: 8px;"></i>
-            "Trách nhiệm – Kịp thời – Tận tâm: Chuẩn hóa hạ tầng công nghệ và thiết bị cơ sở vật chất là nền tảng vững chắc cho chất lượng giáo dục thời đại số."
+        <!-- Right Introduction -->
+        <div class="hero__introduction">
+          <p class="hero__name">Nguyễn Trọng Nghĩa</p>
+          <span class="hero__unit-badge">Phòng Quản trị Thiết bị – Cơ sở vật chất</span>
+          <p class="hero__copy">
+            Với nền tảng Cử nhân Công nghệ Thông tin, tôi đảm nhiệm công tác quản trị mạng, vận hành phòng thực hành máy tính và chuẩn hóa trang thiết bị giảng đường toàn trường. Tiếp theo là những thông tin cùng dấu ấn chuyên môn tiêu biểu trong hành trình công tác.
           </p>
         </div>
 
-        <div class="about-pillars">
-          <div class="pillar-card">
-            <i class="fas fa-laptop-code pillar-icon"></i>
-            <h3 class="pillar-title">Vận hành kỹ thuật số</h3>
-            <p class="pillar-desc">Quản lý và bảo trì toàn bộ hệ thống máy tính, máy chiếu, âm thanh hội trường và thiết bị công nghệ phục vụ giảng dạy.</p>
-          </div>
-
-          <div class="pillar-card">
-            <i class="fas fa-network-wired pillar-icon"></i>
-            <h3 class="pillar-title">Hạ tầng mạng thông suốt</h3>
-            <p class="pillar-desc">Cấu hình, giám sát và xử lý sự cố kết nối mạng LAN, Wi-Fi nội bộ đảm bảo môi trường học tập và làm việc liên tục 24/7.</p>
-          </div>
-
-          <div class="pillar-card">
-            <i class="fas fa-handshake-angle pillar-icon"></i>
-            <h3 class="pillar-title">Hỗ trợ tận tâm</h3>
-            <p class="pillar-desc">Đồng hành và giải quyết nhanh chóng các yêu cầu kỹ thuật của cán bộ, giảng viên trong các kỳ thi, hội thảo và sự kiện trường.</p>
-          </div>
-        </div>
+        <!-- Bottom Right CTA -->
+        <a class="hero__cta" href="#profile" aria-label="Xem hồ sơ chuyên viên Nguyễn Trọng Nghĩa">
+          <span>Xem hồ sơ</span>
+          <span class="hero__cta-icon" aria-hidden="true">&#8594;</span>
+        </a>
 
       </div>
     </section>
-
-    <!-- QUÁ TRÌNH CÔNG TÁC & BẰNG CẤP HỌC VẤN (2 COLUMNS) -->
-    <div class="two-cols-grid">
-      
-      <!-- QUÁ TRÌNH CÔNG TÁC -->
-      <section id="experience" class="luxury-card fade-up">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-title-icon"><i class="fas fa-briefcase"></i></span>
-            <span>Quá trình công tác</span>
-          </h2>
-          <span class="section-badge">CAREER</span>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-node">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card-inner">
-              <h3 class="timeline-role">Chuyên viên Quản trị Thiết bị & CSVC</h3>
-              <p class="timeline-place">
-                <i class="fas fa-building-columns"></i> Trường Cao Đẳng Bách Khoa Nam Sài Gòn
-              </p>
-              <div class="timeline-time">
-                <i class="far fa-calendar-alt"></i> 05/2024 – Hiện tại
-                <span class="badge-status-tag">ĐANG CÔNG TÁC CHÍNH THỨC</span>
-              </div>
-              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem;">
-                Đơn vị: Phòng Quản trị Thiết bị – Cơ sở vật chất
-              </p>
-              <ul class="timeline-bullets">
-                <li>Chịu trách nhiệm quản lý, cấu hình và vận hành trang thiết bị kỹ thuật số, hệ thống mạng internet, máy chiếu và âm thanh các phòng học, hội trường.</li>
-                <li>Thực hiện công tác bảo trì định kỳ, kiểm tra an toàn kỹ thuật phòng máy tính và khắc phục nhanh chóng các sự cố phát sinh.</li>
-                <li>Hỗ trợ kỹ thuật chuyên sâu cho cán bộ, giảng viên và sinh viên trong các hoạt động giảng dạy, kỳ thi trực tuyến và sự kiện lễ hội của trường.</li>
-                <li>Tham mưu đề xuất nâng cấp và tối ưu hóa hạ tầng công nghệ thông tin phục vụ chuyển đổi số giáo dục.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TRÌNH ĐỘ & BẰNG CẤP CHUYÊN MÔN -->
-      <section id="education" class="luxury-card fade-up">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-title-icon"><i class="fas fa-graduation-cap"></i></span>
-            <span>Trình độ & Bằng cấp</span>
-          </h2>
-          <span class="section-badge">DEGREES</span>
-        </div>
-
-        <div class="timeline">
-          
-          <div class="timeline-node">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card-inner">
-              <h3 class="timeline-role">Cử nhân Công nghệ Thông tin</h3>
-              <p class="timeline-place">
-                <i class="fas fa-university"></i> Trường Đại học Trà Vinh
-              </p>
-              <div class="timeline-time">
-                <i class="far fa-calendar-check"></i> Đã tốt nghiệp
-                <span class="badge-status-tag">CHÍNH QUY</span>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Được đào tạo bài bản và chuyên sâu về cấu trúc hệ thống công nghệ thông tin, quản trị mạng, giải pháp an toàn dữ liệu và phát triển phần mềm ứng dụng.</li>
-                <li>Vận dụng hiệu quả kiến thức bậc đại học vào thực tiễn quản trị hạ tầng cơ sở vật chất công nghệ tại đơn vị công tác.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-node">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card-inner">
-              <h3 class="timeline-role">Cao đẳng Tin học ứng dụng</h3>
-              <p class="timeline-place">
-                <i class="fas fa-school"></i> Trường Cao Đẳng Bách Khoa Nam Sài Gòn
-              </p>
-              <div class="timeline-time">
-                <i class="far fa-calendar-check"></i> Đã tốt nghiệp (2021 – 2024)
-                <span class="badge-status-tag">HOÀN THÀNH</span>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Nền tảng kỹ thuật vững vàng về bảo trì phần cứng, lắp ráp, cấu hình mạng nội bộ và hỗ trợ kỹ thuật chuyên nghiệp.</li>
-                <li>Tích cực tham gia các phong trào thanh niên, đoàn thể và hoạt động kỹ thuật tình nguyện tại trường.</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-    </div>
 
     <!-- =========================================================
-         HÌNH ẢNH HOẠT ĐỘNG CÁ NHÂN & CƠ QUAN (NEW!)
+         2. PROFILE & FACTS SECTION
          ========================================================= -->
-    <section id="gallery" class="section-wrapper">
-      <div class="luxury-card fade-up">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-title-icon"><i class="fas fa-images"></i></span>
-            <span>Hình ảnh hoạt động & Công tác</span>
-          </h2>
-          <span class="section-badge">GALLERY & ACTIVITIES</span>
-        </div>
-
-        <!-- Filter Buttons -->
-        <div class="gallery-filter-bar">
-          <button class="filter-btn active" onclick="filterGallery('all', this)">Tất cả hình ảnh</button>
-          <button class="filter-btn" onclick="filterGallery('truong', this)">Công tác tại trường</button>
-          <button class="filter-btn" onclick="filterGallery('kythuat', this)">Kỹ thuật & Thiết bị</button>
-          <button class="filter-btn" onclick="filterGallery('sukien', this)">Sự kiện & Phong trào</button>
-        </div>
-
-        <!-- Gallery Grid -->
-        <div class="gallery-grid" id="galleryGrid">
+    <section class="profile" id="profile" aria-label="Thông tin chuyên môn và quá trình công tác">
+      <div class="profile__inner">
+        <div class="profile__composition">
           
-          <!-- Image 1 -->
-          <div class="gallery-item" data-category="truong" onclick="openLightbox('images/truong_nam_sai_gon.jpg', 'Khuôn viên Trường Cao Đẳng Bách Khoa Nam Sài Gòn', 'Môi trường làm việc năng động, hiện đại và thân thiện tại trường.')">
+          <!-- Sticky Visual on Left -->
+          <figure class="profile__visual">
+            <div class="profile__portrait-plane" aria-hidden="true"></div>
+            <img src="images/hoat_dong_ca_nhan.jpg" alt="Nguyễn Trọng Nghĩa trong công tác chuyên môn" width="1000" height="1500" loading="lazy">
+          </figure>
+
+          <!-- Content on Right -->
+          <div class="profile__content">
+            
+            <aside class="profile__facts">
+              <h2 class="profile__full-name">NGUYỄN TRỌNG NGHĨA</h2>
+              <p class="profile__position-title">Cử nhân Công nghệ Thông tin • Chuyên viên Quản trị Thiết bị & CSVC</p>
+              
+              <dl>
+                <div class="profile__fact">
+                  <dt>Kinh nghiệm</dt>
+                  <dd>03<span>+ Năm</span></dd>
+                </div>
+                <div class="profile__fact">
+                  <dt>Thiết bị quản trị</dt>
+                  <dd>100<span>+ Máy</span></dd>
+                </div>
+                <div class="profile__fact profile__fact--text">
+                  <dt>Đơn vị công tác</dt>
+                  <dd>CĐ Bách Khoa Nam Sài Gòn</dd>
+                </div>
+              </dl>
+            </aside>
+
+            <!-- Milestones & Education -->
+            <div class="achievements">
+              <h3>Dấu ấn & Quá trình công tác</h3>
+              <ol>
+                <li class="featured">
+                  <time datetime="2024">05/2024 – Hiện tại</time>
+                  <h4>Chuyên viên Quản trị Thiết bị & Cơ sở vật chất</h4>
+                  <p>Trường Cao Đẳng Bách Khoa Nam Sài Gòn. Quản lý, cấu hình và vận hành toàn diện hệ thống mạng internet, máy chiếu, âm thanh và trang thiết bị phòng học toàn trường.</p>
+                </li>
+                <li>
+                  <time datetime="2024">2024</time>
+                  <h4>Cử nhân Công nghệ Thông tin</h4>
+                  <p>Tốt nghiệp hệ chính quy Trường Đại học Trà Vinh. Đào tạo chuyên sâu về cấu trúc mạng, cơ sở dữ liệu và giải pháp an toàn thông tin.</p>
+                </li>
+                <li>
+                  <time datetime="2024">2021 – 2024</time>
+                  <h4>Cao đẳng Tin học ứng dụng</h4>
+                  <p>Tốt nghiệp Trường Cao Đẳng Bách Khoa Nam Sài Gòn. Nền tảng vững vàng về phần cứng, bảo trì máy tính và hỗ trợ kỹ thuật số học đường.</p>
+                </li>
+                <li>
+                  <time datetime="2021">2021</time>
+                  <h4>Khởi đầu hành trình đam mê công nghệ</h4>
+                  <p>Bắt đầu xây dựng blog chia sẻ tài liệu công nghệ thông tin và phát triển các kênh truyền thông sáng tạo nội dung số.</p>
+                </li>
+              </ol>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. EXPERTISE SECTION (KỸ NĂNG & 4 LĨNH VỰC NỔI BẬT)
+         ========================================================= */
+    <section class="expertise" id="expertise">
+      <div class="expertise__inner">
+        
+        <div class="expertise__main">
+          <div class="expertise__content">
+            <p class="expertise__eyebrow">Năng lực chuyên môn</p>
+            <h2>Kỹ năng <span>&amp;</span><br>Kinh nghiệm</h2>
+            <div class="expertise__copy">
+              <p>
+                Được đào tạo bài bản và liên tục tôi luyện qua thực tế công tác tại Trường Cao Đẳng Bách Khoa Nam Sài Gòn, tôi luôn đảm bảo hạ tầng thiết bị và hệ thống mạng của nhà trường vận hành ổn định, an toàn và thông suốt.
+              </p>
+              <p>
+                Từ các buổi giảng dạy thường nhật đến những kỳ thi quy mô lớn và sự kiện trọng thể, mọi kịch bản kỹ thuật đều được kiểm tra, chuẩn bị chỉn chu để hỗ trợ tối đa cho Thầy Cô và sinh viên.
+              </p>
+            </div>
+            
+            <dl class="expertise__stats">
+              <div>
+                <dt>03+</dt>
+                <dd>Năm kinh nghiệm IT</dd>
+              </div>
+              <div>
+                <dt>100+</dt>
+                <dd>Thiết bị & CSVC</dd>
+              </div>
+              <div>
+                <dt>04</dt>
+                <dd>Lĩnh vực trọng tâm</dd>
+              </div>
+            </dl>
+          </div>
+
+          <figure class="expertise__visual">
+            <img src="images/ky_thuat_mang.jpg" alt="Quản trị mạng và hạ tầng máy chủ trường học" loading="lazy">
+          </figure>
+        </div>
+
+        <!-- 4 Major Skill Cards -->
+        <div class="expertise__skills">
+          
+          <div class="expertise__skill">
+            <div>
+              <span class="expertise__skill-number">01</span>
+              <h3>Quản trị Mạng &amp; Hạ tầng Server</h3>
+              <p>Vận hành hệ thống mạng LAN, Wi-Fi nội bộ trường học, giám sát băng thông và bảo mật kết nối ổn định 24/7.</p>
+            </div>
+            <span class="expertise__skill-mark">+</span>
+          </div>
+
+          <div class="expertise__skill">
+            <div>
+              <span class="expertise__skill-number">02</span>
+              <h3>Thiết bị Giảng đường &amp; CSVC</h3>
+              <p>Bảo dưỡng, cấu hình và xử lý nhanh các sự cố máy chiếu, màn hình tương tác, âm thanh hội trường và lớp học.</p>
+            </div>
+            <span class="expertise__skill-mark">+</span>
+          </div>
+
+          <div class="expertise__skill">
+            <div>
+              <span class="expertise__skill-number">03</span>
+              <h3>Phòng máy tính Thực hành</h3>
+              <p>Chuẩn hóa hệ điều hành, cài đặt phần mềm chuyên ngành và quản lý bảo trì hàng trăm máy tính sinh viên.</p>
+            </div>
+            <span class="expertise__skill-mark">+</span>
+          </div>
+
+          <div class="expertise__skill">
+            <div>
+              <span class="expertise__skill-number">04</span>
+              <h3>Hỗ trợ Sự kiện &amp; Thi cử</h3>
+              <p>Trực kỹ thuật âm thanh, đường truyền mạng cho các lễ tốt nghiệp, hội thảo khoa học và kỳ thi trực tuyến.</p>
+            </div>
+            <span class="expertise__skill-mark">+</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. ACTIVITY & GALLERY SHOWCASE
+         ========================================================= -->
+    <section class="activities" id="activities">
+      <div class="activities__inner">
+        
+        <header class="activities__header">
+          <div>
+            <p class="activities__eyebrow">Hình ảnh thực tế</p>
+            <h2>Hoạt động <span>&amp; Công tác</span></h2>
+          </div>
+          
+          <div class="activities__filter">
+            <button class="filter-pill active" onclick="filterGallery('all', this)">Tất cả</button>
+            <button class="filter-pill" onclick="filterGallery('coquan', this)">Nhà trường</button>
+            <button class="filter-pill" onclick="filterGallery('kythuat', this)">Kỹ thuật</button>
+            <button class="filter-pill" onclick="filterGallery('sukien', this)">Sự kiện</button>
+          </div>
+        </header>
+
+        <div class="gallery-masonry" id="galleryGrid">
+          
+          <div class="gallery-card" data-category="coquan" onclick="openLightbox('images/truong_nam_sai_gon.jpg', 'Khuôn viên CĐ Bách Khoa Nam Sài Gòn', 'Môi trường giáo dục hiện đại, năng động và giàu nhiệt huyết.')">
             <img src="images/truong_nam_sai_gon.jpg" alt="Trường CĐ Bách Khoa Nam Sài Gòn" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-tag">Cơ quan công tác</span>
-              <h4 class="gallery-title">Trường CĐ Bách Khoa Nam Sài Gòn</h4>
-              <p class="gallery-desc">Môi trường giáo dục hiện đại, năng động và chuyên nghiệp.</p>
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__tag">Cơ quan công tác</span>
+              <h4 class="gallery-card__title">CĐ Bách Khoa Nam Sài Gòn</h4>
+              <p class="gallery-card__desc">Khuôn viên trường khang trang, hiện đại.</p>
             </div>
           </div>
 
-          <!-- Image 2 -->
-          <div class="gallery-item" data-category="kythuat" onclick="openLightbox('images/ky_thuat_mang.jpg', 'Quản trị hệ thống Server & Mạng máy tính', 'Theo dõi, cấu hình và bảo trì hạ tầng truyền dẫn mạng nội bộ thông suốt.')">
-            <img src="images/ky_thuat_mang.jpg" alt="Quản trị mạng & Server" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-tag">Hạ tầng công nghệ</span>
-              <h4 class="gallery-title">Quản trị Mạng & Server</h4>
-              <p class="gallery-desc">Vận hành hạ tầng mạng internet và máy chủ nội bộ trường.</p>
+          <div class="gallery-card" data-category="kythuat" onclick="openLightbox('images/ky_thuat_mang.jpg', 'Quản trị Mạng & Hạ tầng Server', 'Theo dõi, cấu hình tủ mạng và hệ thống đường truyền.')">
+            <img src="images/ky_thuat_mang.jpg" alt="Hệ thống mạng Server" loading="lazy">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__tag">Hạ tầng mạng</span>
+              <h4 class="gallery-card__title">Hệ thống Mạng &amp; Server</h4>
+              <p class="gallery-card__desc">Hạ tầng kết nối nội bộ thông suốt.</p>
             </div>
           </div>
 
-          <!-- Image 3 -->
-          <div class="gallery-item" data-category="truong" onclick="openLightbox('images/phong_may_tinh.jpg', 'Quản lý phòng máy tính & Thiết bị thực hành', 'Chuẩn bị phòng máy, kiểm tra phần mềm phục vụ các buổi thực hành và thi cử.')">
-            <img src="images/phong_may_tinh.jpg" alt="Phòng máy tính sinh viên" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-tag">Cơ sở vật chất</span>
-              <h4 class="gallery-title">Phòng máy tính & Giảng đường</h4>
-              <p class="gallery-desc">Quản lý và kiểm tra trang thiết bị phòng máy thực hành.</p>
+          <div class="gallery-card" data-category="coquan" onclick="openLightbox('images/phong_may_tinh.jpg', 'Phòng thực hành máy tính sinh viên', 'Chuẩn bị trang thiết bị máy móc phục vụ môn học.')">
+            <img src="images/phong_may_tinh.jpg" alt="Phòng máy tính" loading="lazy">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__tag">Cơ sở vật chất</span>
+              <h4 class="gallery-card__title">Phòng máy tính sinh viên</h4>
+              <p class="gallery-card__desc">Đảm bảo máy móc phục vụ thi cử và thực hành.</p>
             </div>
           </div>
 
-          <!-- Image 4 -->
-          <div class="gallery-item" data-category="kythuat" onclick="openLightbox('images/ho_tro_ky_thuat.jpg', 'Bảo trì & Hỗ trợ kỹ thuật thiết bị', 'Kiểm tra máy chiếu, dàn âm thanh và hệ thống kỹ thuật số giảng đường.')">
-            <img src="images/ho_tro_ky_thuat.jpg" alt="Bảo trì thiết bị CSVC" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-tag">Bảo trì CSVC</span>
-              <h4 class="gallery-title">Bảo trì thiết bị giảng đường</h4>
-              <p class="gallery-desc">Kiểm tra định kỳ máy chiếu, âm thanh và thiết bị số.</p>
+          <div class="gallery-card" data-category="kythuat" onclick="openLightbox('images/ho_tro_ky_thuat.jpg', 'Bảo trì trang thiết bị giảng đường', 'Kiểm tra máy chiếu, micro âm thanh lớp học.')">
+            <img src="images/ho_tro_ky_thuat.jpg" alt="Bảo trì máy chiếu" loading="lazy">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__tag">Bảo trì CSVC</span>
+              <h4 class="gallery-card__title">Kiểm tra thiết bị lớp học</h4>
+              <p class="gallery-card__desc">Bảo trì máy chiếu và âm thanh định kỳ.</p>
             </div>
           </div>
 
-          <!-- Image 5 -->
-          <div class="gallery-item" data-category="sukien" onclick="openLightbox('images/su_kien_co_quan.jpg', 'Hội nghị, sự kiện & hoạt động nhà trường', 'Hỗ trợ kỹ thuật âm thanh, trình chiếu cho các hội nghị và lễ tốt nghiệp.')">
-            <img src="images/su_kien_co_quan.jpg" alt="Sự kiện tại trường" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-tag">Sự kiện & Phong trào</span>
-              <h4 class="gallery-title">Hội nghị & Hoạt động trường</h4>
-              <p class="gallery-desc">Đảm bảo kỹ thuật âm thanh, ánh sáng cho sự kiện lớn.</p>
+          <div class="gallery-card" data-category="sukien" onclick="openLightbox('images/su_kien_co_quan.jpg', 'Hội nghị và sự kiện nhà trường', 'Hỗ trợ kỹ thuật ánh sáng và âm thanh hội trường.')">
+            <img src="images/su_kien_co_quan.jpg" alt="Hội nghị sự kiện" loading="lazy">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__tag">Sự kiện &amp; Lễ hội</span>
+              <h4 class="gallery-card__title">Sự kiện &amp; Lễ tốt nghiệp</h4>
+              <p class="gallery-card__desc">Đảm bảo kỹ thuật âm thanh cho sự kiện lớn.</p>
             </div>
           </div>
 
-          <!-- Image 6 -->
-          <div class="gallery-item" data-category="sukien" onclick="openLightbox('images/hoat_dong_ca_nhan.jpg', 'Nghiên cứu công nghệ & Sáng tạo nội dung', 'Không ngừng cập nhật xu hướng công nghệ mới và chia sẻ kiến thức hữu ích.')">
-            <img src="images/hoat_dong_ca_nhan.jpg" alt="Nghiên cứu & Đời sống cá nhân" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-tag">Cá nhân & Đời sống</span>
-              <h4 class="gallery-title">Nghiên cứu & Sáng tạo số</h4>
-              <p class="gallery-desc">Chia sẻ mẹo công nghệ trên Blog và kênh truyền thông cá nhân.</p>
+          <div class="gallery-card" data-category="sukien" onclick="openLightbox('images/hoat_dong_ca_nhan.jpg', 'Nghiên cứu công nghệ & Sáng tạo số', 'Chia sẻ kiến thức bổ ích trên Blog và kênh mạng xã hội.')">
+            <img src="images/hoat_dong_ca_nhan.jpg" alt="Nghiên cứu công nghệ" loading="lazy">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__tag">Cá nhân &amp; Sáng tạo</span>
+              <h4 class="gallery-card__title">Sáng tạo nội dung số</h4>
+              <p class="gallery-card__desc">Chia sẻ mẹo công nghệ trên TikTok &amp; Blog.</p>
             </div>
           </div>
 
         </div>
+
       </div>
     </section>
 
-    <!-- KỸ NĂNG CHUYÊN MÔN -->
-    <section id="skills" class="section-wrapper">
-      <div class="luxury-card fade-up">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-title-icon"><i class="fas fa-sliders"></i></span>
-            <span>Kỹ năng chuyên môn</span>
-          </h2>
-          <span class="section-badge">SKILLS & EXPERTISE</span>
-        </div>
+    <!-- =========================================================
+         5. COLLABORATION SHOWCASE (HỆ SINH THÁI ĐỒNG HÀNH)
+         ========================================================= -->
+    <section class="collaborations" id="collaborations">
+      <div class="collaborations__inner">
+        
+        <header class="collaborations__headline">
+          <p>Dấu ấn đồng hành</p>
+          <h2>Hệ sinh thái công tác</h2>
+        </header>
 
-        <div class="skills-grid">
+        <div class="collab-grid">
           
-          <div class="skill-block">
-            <div class="skill-header">
-              <span class="skill-name"><i class="fas fa-network-wired"></i> Quản trị mạng & Khắc phục sự cố phần cứng</span>
-              <span class="skill-percent">85%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-progress="85%"></div>
-            </div>
+          <div class="collab-card">
+            <i class="fas fa-building-columns collab-icon"></i>
+            <h3 class="collab-title">CĐ Bách Khoa Nam Sài Gòn</h3>
+            <p class="collab-desc">Đơn vị công tác chính thức • Phòng Quản trị Thiết bị – CSVC.</p>
           </div>
 
-          <div class="skill-block">
-            <div class="skill-header">
-              <span class="skill-name"><i class="fas fa-users-gear"></i> Phối hợp làm việc nhóm & Hỗ trợ kỹ thuật</span>
-              <span class="skill-percent">85%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-progress="85%"></div>
-            </div>
+          <div class="collab-card">
+            <i class="fas fa-graduation-cap collab-icon"></i>
+            <h3 class="collab-title">Đại học Trà Vinh</h3>
+            <p class="collab-desc">Đơn vị đào tạo Bậc Cử nhân Công nghệ Thông tin chính quy.</p>
           </div>
 
-          <div class="skill-block">
-            <div class="skill-header">
-              <span class="skill-name"><i class="fab fa-html5"></i> HTML5 & CSS3 Responsive Web</span>
-              <span class="skill-percent">80%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-progress="80%"></div>
-            </div>
+          <div class="collab-card">
+            <i class="fas fa-network-wired collab-icon"></i>
+            <h3 class="collab-title">Hạ tầng kỹ thuật số</h3>
+            <p class="collab-desc">Hệ thống mạng, máy chủ và thiết bị phòng máy thực hành.</p>
           </div>
 
-          <div class="skill-block">
-            <div class="skill-header">
-              <span class="skill-name"><i class="fab fa-wordpress"></i> WordPress & Quản trị CMS</span>
-              <span class="skill-percent">75%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-progress="75%"></div>
-            </div>
-          </div>
-
-          <div class="skill-block">
-            <div class="skill-header">
-              <span class="skill-name"><i class="fas fa-brain"></i> Tư duy phân tích & Giải quyết sự cố IT</span>
-              <span class="skill-percent">70%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-progress="70%"></div>
-            </div>
-          </div>
-
-          <div class="skill-block">
-            <div class="skill-header">
-              <span class="skill-name"><i class="fab fa-windows"></i> Lập trình C# (Cơ bản & Ứng dụng)</span>
-              <span class="skill-percent">45%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-progress="45%"></div>
-            </div>
-          </div>
-
-          <div class="skill-block">
-            <div class="skill-header">
-              <span class="skill-name"><i class="fab fa-js"></i> JavaScript (DOM & Thao tác giao diện)</span>
-              <span class="skill-percent">40%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-progress="40%"></div>
-            </div>
-          </div>
-
-          <div class="skill-block">
-            <div class="skill-header">
-              <span class="skill-name"><i class="fas fa-language"></i> Tiếng Anh chuyên ngành CNTT (Cơ bản)</span>
-              <span class="skill-percent">40%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-progress="40%"></div>
-            </div>
+          <div class="collab-card">
+            <i class="fas fa-share-nodes collab-icon"></i>
+            <h3 class="collab-title">Cộng đồng công nghệ</h3>
+            <p class="collab-desc">Blogspot &amp; TikTok cá nhân chia sẻ kiến thức tin học.</p>
           </div>
 
         </div>
+
       </div>
     </section>
 
-    <!-- DỰ ÁN & HOẠT ĐỘNG NỔI BẬT -->
-    <section id="projects" class="section-wrapper">
-      <div class="luxury-card fade-up">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-title-icon"><i class="fas fa-rocket"></i></span>
-            <span>Dự án & Kênh truyền thông nổi bật</span>
-          </h2>
-          <span class="section-badge">PORTFOLIO & MEDIA</span>
-        </div>
+    <!-- =========================================================
+         6. CLOSING SECTION (LỜI KẾT)
+         ========================================================= -->
+    <section class="closing" id="closing">
+      <img class="closing__backdrop" src="images/truong_nam_sai_gon.jpg" alt="" width="1672" height="941" loading="lazy">
 
-        <div class="projects-grid">
+      <div class="closing__inner">
+        <div class="closing__content">
+          <p class="closing__eyebrow">Trân trọng từng cơ hội gặp gỡ</p>
+          <h2>Lời kết</h2>
+          <div class="closing__copy">
+            <p>
+              Trọng Nghĩa hy vọng hồ sơ này đã giúp Quý Thầy Cô, Quý Đồng nghiệp và các bạn sinh viên hiểu thêm về hành trình, năng lực chuyên môn và tinh thần trách nhiệm mà tôi dành cho công tác quản trị cơ sở vật chất kỹ thuật số.
+            </p>
+            <p>
+              Sẽ là một niềm vinh dự khi được lắng nghe, phối hợp cùng Quý vị trong các nhiệm vụ giảng dạy, sự kiện trường và dự án ứng dụng công nghệ sắp tới.
+            </p>
+          </div>
           
-          <!-- Project 1 -->
-          <div class="project-card">
-            <div>
-              <div class="project-top">
-                <div class="project-icon-box">
-                  <i class="fas fa-globe"></i>
-                </div>
-                <span class="project-badge">BLOG & PORTFOLIO</span>
-              </div>
-              <h3 class="project-title">Personal Blog & Tech Portal</h3>
-              <p class="project-desc">
-                Nền tảng trực tuyến chia sẻ tài liệu công nghệ thông tin, thủ thuật tin học văn phòng và nhật ký các dự án cá nhân hữu ích cho cộng đồng.
-              </p>
-            </div>
-            <a href="https://nghiasieunhandz.blogspot.com/" target="_blank" rel="noopener noreferrer" class="project-btn">
-              <span>Khám phá Website</span>
-              <i class="fas fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-card">
-            <div>
-              <div class="project-top">
-                <div class="project-icon-box">
-                  <i class="fab fa-tiktok"></i>
-                </div>
-                <span class="project-badge">CREATIVE CONTENT</span>
-              </div>
-              <h3 class="project-title">Creative Tech on TikTok</h3>
-              <p class="project-desc">
-                Kênh nội dung sáng tạo video ngắn chia sẻ về đời sống IT trường học, các mẹo công nghệ hàng ngày và trải nghiệm thực tế trong môi trường giáo dục.
-              </p>
-            </div>
-            <a href="https://www.tiktok.com/@trongnghiansg" target="_blank" rel="noopener noreferrer" class="project-btn">
-              <span>Xem kênh @trongnghiansg</span>
-              <i class="fas fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card">
-            <div>
-              <div class="project-top">
-                <div class="project-icon-box">
-                  <i class="fas fa-server"></i>
-                </div>
-                <span class="project-badge">INFRASTRUCTURE</span>
-              </div>
-              <h3 class="project-title">Hạ tầng CSVC Kỹ thuật số</h3>
-              <p class="project-desc">
-                Tham gia quản lý danh mục và bảo dưỡng hàng trăm thiết bị công nghệ giảng đường phục vụ toàn diện công tác dạy và học của nhà trường.
-              </p>
-            </div>
-            <a href="#contact" class="project-btn">
-              <span>Liên hệ trao đổi</span>
-              <i class="fas fa-chevron-right"></i>
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- LIÊN HỆ & THÔNG TIN KẾT NỐI -->
-    <section id="contact" class="section-wrapper">
-      <div class="luxury-card fade-up">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-title-icon"><i class="fas fa-address-book"></i></span>
-            <span>Thông tin liên hệ trực tiếp</span>
-          </h2>
-          <span class="section-badge">GET IN TOUCH</span>
+          <button class="closing__cta" type="button" onclick="openContactModal()">
+            <span>Kết nối trực tiếp</span>
+            <span class="closing__cta-icon">&#8599;</span>
+          </button>
         </div>
 
-        <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1rem;">
-          Mọi thông tin trao đổi công tác, phối hợp kỹ thuật hoặc kết nối công việc, bạn vui lòng liên hệ qua các kênh chính thức dưới đây:
-        </p>
-
-        <div class="contact-grid">
-          
-          <a href="mailto:trongnghia@nsg.edu.vn" class="contact-card" title="Nhấn để gửi email công vụ">
-            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
-            <div class="contact-card-title">Email cơ quan</div>
-            <div class="contact-card-value">trongnghia@nsg.edu.vn</div>
-          </a>
-
-          <a href="tel:0917912210" class="contact-card" title="Nhấn để gọi trực tiếp">
-            <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
-            <div class="contact-card-title">Số điện thoại / Hotline</div>
-            <div class="contact-card-value">0917.912.210</div>
-          </a>
-
-          <a href="https://zalo.me/0917912210" target="_blank" rel="noopener noreferrer" class="contact-card" title="Nhấn để chat Zalo">
-            <div class="contact-card-icon"><i class="fas fa-comment-dots"></i></div>
-            <div class="contact-card-title">Zalo Official</div>
-            <div class="contact-card-value">0917 912 210</div>
-          </a>
-
-          <a href="https://www.facebook.com/NguyenTrongNghia.Official/" target="_blank" rel="noopener noreferrer" class="contact-card" title="Nhấn để xem trang Facebook">
-            <div class="contact-card-icon"><i class="fab fa-facebook-f"></i></div>
-            <div class="contact-card-title">Facebook Profile</div>
-            <div class="contact-card-value">Nguyễn Trọng Nghĩa</div>
-          </a>
-
+        <div class="closing__signature-box">
+          <p class="closing__signature">
+            "Công nghệ chuẩn hóa,<br>vững bước tương lai."
+          </p>
+          <p class="closing__author">Nguyễn Trọng Nghĩa</p>
+          <p class="closing__org">Trường Cao Đẳng Bách Khoa Nam Sài Gòn</p>
         </div>
       </div>
     </section>
@@ -2506,143 +1756,92 @@
   </main>
 
   <!-- =========================================================
-       FOOTER
+       7. FLOATING SITE DOCK (mccongdanh.com style)
        ========================================================= -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <div class="footer-brand-title">NGUYỄN TRỌNG NGHĨA</div>
-          <div class="footer-brand-sub">Chuyên viên Quản trị Thiết bị & CSVC • Trường Cao Đẳng Bách Khoa Nam Sài Gòn</div>
-        </div>
+  <nav class="site-dock" aria-label="Điều hướng nhanh">
+    <div class="site-dock__menu">
+      <a class="dock-home" href="#hero" title="Về đầu trang">&#8962;</a>
+      <a href="#profile">Hồ sơ</a>
+      <a href="#expertise">Năng lực</a>
+      <a href="#activities">Hoạt động</a>
+      
+      <!-- Music Sound Toggle -->
+      <button type="button" class="dock-music" id="dockMusicBtn" onclick="toggleMusic()" title="Bật / Dừng nhạc Lofi chill">
+        <i class="fas fa-music" id="dockMusicIcon"></i>
+        <span id="dockMusicLabel">Nhạc Lofi</span>
+      </button>
 
-        <div class="footer-links">
-          <a href="https://www.facebook.com/NguyenTrongNghia.Official/" target="_blank" class="footer-link-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.tiktok.com/@trongnghiansg" target="_blank" class="footer-link-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
-          <a href="https://nghiasieunhandz.blogspot.com/" target="_blank" class="footer-link-icon" title="Blog"><i class="fas fa-rss"></i></a>
-          <a href="mailto:trongnghia@nsg.edu.vn" class="footer-link-icon" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://zalo.me/0917912210" target="_blank" class="footer-link-icon" title="Zalo"><i class="fas fa-comment"></i></a>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>
-          © <span id="currentYear"></span> Nguyễn Trọng Nghĩa. Thiết kế Luxury Ocean Blue tối ưu đa thiết bị.
-        </div>
-        <div>
-          <span>Hệ thống: Vận hành ổn định • </span>
-          <span id="localTimeDisplay">Giờ VN: Đang tải...</span>
-        </div>
-      </div>
+      <!-- Contact Modal Trigger -->
+      <button type="button" class="dock-contact-btn" onclick="openContactModal()">Liên hệ</button>
     </div>
-  </footer>
+  </nav>
 
-
-
-  <!-- Audio Element with High Quality Playlist -->
+  <!-- Audio Element -->
   <audio id="bgAudio" preload="auto">
     <source src="music.mp3" type="audio/mpeg">
     <source src="https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/1.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- =========================================================
-       FLOATING INTERACTIVE WIDGETS (ZALO & SCROLL-TOP)
-       ========================================================= -->
-  <!-- Zalo Button -->
-  <a href="https://zalo.me/0917912210" target="_blank" rel="noopener noreferrer" class="zalo-float" title="Chat trực tiếp qua Zalo">
-    <div class="zalo-label">Liên hệ qua Zalo</div>
-    <div class="zalo-btn-circle">
-      <svg class="zalo-icon-svg" viewBox="0 0 460.1 436.6">
-        <path d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z"/>
-      </svg>
-    </div>
+  <!-- Floating Zalo Button -->
+  <a href="https://zalo.me/0917912210" target="_blank" rel="noopener noreferrer" class="zalo-fixed-btn" title="Chat Zalo trực tiếp">
+    <svg viewBox="0 0 460.1 436.6">
+      <path d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z"/>
+    </svg>
   </a>
 
-  <!-- Scroll to Top Button -->
-  <button class="scroll-top-btn" id="scrollTopBtn" onclick="scrollToTop()" title="Lên đầu trang">
-    <i class="fas fa-chevron-up"></i>
-  </button>
+  <!-- =========================================================
+       8. CONTACT MODAL (mccongdanh style)
+       ========================================================= -->
+  <dialog class="booking-modal" id="contactModal">
+    <button class="booking-modal__close" type="button" onclick="closeContactModal()">&times;</button>
+    <div class="booking-modal__body">
+      <p class="booking-modal__eyebrow">Liên hệ trực tiếp</p>
+      <h2>Nguyễn Trọng Nghĩa</h2>
+      <p class="booking-modal__copy">
+        Quý Thầy Cô, Quý Đối tác có thể liên hệ trực tiếp với Trọng Nghĩa qua các kênh dưới đây để trao đổi công việc và phối hợp kỹ thuật:
+      </p>
+      
+      <div class="booking-modal__actions">
+        <a href="https://zalo.me/0917912210" target="_blank" rel="noopener noreferrer" class="booking-link-btn">
+          <span><i class="fas fa-comment-dots" style="color: #00f2fe; margin-right: 8px;"></i> Chat Zalo (0917 912 210)</span>
+          <span>&#8599;</span>
+        </a>
+
+        <a href="tel:0917912210" class="booking-link-btn">
+          <span><i class="fas fa-phone" style="color: #00f2fe; margin-right: 8px;"></i> Gọi điện (0917.912.210)</span>
+          <span>&#8599;</span>
+        </a>
+
+        <a href="mailto:trongnghia@nsg.edu.vn" class="booking-link-btn">
+          <span><i class="fas fa-envelope" style="color: #00f2fe; margin-right: 8px;"></i> Email cơ quan</span>
+          <span>&#8599;</span>
+        </a>
+
+        <a href="https://www.facebook.com/NguyenTrongNghia.Official/" target="_blank" rel="noopener noreferrer" class="booking-link-btn">
+          <span><i class="fab fa-facebook-f" style="color: #00f2fe; margin-right: 8px;"></i> Facebook</span>
+          <span>&#8599;</span>
+        </a>
+      </div>
+
+      <p class="booking-modal__thanks">Chân thành cảm ơn Quý Thầy Cô &amp; Quý Đồng nghiệp đã quan tâm và tin tưởng.</p>
+    </div>
+  </dialog>
 
   <!-- Lightbox Modal -->
   <div class="lightbox-modal" id="imageLightbox">
     <div class="lightbox-content">
-      <button class="lightbox-close" onclick="closeLightbox()" title="Đóng">&times;</button>
+      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
       <img src="" alt="Xem ảnh lớn" id="lightboxImg" class="lightbox-img">
       <div class="lightbox-caption">
-        <h3 id="lightboxTitle">Tiêu đề ảnh</h3>
-        <p id="lightboxDesc">Mô tả chi tiết ảnh hoạt động.</p>
+        <h3 id="lightboxTitle">Tiêu đề</h3>
+        <p id="lightboxDesc">Mô tả ảnh.</p>
       </div>
     </div>
   </div>
 
-  <!-- Luxury Toast Alert -->
-  <div class="luxury-toast" id="luxuryToast">
-    <i class="fas fa-circle-check toast-icon"></i>
-    <span id="toastMessage">Đã thực hiện thành công!</span>
-  </div>
-
-  <!-- =========================================================
-       JAVASCRIPT LOGIC & INTERACTIONS
-       ========================================================= -->
+  <!-- JavaScript -->
   <script>
-    // --- 1. DYNAMIC TYPEWRITER EFFECT (CÁN BỘ CÔNG TÁC CHUYÊN NGHIỆP) ---
-    const roles = [
-      "Chuyên viên Quản trị Thiết bị & CSVC",
-      "IT Support & Network Specialist",
-      "Cán bộ Kỹ thuật - CĐ Bách Khoa Nam Sài Gòn",
-      "Cử nhân Công nghệ Thông tin",
-      "Quản trị Hệ thống & Mạng máy tính"
-    ];
-    let roleIdx = 0;
-    let charIdx = 0;
-    let isDeleting = false;
-    const typingElement = document.getElementById("typing-text");
-
-    function handleTyping() {
-      const currentRole = roles[roleIdx];
-      
-      if (!isDeleting) {
-        typingElement.textContent = currentRole.substring(0, charIdx + 1);
-        charIdx++;
-        if (charIdx === currentRole.length) {
-          isDeleting = true;
-          setTimeout(handleTyping, 2200);
-          return;
-        }
-      } else {
-        typingElement.textContent = currentRole.substring(0, charIdx - 1);
-        charIdx--;
-        if (charIdx === 0) {
-          isDeleting = false;
-          roleIdx = (roleIdx + 1) % roles.length;
-          setTimeout(handleTyping, 500);
-          return;
-        }
-      }
-      setTimeout(handleTyping, isDeleting ? 40 : 85);
-    }
-    handleTyping();
-
-    // --- 2. MOBILE MENU DRAWER TOGGLE ---
-    const menuToggleBtn = document.getElementById("menuToggleBtn");
-    const mobileMenuDrawer = document.getElementById("mobileMenuDrawer");
-    const menuToggleIcon = document.getElementById("menuToggleIcon");
-
-    if (menuToggleBtn && mobileMenuDrawer) {
-      menuToggleBtn.addEventListener("click", () => {
-        const isOpen = mobileMenuDrawer.classList.toggle("open");
-        menuToggleIcon.className = isOpen ? "fas fa-xmark" : "fas fa-bars";
-      });
-    }
-
-    function closeMobileMenu() {
-      if (mobileMenuDrawer) {
-        mobileMenuDrawer.classList.remove("open");
-        if (menuToggleIcon) menuToggleIcon.className = "fas fa-bars";
-      }
-    }
-
-    // --- 3. INTERACTIVE OCEAN AMBIENT CANVAS ---
+    // --- 1. AMBIENT PARTICLES ---
     const canvas = document.getElementById("ambient-canvas");
     const ctx = canvas.getContext("2d");
     let particles = [];
@@ -2654,22 +1853,22 @@
     window.addEventListener("resize", resizeCanvas);
     resizeCanvas();
 
-    class OceanParticle {
+    class Particle {
       constructor() {
         this.reset();
       }
       reset() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 2.2 + 0.6;
-        this.speedX = (Math.random() - 0.5) * 0.4;
-        this.speedY = - (Math.random() * 0.6 + 0.2);
-        this.alpha = Math.random() * 0.6 + 0.2;
+        this.size = Math.random() * 2 + 0.5;
+        this.speedX = (Math.random() - 0.5) * 0.3;
+        this.speedY = -(Math.random() * 0.5 + 0.2);
+        this.alpha = Math.random() * 0.5 + 0.2;
       }
       update() {
         this.x += this.speedX;
         this.y += this.speedY;
-        if (this.y < 0 || this.x < 0 || this.x > canvas.width) {
+        if (this.y < 0) {
           this.reset();
           this.y = canvas.height + 10;
         }
@@ -2678,71 +1877,79 @@
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(0, 242, 254, ${this.alpha})`;
-        ctx.shadowBlur = 8;
-        ctx.shadowColor = "#00f2fe";
         ctx.fill();
-        ctx.shadowBlur = 0;
       }
     }
 
-    const particleCount = Math.min(window.innerWidth < 768 ? 35 : 70, 80);
-    for (let i = 0; i < particleCount; i++) {
-      particles.push(new OceanParticle());
-    }
+    for (let i = 0; i < 50; i++) particles.push(new Particle());
 
-    function animateParticles() {
+    function animate() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      for (let i = 0; i < particles.length; i++) {
-        particles[i].update();
-        particles[i].draw();
-
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-
-          if (dist < 110) {
-            ctx.beginPath();
-            ctx.strokeStyle = `rgba(56, 189, 248, ${0.15 * (1 - dist / 110)})`;
-            ctx.lineWidth = 0.7;
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.stroke();
-          }
-        }
-      }
-      requestAnimationFrame(animateParticles);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animate);
     }
-    animateParticles();
+    animate();
 
-    // --- 4. SCROLL REVEAL & PROGRESS BAR ANIMATION ---
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          
-          const progressBars = entry.target.querySelectorAll(".progress-fill");
-          progressBars.forEach(bar => {
-            const targetWidth = bar.getAttribute("data-progress");
-            if (targetWidth) {
-              bar.style.width = targetWidth;
-            }
-          });
+    // --- 2. MUSIC CONTROLLER IN SITE-DOCK ---
+    const audio = document.getElementById("bgAudio");
+    const dockMusicBtn = document.getElementById("dockMusicBtn");
+    const dockMusicIcon = document.getElementById("dockMusicIcon");
+    const dockMusicLabel = document.getElementById("dockMusicLabel");
+    let isPlaying = false;
 
-          observer.unobserve(entry.target);
+    function toggleMusic() {
+      if (isPlaying) {
+        audio.pause();
+        isPlaying = false;
+        dockMusicBtn.classList.remove("playing");
+        dockMusicIcon.className = "fas fa-music";
+        dockMusicLabel.textContent = "Nhạc Lofi";
+      } else {
+        audio.play().then(() => {
+          isPlaying = true;
+          dockMusicBtn.classList.add("playing");
+          dockMusicIcon.className = "fas fa-pause";
+          dockMusicLabel.textContent = "Đang phát";
+        }).catch(err => {
+          console.log("Audio permission needed");
+        });
+      }
+    }
+
+    // --- 3. CONTACT DIALOG MODAL ---
+    const contactModal = document.getElementById("contactModal");
+
+    function openContactModal() {
+      if (contactModal) contactModal.showModal();
+    }
+
+    function closeContactModal() {
+      if (contactModal) contactModal.close();
+    }
+
+    if (contactModal) {
+      contactModal.addEventListener("click", (e) => {
+        const dialogDimensions = contactModal.getBoundingClientRect();
+        if (
+          e.clientX < dialogDimensions.left ||
+          e.clientX > dialogDimensions.right ||
+          e.clientY < dialogDimensions.top ||
+          e.clientY > dialogDimensions.bottom
+        ) {
+          contactModal.close();
         }
       });
-    }, { threshold: 0.12 });
+    }
 
-    document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
-
-    // --- 5. GALLERY FILTER & LIGHTBOX MODAL ---
+    // --- 4. GALLERY FILTER & LIGHTBOX ---
     function filterGallery(category, btnElement) {
-      document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
+      document.querySelectorAll(".filter-pill").forEach(btn => btn.classList.remove("active"));
       btnElement.classList.add("active");
 
-      const items = document.querySelectorAll(".gallery-item");
+      const items = document.querySelectorAll(".gallery-card");
       items.forEach(item => {
         if (category === "all" || item.getAttribute("data-category") === category) {
           item.style.display = "block";
@@ -2766,137 +1973,21 @@
     }
 
     function closeLightbox() {
-      if (lightbox) {
-        lightbox.classList.remove("active");
-      }
+      if (lightbox) lightbox.classList.remove("active");
     }
 
     if (lightbox) {
       lightbox.addEventListener("click", (e) => {
-        if (e.target === lightbox) {
-          closeLightbox();
-        }
+        if (e.target === lightbox) closeLightbox();
       });
     }
 
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeLightbox();
-    });
-
-    // --- 6. MUSIC CONTROLLER (NAVBAR & HERO) ---
-    const audio = document.getElementById("bgAudio");
-    const heroMusicBtn = document.getElementById("heroMusicBtn");
-    const navMusicBtn = document.getElementById("navMusicBtn");
-    const navMusicIcon = document.getElementById("navMusicIcon");
-    const navMusicText = document.getElementById("navMusicText");
-
-    const playlist = [
-      {
-        title: "Ocean Breeze Chill",
-        artist: "Nhạc nền Lofi thư giãn",
-        src: "music.mp3"
-      },
-      {
-        title: "Sapphire Dream Vibes",
-        artist: "Chillhop Instrumental",
-        src: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/1.mp3"
-      },
-      {
-        title: "Cyber Night Odyssey",
-        artist: "Deep Ambient Ocean",
-        src: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/2.mp3"
-      }
-    ];
-    let currentTrackIdx = 0;
-    let isPlaying = false;
-
-    function toggleMusic(forcePlay = false) {
-      if (isPlaying && !forcePlay) {
-        audio.pause();
-        isPlaying = false;
-        if (navMusicBtn) navMusicBtn.classList.remove("playing");
-        if (navMusicIcon) navMusicIcon.className = "fas fa-music";
-        if (navMusicText) navMusicText.textContent = "Nhạc Lofi";
-        if (heroMusicBtn) heroMusicBtn.innerHTML = '<i class="fas fa-music"></i> Bật nhạc thư giãn';
-        showToast("Đã tạm dừng phát nhạc.");
-      } else {
-        audio.play().then(() => {
-          isPlaying = true;
-          if (navMusicBtn) navMusicBtn.classList.add("playing");
-          if (navMusicIcon) navMusicIcon.className = "fas fa-pause";
-          if (navMusicText) navMusicText.textContent = "Đang phát";
-          if (heroMusicBtn) heroMusicBtn.innerHTML = '<i class="fas fa-volume-high"></i> Đang phát nhạc nền';
-          showToast("🎵 Đang phát nhạc: " + playlist[currentTrackIdx].title);
-        }).catch(err => {
-          console.log("Audio play error:", err);
-          showToast("Nhấn vào trang một lần để cấp quyền phát âm thanh!");
-        });
-      }
-    }
-
-    function nextTrack() {
-      currentTrackIdx = (currentTrackIdx + 1) % playlist.length;
-      audio.src = playlist[currentTrackIdx].src;
-      if (isPlaying) {
-        audio.play();
-        showToast("Chuyển bài: " + playlist[currentTrackIdx].title);
-      }
-    }
-
-    audio.addEventListener("ended", () => {
-      nextTrack();
-    });
-
-    // --- 7. TOAST NOTIFICATION UTILITY ---
-    const toast = document.getElementById("luxuryToast");
-    const toastMessage = document.getElementById("toastMessage");
-    let toastTimeout;
-
-    function showToast(msg) {
-      if (!toast) return;
-      toastMessage.textContent = msg;
-      toast.classList.add("active");
-      clearTimeout(toastTimeout);
-      toastTimeout = setTimeout(() => {
-        toast.classList.remove("active");
-      }, 3200);
-    }
-
-    function copyProfileLink() {
-      const url = window.location.href;
-      navigator.clipboard.writeText(url).then(() => {
-        showToast("Đã sao chép liên kết trang vào bộ nhớ tạm!");
-      }).catch(() => {
-        showToast("Đã sao chép: " + url);
-      });
-    }
-
-    // --- 8. SCROLL TO TOP & LIVE TIME ---
-    const scrollTopBtn = document.getElementById("scrollTopBtn");
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 400) {
-        scrollTopBtn.classList.add("show");
-      } else {
-        scrollTopBtn.classList.remove("show");
+      if (e.key === "Escape") {
+        closeLightbox();
+        closeContactModal();
       }
     });
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-    const yearEl = document.getElementById("currentYear");
-    if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-    function updateLiveTime() {
-      const timeEl = document.getElementById("localTimeDisplay");
-      if (!timeEl) return;
-      const now = new Date();
-      const options = { timeZone: "Asia/Ho_Chi_Minh", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false };
-      timeEl.textContent = "Giờ VN: " + new Intl.DateTimeFormat("vi-VN", options).format(now);
-    }
-    setInterval(updateLiveTime, 1000);
-    updateLiveTime();
   </script>
 </body>
 </html>
