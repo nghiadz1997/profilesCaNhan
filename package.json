@@ -1,0 +1,24 @@
+{
+  "name": "trangprofiles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "instant_index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nghiadz1997/profilesCaNhan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nghiadz1997/profilesCaNhan/issues"
+  },
+  "homepage": "https://github.com/nghiadz1997/profilesCaNhan#readme",
+  "dependencies": {
+    "googleapis": "^186.0.0"
+  }
+}
