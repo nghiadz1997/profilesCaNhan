@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nguyễn Trọng Nghĩa | Chuyên viên IT & Quản trị Hệ thống</title>
+  <title>Nguyễn Trọng Nghĩa | Chuyên viên Quản trị Thiết bị & CSVC - CĐ Bách Khoa Nam Sài Gòn</title>
   
   <!-- Meta SEO & Social Sharing -->
-  <meta name="description" content="Trang hồ sơ cá nhân của Nguyễn Trọng Nghĩa - Chuyên viên IT Support & Quản trị Thiết bị tại Trường Cao Đẳng Bách Khoa Nam Sài Gòn. Đam mê công nghệ, mạng máy tính và phát triển phần mềm.">
-  <meta name="keywords" content="Nguyễn Trọng Nghĩa, Trong Nghia IT, IT Support, Cao Đẳng Bách Khoa Nam Sài Gòn, Quản trị mạng, Portfolio">
+  <meta name="description" content="Trang hồ sơ năng lực & giới thiệu bản thân của Nguyễn Trọng Nghĩa - Chuyên viên Quản trị Thiết bị & CSVC tại Trường Cao Đẳng Bách Khoa Nam Sài Gòn. Cử nhân Công nghệ Thông tin.">
+  <meta name="keywords" content="Nguyễn Trọng Nghĩa, Quản trị thiết bị, Cao Đẳng Bách Khoa Nam Sài Gòn, IT Support, IT Professional, Portfolio, CSVC">
   <meta name="author" content="Nguyễn Trọng Nghĩa">
-  <meta property="og:title" content="Nguyễn Trọng Nghĩa | IT Professional Portfolio">
-  <meta property="og:description" content="Khám phá hồ sơ năng lực, kinh nghiệm công tác và kỹ năng chuyên môn của Nguyễn Trọng Nghĩa.">
+  <meta property="og:title" content="Nguyễn Trọng Nghĩa | Profile & Năng Lực Công Tác">
+  <meta property="og:description" content="Giới thiệu hồ sơ bản thân, quá trình công tác, bằng cấp chuyên môn và hình ảnh hoạt động tại Trường Cao Đẳng Bách Khoa Nam Sài Gòn.">
   <meta property="og:image" content="avatar.jpg">
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
 
-  <!-- Google Fonts: Plus Jakarta Sans & Outfit & JetBrains Mono -->
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Font Awesome 6.5.0 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -30,11 +30,10 @@
        LUXURY OCEAN BLUE THEME - DESIGN SYSTEM
        ========================================================= */
     :root {
-      /* Bảng màu Ocean Sapphire & Electric Cyan */
-      --bg-dark: #040814;
-      --bg-deep: #081126;
-      --bg-card: rgba(10, 24, 48, 0.65);
-      --bg-card-hover: rgba(16, 36, 70, 0.82);
+      --bg-dark: #030712;
+      --bg-deep: #070e1e;
+      --bg-card: rgba(10, 24, 50, 0.65);
+      --bg-card-hover: rgba(15, 34, 68, 0.85);
       --bg-glass: rgba(255, 255, 255, 0.04);
       
       --primary: #00f2fe;         /* Cyan điện quang cực sáng */
@@ -49,7 +48,7 @@
       --text-sub: #cbd5e1;        /* Xám bạc nổi */
       
       --border-color: rgba(56, 189, 248, 0.16);
-      --border-hover: rgba(0, 242, 254, 0.48);
+      --border-hover: rgba(0, 242, 254, 0.45);
       
       --radius-sm: 8px;
       --radius-md: 14px;
@@ -73,6 +72,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
     }
 
     html {
@@ -88,8 +88,6 @@
       overflow-x: hidden;
       min-height: 100vh;
       position: relative;
-      selection-background-color: var(--primary);
-      selection-color: #000;
     }
 
     ::selection {
@@ -97,7 +95,7 @@
       color: #030712;
     }
 
-    /* Background Ambient Canvas & Mesh Lighting */
+    /* Background Ambient Canvas & Lights */
     #ambient-canvas {
       position: fixed;
       top: 0;
@@ -122,46 +120,47 @@
     .ocean-glow-orb {
       position: absolute;
       border-radius: 50%;
-      filter: blur(120px);
+      filter: blur(130px);
       opacity: 0.45;
-      animation: floatOrb 18s ease-in-out infinite alternate;
+      animation: floatOrb 20s ease-in-out infinite alternate;
     }
 
     .orb-1 {
-      width: 500px;
-      height: 500px;
+      width: 550px;
+      height: 550px;
       background: radial-gradient(circle, #0284c7 0%, transparent 70%);
-      top: -100px;
-      left: 10%;
+      top: -120px;
+      left: 8%;
     }
 
     .orb-2 {
-      width: 600px;
-      height: 600px;
+      width: 650px;
+      height: 650px;
       background: radial-gradient(circle, #00f2fe 0%, transparent 70%);
       top: 40%;
       right: -150px;
-      animation-delay: -5s;
+      animation-delay: -6s;
     }
 
     .orb-3 {
-      width: 450px;
-      height: 450px;
+      width: 500px;
+      height: 500px;
       background: radial-gradient(circle, #1d4ed8 0%, transparent 70%);
-      bottom: -100px;
+      bottom: -120px;
       left: 20%;
-      animation-delay: -10s;
+      animation-delay: -12s;
     }
 
     @keyframes floatOrb {
       0% { transform: translate(0, 0) scale(1); }
-      50% { transform: translate(40px, 30px) scale(1.08); }
-      100% { transform: translate(-30px, -40px) scale(0.95); }
+      50% { transform: translate(50px, 35px) scale(1.08); }
+      100% { transform: translate(-35px, -45px) scale(0.95); }
     }
 
     /* Container Utility */
     .container {
-      max-width: 1180px;
+      width: 100%;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 0 1.5rem;
     }
@@ -187,15 +186,15 @@
     }
 
     /* =========================================================
-       NAVIGATION BAR (Glassmorphism Sticky)
+       NAVIGATION BAR (Responsive Glassmorphism)
        ========================================================= */
     .navbar {
       position: sticky;
       top: 0;
-      z-index: 100;
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: rgba(4, 8, 20, 0.75);
+      z-index: 1000;
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      background: rgba(3, 7, 18, 0.82);
       border-bottom: 1px solid var(--border-color);
       transition: var(--transition-fast);
     }
@@ -204,7 +203,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 72px;
+      height: 74px;
     }
 
     .brand-logo {
@@ -220,23 +219,23 @@
     }
 
     .brand-badge {
-      width: 38px;
-      height: 38px;
-      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
       background: linear-gradient(135deg, #0284c7, #00f2fe);
       display: flex;
       align-items: center;
       justify-content: center;
       color: #030712;
       font-weight: 800;
-      font-size: 1.1rem;
-      box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+      font-size: 1.15rem;
+      box-shadow: 0 0 18px rgba(0, 242, 254, 0.4);
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 2rem;
+      gap: 1.8rem;
       list-style: none;
     }
 
@@ -297,23 +296,79 @@
       color: #000;
     }
 
-    /* Mobile Menu Toggle */
+    /* Mobile Menu Hamburger Button */
     .menu-toggle {
       display: none;
-      background: transparent;
+      background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--border-color);
       color: var(--text-main);
       font-size: 1.25rem;
-      padding: 8px 12px;
-      border-radius: 8px;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
       cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .menu-toggle:hover {
+      background: rgba(0, 242, 254, 0.15);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    /* Mobile Drawer Menu */
+    .mobile-menu-drawer {
+      display: none;
+      position: fixed;
+      top: 74px;
+      left: 0;
+      width: 100%;
+      background: rgba(3, 7, 18, 0.98);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 1.5rem 2rem 2rem;
+      z-index: 999;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+      transform: translateY(-110%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .mobile-menu-drawer.open {
+      transform: translateY(0);
+    }
+
+    .mobile-nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .mobile-nav-link {
+      color: var(--text-sub);
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .mobile-nav-link i {
+      color: var(--primary);
+      width: 24px;
     }
 
     /* =========================================================
-       HERO HEADER SECTION
+       HERO PROFILE HEADER
        ========================================================= */
     .hero-section {
-      padding: 5rem 0 3.5rem;
+      padding: 4.5rem 0 3.5rem;
       position: relative;
     }
 
@@ -350,11 +405,12 @@
     /* Avatar Frame with Glowing Rotating Wave */
     .avatar-wrapper {
       position: relative;
-      width: 190px;
-      height: 190px;
+      width: 200px;
+      height: 200px;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-shrink: 0;
     }
 
     .avatar-glow-ring {
@@ -401,39 +457,40 @@
       position: absolute;
       bottom: 8px;
       right: 8px;
-      width: 38px;
-      height: 38px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       background: linear-gradient(135deg, #00f2fe, #0284c7);
       color: #030712;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       border: 3px solid #081126;
       z-index: 3;
-      box-shadow: 0 0 15px rgba(0, 242, 254, 0.7);
+      box-shadow: 0 0 18px rgba(0, 242, 254, 0.7);
     }
 
     /* Hero Text Details */
     .status-pill {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       background: rgba(0, 242, 254, 0.1);
       border: 1px solid rgba(0, 242, 254, 0.3);
-      padding: 6px 16px;
+      padding: 7px 18px;
       border-radius: var(--radius-full);
-      font-size: 0.85rem;
-      font-weight: 600;
+      font-size: 0.84rem;
+      font-weight: 700;
       color: var(--primary);
       margin-bottom: 1.25rem;
       font-family: var(--font-mono);
+      letter-spacing: 0.5px;
     }
 
     .status-dot {
-      width: 8px;
-      height: 8px;
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
       background-color: #10b981;
       box-shadow: 0 0 10px #10b981, 0 0 20px #10b981;
@@ -442,13 +499,13 @@
 
     @keyframes pulseDot {
       0% { opacity: 0.5; transform: scale(0.9); }
-      50% { opacity: 1; transform: scale(1.2); }
+      50% { opacity: 1; transform: scale(1.25); }
       100% { opacity: 0.5; transform: scale(0.9); }
     }
 
     .hero-name {
-      font-size: clamp(2.2rem, 5vw, 3.2rem);
-      margin-bottom: 0.75rem;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      margin-bottom: 0.65rem;
       line-height: 1.2;
     }
 
@@ -456,7 +513,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+      font-size: clamp(1.05rem, 2.3vw, 1.35rem);
       color: var(--accent);
       font-weight: 600;
       margin-bottom: 1.5rem;
@@ -491,9 +548,9 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 6px 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      padding: 7px 15px;
       border-radius: var(--radius-sm);
       font-size: 0.9rem;
       color: var(--text-sub);
@@ -590,145 +647,6 @@
     }
 
     /* =========================================================
-       LUXURY FLOATING MUSIC PLAYER (BAR / MINI DOCK)
-       ========================================================= */
-    .music-player-bar {
-      position: fixed;
-      bottom: 24px;
-      left: 24px;
-      z-index: 99;
-      background: rgba(8, 17, 38, 0.85);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(56, 189, 248, 0.3);
-      border-radius: var(--radius-full);
-      padding: 8px 18px 8px 10px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 242, 254, 0.2);
-      transition: var(--transition-smooth);
-    }
-
-    .music-player-bar:hover {
-      border-color: var(--primary);
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 242, 254, 0.35);
-    }
-
-    /* Spinning Vinyl Record */
-    .vinyl-disc {
-      position: relative;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: radial-gradient(circle, #0284c7 20%, #040814 60%, #00f2fe 100%);
-      border: 2px solid #00f2fe;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 12px rgba(0, 242, 254, 0.5);
-      animation: spinVinyl 5s linear infinite;
-      animation-play-state: paused;
-      cursor: pointer;
-    }
-
-    .vinyl-disc.playing {
-      animation-play-state: running;
-    }
-
-    .vinyl-center {
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      background: #030712;
-      border: 2px solid #ffffff;
-    }
-
-    @keyframes spinVinyl {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    .music-info {
-      display: flex;
-      flex-direction: column;
-      min-width: 130px;
-    }
-
-    .music-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--text-main);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .music-subtitle {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-    }
-
-    /* Sound Waveform Visualizer */
-    .sound-waves {
-      display: flex;
-      align-items: flex-end;
-      gap: 3px;
-      height: 16px;
-    }
-
-    .sound-bar {
-      width: 3px;
-      background: var(--primary);
-      border-radius: 3px;
-      height: 4px;
-      transition: height 0.2s ease;
-    }
-
-    .playing .sound-bar:nth-child(1) { animation: soundAnim 0.8s infinite ease-in-out alternate; }
-    .playing .sound-bar:nth-child(2) { animation: soundAnim 1.2s infinite ease-in-out alternate 0.2s; }
-    .playing .sound-bar:nth-child(3) { animation: soundAnim 0.7s infinite ease-in-out alternate 0.4s; }
-    .playing .sound-bar:nth-child(4) { animation: soundAnim 1.0s infinite ease-in-out alternate 0.1s; }
-
-    @keyframes soundAnim {
-      0% { height: 4px; }
-      100% { height: 16px; }
-    }
-
-    .music-btn {
-      background: transparent;
-      border: none;
-      color: var(--text-main);
-      font-size: 1.05rem;
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: var(--transition-fast);
-    }
-
-    .music-btn:hover {
-      background: rgba(0, 242, 254, 0.15);
-      color: var(--primary);
-    }
-
-    .music-btn.play-btn {
-      background: linear-gradient(135deg, #00f2fe, #0284c7);
-      color: #030712;
-      box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
-    }
-
-    .music-btn.play-btn:hover {
-      transform: scale(1.08);
-      box-shadow: 0 0 20px rgba(0, 242, 254, 0.6);
-      color: #000;
-    }
-
-    /* =========================================================
        HIGHLIGHT STATS BANNER
        ========================================================= */
     .stats-section {
@@ -818,6 +736,8 @@
       margin-bottom: 2rem;
       padding-bottom: 1.25rem;
       border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+      flex-wrap: wrap;
+      gap: 1rem;
     }
 
     .section-title {
@@ -847,8 +767,9 @@
       color: var(--accent);
       background: rgba(56, 189, 248, 0.1);
       border: 1px solid rgba(56, 189, 248, 0.2);
-      padding: 4px 12px;
+      padding: 5px 14px;
       border-radius: var(--radius-full);
+      font-weight: 600;
     }
 
     /* =========================================================
@@ -916,7 +837,7 @@
     }
 
     /* =========================================================
-       TWO COLUMNS: EXPERIENCE & EDUCATION
+       TWO COLUMNS: WORK EXPERIENCE & COMPLETED EDUCATION
        ========================================================= */
     .two-cols-grid {
       display: grid;
@@ -943,7 +864,7 @@
 
     .timeline-node {
       position: relative;
-      margin-bottom: 2.25rem;
+      margin-bottom: 2rem;
     }
 
     .timeline-node:last-child {
@@ -983,7 +904,7 @@
     }
 
     .timeline-role {
-      font-size: 1.18rem;
+      font-size: 1.15rem;
       color: #fff;
       font-weight: 700;
       margin-bottom: 0.35rem;
@@ -1012,6 +933,17 @@
       margin-bottom: 0.85rem;
     }
 
+    .badge-status-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      margin-left: 8px;
+    }
+
     .timeline-bullets {
       list-style: none;
       padding-left: 0;
@@ -1035,12 +967,197 @@
     }
 
     /* =========================================================
+       PHOTO & ACTIVITY GALLERY SECTION (NEW!)
+       ========================================================= */
+    .gallery-filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-sub);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--primary);
+      color: #030712;
+      border-color: var(--primary);
+      box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      background: #081126;
+      aspect-ratio: 4 / 3;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 20%, rgba(3, 7, 18, 0.92) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.25rem;
+      opacity: 0.9;
+      transition: var(--transition-fast);
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary);
+      box-shadow: 0 15px 35px rgba(0, 242, 254, 0.25);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+      background: linear-gradient(180deg, rgba(0, 242, 254, 0.1) 0%, rgba(3, 7, 18, 0.95) 100%);
+    }
+
+    .gallery-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--primary);
+      background: rgba(0, 242, 254, 0.15);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      display: inline-block;
+      align-self: flex-start;
+      margin-bottom: 0.4rem;
+    }
+
+    .gallery-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.2rem;
+    }
+
+    .gallery-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: 10000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .lightbox-content {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(8, 17, 38, 0.95);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 242, 254, 0.2);
+      position: relative;
+    }
+
+    .lightbox-img {
+      width: 100%;
+      max-height: 65vh;
+      object-fit: cover;
+      display: block;
+    }
+
+    .lightbox-caption {
+      padding: 1.5rem 2rem;
+    }
+
+    .lightbox-caption h3 {
+      font-size: 1.35rem;
+      color: #fff;
+      margin-bottom: 0.35rem;
+    }
+
+    .lightbox-caption p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      z-index: 10;
+    }
+
+    .lightbox-close:hover {
+      background: var(--primary);
+      color: #030712;
+    }
+
+    /* =========================================================
        SKILLS SECTION (Interactive Progress Bars)
        ========================================================= */
     .skills-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem 2.5rem;
+      gap: 1.75rem 2.5rem;
     }
 
     .skill-block {
@@ -1065,7 +1182,7 @@
     }
 
     .skill-name {
-      font-size: 0.98rem;
+      font-size: 0.96rem;
       font-weight: 600;
       color: var(--text-main);
       display: flex;
@@ -1342,12 +1459,12 @@
 
     .footer-links {
       display: flex;
-      gap: 1.5rem;
+      gap: 1.25rem;
     }
 
     .footer-link-icon {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1355,7 +1472,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       text-decoration: none;
       transition: var(--transition-fast);
     }
@@ -1380,9 +1497,146 @@
     }
 
     /* =========================================================
-       FLOATING INTERACTIVE WIDGETS (ZALO & BACK TO TOP)
+       FLOATING INTERACTIVE WIDGETS (MUSIC, ZALO & BACK TO TOP)
        ========================================================= */
-    /* Luxury Floating Zalo Button */
+    /* Luxury Floating Music Player */
+    .music-player-bar {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      z-index: 99;
+      background: rgba(8, 17, 38, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: var(--radius-full);
+      padding: 8px 18px 8px 10px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 242, 254, 0.2);
+      transition: var(--transition-smooth);
+    }
+
+    .music-player-bar:hover {
+      border-color: var(--primary);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 242, 254, 0.35);
+    }
+
+    .vinyl-disc {
+      position: relative;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #0284c7 20%, #040814 60%, #00f2fe 100%);
+      border: 2px solid #00f2fe;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 12px rgba(0, 242, 254, 0.5);
+      animation: spinVinyl 5s linear infinite;
+      animation-play-state: paused;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .vinyl-disc.playing {
+      animation-play-state: running;
+    }
+
+    .vinyl-center {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #030712;
+      border: 2px solid #ffffff;
+    }
+
+    @keyframes spinVinyl {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .music-info {
+      display: flex;
+      flex-direction: column;
+      min-width: 130px;
+    }
+
+    .music-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .music-subtitle {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .sound-waves {
+      display: flex;
+      align-items: flex-end;
+      gap: 3px;
+      height: 16px;
+    }
+
+    .sound-bar {
+      width: 3px;
+      background: var(--primary);
+      border-radius: 3px;
+      height: 4px;
+      transition: height 0.2s ease;
+    }
+
+    .playing .sound-bar:nth-child(1) { animation: soundAnim 0.8s infinite ease-in-out alternate; }
+    .playing .sound-bar:nth-child(2) { animation: soundAnim 1.2s infinite ease-in-out alternate 0.2s; }
+    .playing .sound-bar:nth-child(3) { animation: soundAnim 0.7s infinite ease-in-out alternate 0.4s; }
+    .playing .sound-bar:nth-child(4) { animation: soundAnim 1.0s infinite ease-in-out alternate 0.1s; }
+
+    @keyframes soundAnim {
+      0% { height: 4px; }
+      100% { height: 16px; }
+    }
+
+    .music-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-main);
+      font-size: 1.05rem;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      flex-shrink: 0;
+    }
+
+    .music-btn:hover {
+      background: rgba(0, 242, 254, 0.15);
+      color: var(--primary);
+    }
+
+    .music-btn.play-btn {
+      background: linear-gradient(135deg, #00f2fe, #0284c7);
+      color: #030712;
+      box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+    }
+
+    .music-btn.play-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 20px rgba(0, 242, 254, 0.6);
+      color: #000;
+    }
+
+    /* Floating Zalo Button */
     .zalo-float {
       position: fixed;
       bottom: 24px;
@@ -1449,7 +1703,7 @@
       fill: #030712;
     }
 
-    /* Floating Scroll To Top Button */
+    /* Scroll To Top Button */
     .scroll-top-btn {
       position: fixed;
       bottom: 92px;
@@ -1486,7 +1740,7 @@
       box-shadow: 0 0 20px var(--glow-blue);
     }
 
-    /* Toast Notification */
+    /* Toast Alert */
     .luxury-toast {
       position: fixed;
       top: 24px;
@@ -1502,7 +1756,7 @@
       align-items: center;
       gap: 12px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 242, 254, 0.3);
-      z-index: 9999;
+      z-index: 10001;
       transform: translateX(120%);
       transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -1529,18 +1783,26 @@
     }
 
     /* =========================================================
-       RESPONSIVE BREAKPOINTS (Mobile & Tablet)
+       RESPONSIVE BREAKPOINTS (Mobile, Tablet/iPad, Laptop, PC)
        ========================================================= */
+    /* Laptop & Desktop Vừa (<= 1199px) */
+    @media (max-width: 1199px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* iPad & Tablet Landscape / Portrait (<= 992px) */
     @media (max-width: 992px) {
       .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 2rem;
+        gap: 2.25rem;
       }
       .avatar-wrapper {
         margin: 0 auto;
       }
-      .hero-tags, .hero-actions {
+      .hero-role-wrapper, .hero-tags, .hero-actions {
         justify-content: center;
       }
       .stats-grid {
@@ -1555,13 +1817,20 @@
       .skills-grid {
         grid-template-columns: 1fr;
       }
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
+    /* Tablet nhỏ & Điện thoại màn hình rộng (<= 768px) */
     @media (max-width: 768px) {
       .nav-links {
         display: none;
       }
       .menu-toggle {
+        display: flex;
+      }
+      .mobile-menu-drawer {
         display: block;
       }
       .hero-card {
@@ -1571,24 +1840,97 @@
         padding: 2rem 1.25rem;
       }
       .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+      .gallery-grid {
         grid-template-columns: 1fr;
       }
       .music-player-bar {
-        left: 14px;
-        right: 14px;
-        bottom: 86px;
-        justify-content: space-between;
+        left: 12px;
+        right: 80px;
+        bottom: 20px;
+        padding: 6px 12px 6px 8px;
+        gap: 8px;
+      }
+      .music-info {
+        min-width: 0;
+        flex: 1;
+        overflow: hidden;
+      }
+      .music-title span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.8rem;
+      }
+      .music-subtitle {
+        display: none;
       }
       .zalo-label {
         display: none;
       }
       .zalo-float {
         bottom: 20px;
-        right: 18px;
+        right: 14px;
+      }
+      .zalo-btn-circle {
+        width: 48px;
+        height: 48px;
       }
       .scroll-top-btn {
-        bottom: 20px;
-        right: 80px;
+        bottom: 78px;
+        right: 16px;
+      }
+    }
+
+    /* Điện thoại di động nhỏ (<= 576px) */
+    @media (max-width: 576px) {
+      .container {
+        padding: 0 1rem;
+      }
+      .hero-section {
+        padding: 2.5rem 0 2rem;
+      }
+      .avatar-wrapper {
+        width: 160px;
+        height: 160px;
+      }
+      .vip-verified-badge {
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
+      }
+      .hero-name {
+        font-size: 2rem;
+      }
+      .hero-role-wrapper {
+        font-size: 1rem;
+      }
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+      .hero-actions a, .hero-actions button {
+        width: 100%;
+        justify-content: center;
+      }
+      .hero-actions .btn-icon-pill {
+        width: 48px;
+      }
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-links {
+        justify-content: center;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
       }
     }
   </style>
@@ -1615,10 +1957,12 @@
         <span>TRỌNG NGHĨA<span class="gradient-blue">.IT</span></span>
       </a>
 
+      <!-- Desktop Navigation Links -->
       <ul class="nav-links">
         <li><a href="#about" class="nav-link">Giới thiệu</a></li>
-        <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
-        <li><a href="#education" class="nav-link">Học vấn</a></li>
+        <li><a href="#experience" class="nav-link">Công tác</a></li>
+        <li><a href="#education" class="nav-link">Bằng cấp</a></li>
+        <li><a href="#gallery" class="nav-link">Hình ảnh hoạt động</a></li>
         <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
         <li><a href="#projects" class="nav-link">Dự án</a></li>
         <li><a href="#contact" class="nav-link">Liên hệ</a></li>
@@ -1629,9 +1973,25 @@
           <i class="fas fa-paper-plane"></i>
           <span>Kết nối ngay</span>
         </a>
+        <button class="menu-toggle" id="menuToggleBtn" title="Mở danh mục điều hướng">
+          <i class="fas fa-bars" id="menuToggleIcon"></i>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-drawer" id="mobileMenuDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-user-astronaut"></i> Giới thiệu bản thân</a></li>
+      <li><a href="#experience" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-building"></i> Quá trình công tác</a></li>
+      <li><a href="#education" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-graduation-cap"></i> Trình độ & Bằng cấp</a></li>
+      <li><a href="#gallery" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-images"></i> Hình ảnh hoạt động</a></li>
+      <li><a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-sliders"></i> Kỹ năng chuyên môn</a></li>
+      <li><a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-rocket"></i> Dự án & Hoạt động</a></li>
+      <li><a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()"><i class="fas fa-address-book"></i> Thông tin liên hệ</a></li>
+    </ul>
+  </div>
 
   <!-- =========================================================
        HERO PROFILE HEADER
@@ -1651,7 +2011,7 @@
             id="userAvatar"
             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80';"
           >
-          <div class="vip-verified-badge" title="Đã xác thực hồ sơ chính thức">
+          <div class="vip-verified-badge" title="Cán bộ công tác chính thức">
             <i class="fas fa-check"></i>
           </div>
         </div>
@@ -1660,7 +2020,7 @@
         <div class="hero-info">
           <div class="status-pill">
             <span class="status-dot"></span>
-            <span>AVAILABLE FOR OPPORTUNITIES</span>
+            <span>CÁN BỘ CÔNG TÁC TẠI CĐ BÁCH KHOA NAM SÀI GÒN</span>
           </div>
 
           <h1 class="hero-name">
@@ -1678,13 +2038,13 @@
               <i class="fas fa-building-columns"></i> CĐ Bách Khoa Nam Sài Gòn
             </span>
             <span class="hero-tag">
-              <i class="fas fa-graduation-cap"></i> ĐH Trà Vinh (CNTT)
+              <i class="fas fa-briefcase"></i> Phòng Quản trị Thiết bị – CSVC
+            </span>
+            <span class="hero-tag">
+              <i class="fas fa-user-graduate"></i> Cử nhân CNTT - ĐH Trà Vinh
             </span>
             <span class="hero-tag">
               <i class="fas fa-map-marker-alt"></i> TP. Hồ Chí Minh
-            </span>
-            <span class="hero-tag">
-              <i class="fas fa-shield-alt"></i> Quản trị mạng & CSVC
             </span>
           </div>
 
@@ -1697,6 +2057,10 @@
             <button onclick="toggleMusic(true)" class="btn-outline-ocean" id="heroMusicBtn">
               <i class="fas fa-music"></i> Bật nhạc thư giãn
             </button>
+
+            <a href="#gallery" class="btn-outline-ocean">
+              <i class="fas fa-images"></i> Xem hoạt động
+            </a>
 
             <button onclick="copyProfileLink()" class="btn-icon-pill" title="Sao chép liên kết trang">
               <i class="fas fa-share-nodes"></i>
@@ -1724,25 +2088,25 @@
       <div class="stat-card fade-up">
         <i class="fas fa-server stat-icon"></i>
         <div class="stat-number">100+</div>
-        <div class="stat-label">Thiết bị & Hệ thống Quản trị</div>
+        <div class="stat-label">Thiết bị & Phòng máy Quản trị</div>
       </div>
 
       <div class="stat-card fade-up">
-        <i class="fas fa-laptop-code stat-icon"></i>
-        <div class="stat-number">3+</div>
-        <div class="stat-label">Năm học tập & kinh nghiệm IT</div>
+        <i class="fas fa-certificate stat-icon"></i>
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Hoàn thành Cử nhân & Bằng cấp CNTT</div>
       </div>
 
       <div class="stat-card fade-up">
-        <i class="fas fa-bolt stat-icon"></i>
+        <i class="fas fa-shield-check stat-icon"></i>
         <div class="stat-number">99.9%</div>
-        <div class="stat-label">Trách nhiệm & Sẵn sàng hỗ trợ</div>
+        <div class="stat-label">Hệ thống mạng & CSVC vận hành ổn định</div>
       </div>
 
       <div class="stat-card fade-up">
-        <i class="fas fa-user-check stat-icon"></i>
+        <i class="fas fa-headset stat-icon"></i>
         <div class="stat-number">24/7</div>
-        <div class="stat-label">Phản hồi & Khắc phục sự cố</div>
+        <div class="stat-label">Hỗ trợ kỹ thuật nhà trường kịp thời</div>
       </div>
     </div>
   </section>
@@ -1752,7 +2116,7 @@
        ========================================================= -->
   <main class="container">
 
-    <!-- GIỚI THIỆU (ABOUT ME) -->
+    <!-- GIỚI THIỆU BẢN THÂN (ABOUT ME) -->
     <section id="about" class="section-wrapper">
       <div class="luxury-card fade-up">
         <div class="section-header">
@@ -1764,87 +2128,94 @@
         </div>
 
         <p class="about-lead">
-          Tôi là <strong class="gradient-blue">Nguyễn Trọng Nghĩa</strong> – một người trẻ đam mê công nghệ, hiện đang công tác tại <strong>Phòng Quản trị Thiết bị – Cơ sở vật chất của Trường Cao Đẳng Bách Khoa Nam Sài Gòn</strong>. Với nền tảng vững chắc về Tin học ứng dụng và định hướng phát triển chuyên sâu trong lĩnh vực Công nghệ thông tin, tôi luôn hướng tới mục tiêu ứng dụng công nghệ để kiến tạo nên một môi trường học tập hiện đại, an toàn và thông minh.
+          Tôi là <strong class="gradient-blue">Nguyễn Trọng Nghĩa</strong> – Cán bộ chuyên môn công nghệ thông tin, hiện đang công tác chính thức tại <strong>Phòng Quản trị Thiết bị – Cơ sở vật chất của Trường Cao Đẳng Bách Khoa Nam Sài Gòn</strong>. Đã hoàn thành chương trình đào tạo Cử nhân Công nghệ Thông tin tại Trường Đại học Trà Vinh và Cao đẳng Tin học ứng dụng tại Trường Cao Đẳng Bách Khoa Nam Sài Gòn.
+        </p>
+
+        <p style="color: var(--text-muted); font-size: 1.02rem; line-height: 1.85; margin-bottom: 2rem;">
+          Với tinh thần trách nhiệm cao và niềm đam mê nghiên cứu kỹ thuật số, tôi đảm nhiệm công tác quản trị, bảo dưỡng hệ thống mạng, hạ tầng thiết bị giảng đường và phòng thực hành máy tính toàn trường. Mục tiêu nghề nghiệp của tôi là chuẩn hóa hạ tầng cơ sở vật chất, số hóa quản lý thiết bị và mang đến môi trường giáo dục công nghệ hiện đại, tiện ích nhất cho toàn thể cán bộ, giảng viên và sinh viên.
         </p>
 
         <div class="about-quote-box">
           <p class="about-quote-text">
             <i class="fas fa-quote-left" style="color: var(--primary); margin-right: 8px;"></i>
-            "Công nghệ không chỉ là những dòng lệnh hay thiết bị phần cứng, mà là chìa khóa mở ra giải pháp tối ưu cho trải nghiệm giảng dạy và học tập hiện đại."
+            "Trách nhiệm – Kịp thời – Tận tâm: Chuẩn hóa hạ tầng công nghệ và thiết bị cơ sở vật chất là nền tảng vững chắc cho chất lượng giáo dục thời đại số."
           </p>
         </div>
 
         <div class="about-pillars">
           <div class="pillar-card">
-            <i class="fas fa-microchip pillar-icon"></i>
-            <h3 class="pillar-title">Đam mê công nghệ</h3>
-            <p class="pillar-desc">Không ngừng nghiên cứu, tìm tòi các giải pháp mạng, hệ thống phần cứng và công nghệ mới để ứng dụng thực tiễn.</p>
+            <i class="fas fa-laptop-code pillar-icon"></i>
+            <h3 class="pillar-title">Vận hành kỹ thuật số</h3>
+            <p class="pillar-desc">Quản lý và bảo trì toàn bộ hệ thống máy tính, máy chiếu, âm thanh hội trường và thiết bị công nghệ phục vụ giảng dạy.</p>
           </div>
 
           <div class="pillar-card">
-            <i class="fas fa-shield-halved pillar-icon"></i>
-            <h3 class="pillar-title">Trách nhiệm & Tỉ mỉ</h3>
-            <p class="pillar-desc">Đảm bảo hạ tầng thiết bị và hệ thống mạng luôn vận hành ổn định, bảo mật và thông suốt trong mọi tình huống.</p>
+            <i class="fas fa-network-wired pillar-icon"></i>
+            <h3 class="pillar-title">Hạ tầng mạng thông suốt</h3>
+            <p class="pillar-desc">Cấu hình, giám sát và xử lý sự cố kết nối mạng LAN, Wi-Fi nội bộ đảm bảo môi trường học tập và làm việc liên tục 24/7.</p>
           </div>
 
           <div class="pillar-card">
-            <i class="fas fa-lightbulb pillar-icon"></i>
-            <h3 class="pillar-title">Học hỏi không ngừng</h3>
-            <p class="pillar-desc">Tiếp tục trau dồi chương trình Cử nhân CNTT tại ĐH Trà Vinh nhằm nâng cao tư duy phân tích và phát triển hệ thống.</p>
+            <i class="fas fa-handshake-angle pillar-icon"></i>
+            <h3 class="pillar-title">Hỗ trợ tận tâm</h3>
+            <p class="pillar-desc">Đồng hành và giải quyết nhanh chóng các yêu cầu kỹ thuật của cán bộ, giảng viên trong các kỳ thi, hội thảo và sự kiện trường.</p>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- KINH NGHIỆM & HỌC VẤN (2 COLUMNS) -->
+    <!-- QUÁ TRÌNH CÔNG TÁC & BẰNG CẤP HỌC VẤN (2 COLUMNS) -->
     <div class="two-cols-grid">
       
-      <!-- KINH NGHIỆM -->
+      <!-- QUÁ TRÌNH CÔNG TÁC -->
       <section id="experience" class="luxury-card fade-up">
         <div class="section-header">
           <h2 class="section-title">
             <span class="section-title-icon"><i class="fas fa-briefcase"></i></span>
-            <span>Kinh nghiệm</span>
+            <span>Quá trình công tác</span>
           </h2>
-          <span class="section-badge">WORK HISTORY</span>
+          <span class="section-badge">CAREER</span>
         </div>
 
         <div class="timeline">
           <div class="timeline-node">
             <div class="timeline-dot"></div>
             <div class="timeline-card-inner">
-              <h3 class="timeline-role">IT Support Specialist</h3>
+              <h3 class="timeline-role">Chuyên viên Quản trị Thiết bị & CSVC</h3>
               <p class="timeline-place">
-                <i class="fas fa-building"></i> Phòng Quản trị Thiết bị – CSVC
+                <i class="fas fa-building-columns"></i> Trường Cao Đẳng Bách Khoa Nam Sài Gòn
               </p>
               <div class="timeline-time">
-                <i class="far fa-calendar-alt"></i> 05/2024 – Hiện tại (Đang làm việc)
+                <i class="far fa-calendar-alt"></i> 05/2024 – Hiện tại
+                <span class="badge-status-tag">ĐANG CÔNG TÁC CHÍNH THỨC</span>
               </div>
               <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem;">
-                Trường Cao Đẳng Bách Khoa Nam Sài Gòn
+                Đơn vị: Phòng Quản trị Thiết bị – Cơ sở vật chất
               </p>
               <ul class="timeline-bullets">
-                <li>Quản trị, cấu hình và tối ưu hóa hệ thống mạng, máy chiếu, âm thanh và trang thiết bị kỹ thuật số toàn trường.</li>
-                <li>Cung cấp hỗ trợ kỹ thuật chuyên sâu cho cán bộ, giảng viên và sinh viên; bảo trì định kỳ và khắc phục sự cố hệ thống.</li>
-                <li>Tham gia quản lý danh mục tài sản thiết bị công nghệ thông tin và đề xuất nâng cấp hạ tầng hiện đại.</li>
+                <li>Chịu trách nhiệm quản lý, cấu hình và vận hành trang thiết bị kỹ thuật số, hệ thống mạng internet, máy chiếu và âm thanh các phòng học, hội trường.</li>
+                <li>Thực hiện công tác bảo trì định kỳ, kiểm tra an toàn kỹ thuật phòng máy tính và khắc phục nhanh chóng các sự cố phát sinh.</li>
+                <li>Hỗ trợ kỹ thuật chuyên sâu cho cán bộ, giảng viên và sinh viên trong các hoạt động giảng dạy, kỳ thi trực tuyến và sự kiện lễ hội của trường.</li>
+                <li>Tham mưu đề xuất nâng cấp và tối ưu hóa hạ tầng công nghệ thông tin phục vụ chuyển đổi số giáo dục.</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- HỌC VẤN -->
+      <!-- TRÌNH ĐỘ & BẰNG CẤP CHUYÊN MÔN -->
       <section id="education" class="luxury-card fade-up">
         <div class="section-header">
           <h2 class="section-title">
             <span class="section-title-icon"><i class="fas fa-graduation-cap"></i></span>
-            <span>Học vấn</span>
+            <span>Trình độ & Bằng cấp</span>
           </h2>
-          <span class="section-badge">EDUCATION</span>
+          <span class="section-badge">DEGREES</span>
         </div>
 
         <div class="timeline">
+          
           <div class="timeline-node">
             <div class="timeline-dot"></div>
             <div class="timeline-card-inner">
@@ -1853,11 +2224,12 @@
                 <i class="fas fa-university"></i> Trường Đại học Trà Vinh
               </p>
               <div class="timeline-time">
-                <i class="far fa-calendar-alt"></i> 2024 – 2026 (Dự kiến tốt nghiệp)
+                <i class="far fa-calendar-check"></i> Đã tốt nghiệp
+                <span class="badge-status-tag">CHÍNH QUY</span>
               </div>
               <ul class="timeline-bullets">
-                <li>Chương trình đào tạo chuyên sâu về Công nghệ thông tin, cấu trúc dữ liệu, thuật toán và giải pháp an toàn thông tin.</li>
-                <li>Mở rộng chuyên môn về phát triển hệ thống và công nghệ phần mềm ứng dụng.</li>
+                <li>Được đào tạo bài bản và chuyên sâu về cấu trúc hệ thống công nghệ thông tin, quản trị mạng, giải pháp an toàn dữ liệu và phát triển phần mềm ứng dụng.</li>
+                <li>Vận dụng hiệu quả kiến thức bậc đại học vào thực tiễn quản trị hạ tầng cơ sở vật chất công nghệ tại đơn vị công tác.</li>
               </ul>
             </div>
           </div>
@@ -1867,21 +2239,111 @@
             <div class="timeline-card-inner">
               <h3 class="timeline-role">Cao đẳng Tin học ứng dụng</h3>
               <p class="timeline-place">
-                <i class="fas fa-school"></i> CĐ Bách Khoa Nam Sài Gòn
+                <i class="fas fa-school"></i> Trường Cao Đẳng Bách Khoa Nam Sài Gòn
               </p>
               <div class="timeline-time">
-                <i class="far fa-calendar-alt"></i> 2021 – 2024 (Đã tốt nghiệp)
+                <i class="far fa-calendar-check"></i> Đã tốt nghiệp (2021 – 2024)
+                <span class="badge-status-tag">HOÀN THÀNH</span>
               </div>
               <ul class="timeline-bullets">
-                <li>Tốt nghiệp ngành Tin học ứng dụng với nền tảng vững vàng về quản trị mạng, phần cứng và phát triển web căn bản.</li>
-                <li>Tích cực tham gia các hoạt động kỹ thuật và đoàn thể tại nhà trường.</li>
+                <li>Nền tảng kỹ thuật vững vàng về bảo trì phần cứng, lắp ráp, cấu hình mạng nội bộ và hỗ trợ kỹ thuật chuyên nghiệp.</li>
+                <li>Tích cực tham gia các phong trào thanh niên, đoàn thể và hoạt động kỹ thuật tình nguyện tại trường.</li>
               </ul>
             </div>
           </div>
+
         </div>
       </section>
 
     </div>
+
+    <!-- =========================================================
+         HÌNH ẢNH HOẠT ĐỘNG CÁ NHÂN & CƠ QUAN (NEW!)
+         ========================================================= -->
+    <section id="gallery" class="section-wrapper">
+      <div class="luxury-card fade-up">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-title-icon"><i class="fas fa-images"></i></span>
+            <span>Hình ảnh hoạt động & Công tác</span>
+          </h2>
+          <span class="section-badge">GALLERY & ACTIVITIES</span>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filter-bar">
+          <button class="filter-btn active" onclick="filterGallery('all', this)">Tất cả hình ảnh</button>
+          <button class="filter-btn" onclick="filterGallery('truong', this)">Công tác tại trường</button>
+          <button class="filter-btn" onclick="filterGallery('kythuat', this)">Kỹ thuật & Thiết bị</button>
+          <button class="filter-btn" onclick="filterGallery('sukien', this)">Sự kiện & Phong trào</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+          
+          <!-- Image 1 -->
+          <div class="gallery-item" data-category="truong" onclick="openLightbox('images/truong_nam_sai_gon.jpg', 'Khuôn viên Trường Cao Đẳng Bách Khoa Nam Sài Gòn', 'Môi trường làm việc năng động, hiện đại và thân thiện tại trường.')">
+            <img src="images/truong_nam_sai_gon.jpg" alt="Trường CĐ Bách Khoa Nam Sài Gòn" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Cơ quan công tác</span>
+              <h4 class="gallery-title">Trường CĐ Bách Khoa Nam Sài Gòn</h4>
+              <p class="gallery-desc">Môi trường giáo dục hiện đại, năng động và chuyên nghiệp.</p>
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="gallery-item" data-category="kythuat" onclick="openLightbox('images/ky_thuat_mang.jpg', 'Quản trị hệ thống Server & Mạng máy tính', 'Theo dõi, cấu hình và bảo trì hạ tầng truyền dẫn mạng nội bộ thông suốt.')">
+            <img src="images/ky_thuat_mang.jpg" alt="Quản trị mạng & Server" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Hạ tầng công nghệ</span>
+              <h4 class="gallery-title">Quản trị Mạng & Server</h4>
+              <p class="gallery-desc">Vận hành hạ tầng mạng internet và máy chủ nội bộ trường.</p>
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div class="gallery-item" data-category="truong" onclick="openLightbox('images/phong_may_tinh.jpg', 'Quản lý phòng máy tính & Thiết bị thực hành', 'Chuẩn bị phòng máy, kiểm tra phần mềm phục vụ các buổi thực hành và thi cử.')">
+            <img src="images/phong_may_tinh.jpg" alt="Phòng máy tính sinh viên" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Cơ sở vật chất</span>
+              <h4 class="gallery-title">Phòng máy tính & Giảng đường</h4>
+              <p class="gallery-desc">Quản lý và kiểm tra trang thiết bị phòng máy thực hành.</p>
+            </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div class="gallery-item" data-category="kythuat" onclick="openLightbox('images/ho_tro_ky_thuat.jpg', 'Bảo trì & Hỗ trợ kỹ thuật thiết bị', 'Kiểm tra máy chiếu, dàn âm thanh và hệ thống kỹ thuật số giảng đường.')">
+            <img src="images/ho_tro_ky_thuat.jpg" alt="Bảo trì thiết bị CSVC" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Bảo trì CSVC</span>
+              <h4 class="gallery-title">Bảo trì thiết bị giảng đường</h4>
+              <p class="gallery-desc">Kiểm tra định kỳ máy chiếu, âm thanh và thiết bị số.</p>
+            </div>
+          </div>
+
+          <!-- Image 5 -->
+          <div class="gallery-item" data-category="sukien" onclick="openLightbox('images/su_kien_co_quan.jpg', 'Hội nghị, sự kiện & hoạt động nhà trường', 'Hỗ trợ kỹ thuật âm thanh, trình chiếu cho các hội nghị và lễ tốt nghiệp.')">
+            <img src="images/su_kien_co_quan.jpg" alt="Sự kiện tại trường" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Sự kiện & Phong trào</span>
+              <h4 class="gallery-title">Hội nghị & Hoạt động trường</h4>
+              <p class="gallery-desc">Đảm bảo kỹ thuật âm thanh, ánh sáng cho sự kiện lớn.</p>
+            </div>
+          </div>
+
+          <!-- Image 6 -->
+          <div class="gallery-item" data-category="sukien" onclick="openLightbox('images/hoat_dong_ca_nhan.jpg', 'Nghiên cứu công nghệ & Sáng tạo nội dung', 'Không ngừng cập nhật xu hướng công nghệ mới và chia sẻ kiến thức hữu ích.')">
+            <img src="images/hoat_dong_ca_nhan.jpg" alt="Nghiên cứu & Đời sống cá nhân" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Cá nhân & Đời sống</span>
+              <h4 class="gallery-title">Nghiên cứu & Sáng tạo số</h4>
+              <p class="gallery-desc">Chia sẻ mẹo công nghệ trên Blog và kênh truyền thông cá nhân.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <!-- KỸ NĂNG CHUYÊN MÔN -->
     <section id="skills" class="section-wrapper">
@@ -1898,7 +2360,7 @@
           
           <div class="skill-block">
             <div class="skill-header">
-              <span class="skill-name"><i class="fas fa-network-wired"></i> Networking & Hardware Troubleshooting</span>
+              <span class="skill-name"><i class="fas fa-network-wired"></i> Quản trị mạng & Khắc phục sự cố phần cứng</span>
               <span class="skill-percent">85%</span>
             </div>
             <div class="progress-track">
@@ -1908,7 +2370,7 @@
 
           <div class="skill-block">
             <div class="skill-header">
-              <span class="skill-name"><i class="fas fa-users-gear"></i> Team Collaboration & Support</span>
+              <span class="skill-name"><i class="fas fa-users-gear"></i> Phối hợp làm việc nhóm & Hỗ trợ kỹ thuật</span>
               <span class="skill-percent">85%</span>
             </div>
             <div class="progress-track">
@@ -1918,7 +2380,7 @@
 
           <div class="skill-block">
             <div class="skill-header">
-              <span class="skill-name"><i class="fab fa-html5"></i> HTML5 & CSS3 Responsive</span>
+              <span class="skill-name"><i class="fab fa-html5"></i> HTML5 & CSS3 Responsive Web</span>
               <span class="skill-percent">80%</span>
             </div>
             <div class="progress-track">
@@ -1928,7 +2390,7 @@
 
           <div class="skill-block">
             <div class="skill-header">
-              <span class="skill-name"><i class="fab fa-wordpress"></i> WordPress & CMS Systems</span>
+              <span class="skill-name"><i class="fab fa-wordpress"></i> WordPress & Quản trị CMS</span>
               <span class="skill-percent">75%</span>
             </div>
             <div class="progress-track">
@@ -1938,7 +2400,7 @@
 
           <div class="skill-block">
             <div class="skill-header">
-              <span class="skill-name"><i class="fas fa-brain"></i> Problem Solving & Phân tích lỗi</span>
+              <span class="skill-name"><i class="fas fa-brain"></i> Tư duy phân tích & Giải quyết sự cố IT</span>
               <span class="skill-percent">70%</span>
             </div>
             <div class="progress-track">
@@ -1948,7 +2410,7 @@
 
           <div class="skill-block">
             <div class="skill-header">
-              <span class="skill-name"><i class="fab fa-windows"></i> C# Programming (Basic)</span>
+              <span class="skill-name"><i class="fab fa-windows"></i> Lập trình C# (Cơ bản & Ứng dụng)</span>
               <span class="skill-percent">45%</span>
             </div>
             <div class="progress-track">
@@ -1958,7 +2420,7 @@
 
           <div class="skill-block">
             <div class="skill-header">
-              <span class="skill-name"><i class="fab fa-js"></i> JavaScript (Basic & DOM)</span>
+              <span class="skill-name"><i class="fab fa-js"></i> JavaScript (DOM & Thao tác giao diện)</span>
               <span class="skill-percent">40%</span>
             </div>
             <div class="progress-track">
@@ -1968,7 +2430,7 @@
 
           <div class="skill-block">
             <div class="skill-header">
-              <span class="skill-name"><i class="fas fa-language"></i> English Language (Basic)</span>
+              <span class="skill-name"><i class="fas fa-language"></i> Tiếng Anh chuyên ngành CNTT (Cơ bản)</span>
               <span class="skill-percent">40%</span>
             </div>
             <div class="progress-track">
@@ -1986,7 +2448,7 @@
         <div class="section-header">
           <h2 class="section-title">
             <span class="section-title-icon"><i class="fas fa-rocket"></i></span>
-            <span>Dự án & Hoạt động nổi bật</span>
+            <span>Dự án & Kênh truyền thông nổi bật</span>
           </h2>
           <span class="section-badge">PORTFOLIO & MEDIA</span>
         </div>
@@ -2004,7 +2466,7 @@
               </div>
               <h3 class="project-title">Personal Blog & Tech Portal</h3>
               <p class="project-desc">
-                Nền tảng trực tuyến chia sẻ tài liệu công nghệ thông tin, thủ thuật tin học và nhật ký các dự án cá nhân hữu ích cho cộng đồng.
+                Nền tảng trực tuyến chia sẻ tài liệu công nghệ thông tin, thủ thuật tin học văn phòng và nhật ký các dự án cá nhân hữu ích cho cộng đồng.
               </p>
             </div>
             <a href="https://nghiasieunhandz.blogspot.com/" target="_blank" rel="noopener noreferrer" class="project-btn">
@@ -2024,7 +2486,7 @@
               </div>
               <h3 class="project-title">Creative Tech on TikTok</h3>
               <p class="project-desc">
-                Kênh nội dung sáng tạo video ngắn chia sẻ về đời sống IT, các mẹo công nghệ hàng ngày và trải nghiệm thực tế trong môi trường giáo dục.
+                Kênh nội dung sáng tạo video ngắn chia sẻ về đời sống IT trường học, các mẹo công nghệ hàng ngày và trải nghiệm thực tế trong môi trường giáo dục.
               </p>
             </div>
             <a href="https://www.tiktok.com/@trongnghiansg" target="_blank" rel="noopener noreferrer" class="project-btn">
@@ -2042,13 +2504,13 @@
                 </div>
                 <span class="project-badge">INFRASTRUCTURE</span>
               </div>
-              <h3 class="project-title">Quản trị CSVC & Hạ tầng số</h3>
+              <h3 class="project-title">Hạ tầng CSVC Kỹ thuật số</h3>
               <p class="project-desc">
-                Hệ thống theo dõi, bảo trì và chuẩn hóa thiết bị kỹ thuật số phục vụ hơn hàng ngàn lượt sinh viên và cán bộ giảng viên mỗi tuần.
+                Tham gia quản lý danh mục và bảo dưỡng hàng trăm thiết bị công nghệ giảng đường phục vụ toàn diện công tác dạy và học của nhà trường.
               </p>
             </div>
             <a href="#contact" class="project-btn">
-              <span>Chi tiết trao đổi</span>
+              <span>Liên hệ trao đổi</span>
               <i class="fas fa-chevron-right"></i>
             </a>
           </div>
@@ -2069,12 +2531,12 @@
         </div>
 
         <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1rem;">
-          Bạn có thể liên hệ với tôi qua bất kỳ kênh nào dưới đây để trao đổi công việc, hợp tác kỹ thuật hoặc chia sẻ đam mê công nghệ.
+          Mọi thông tin trao đổi công tác, phối hợp kỹ thuật hoặc kết nối công việc, bạn vui lòng liên hệ qua các kênh chính thức dưới đây:
         </p>
 
         <div class="contact-grid">
           
-          <a href="mailto:trongnghia@nsg.edu.vn" class="contact-card" title="Nhấn để gửi email">
+          <a href="mailto:trongnghia@nsg.edu.vn" class="contact-card" title="Nhấn để gửi email công vụ">
             <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
             <div class="contact-card-title">Email cơ quan</div>
             <div class="contact-card-value">trongnghia@nsg.edu.vn</div>
@@ -2106,13 +2568,13 @@
 
   <!-- =========================================================
        FOOTER
-       ========================================================= */
+       ========================================================= -->
   <footer>
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
           <div class="footer-brand-title">NGUYỄN TRỌNG NGHĨA</div>
-          <div class="footer-brand-sub">IT Professional • Quản trị thiết bị CSVC • Cao Đẳng Bách Khoa Nam Sài Gòn</div>
+          <div class="footer-brand-sub">Chuyên viên Quản trị Thiết bị & CSVC • Trường Cao Đẳng Bách Khoa Nam Sài Gòn</div>
         </div>
 
         <div class="footer-links">
@@ -2126,7 +2588,7 @@
 
       <div class="footer-bottom">
         <div>
-          © <span id="currentYear"></span> Nguyễn Trọng Nghĩa. Thiết kế sang trọng tông Ocean Blue.
+          © <span id="currentYear"></span> Nguyễn Trọng Nghĩa. Thiết kế Luxury Ocean Blue tối ưu đa thiết bị.
         </div>
         <div>
           <span>Hệ thống: Vận hành ổn định • </span>
@@ -2137,7 +2599,7 @@
   </footer>
 
   <!-- =========================================================
-       LUXURY FLOATING MUSIC PLAYER (RELAXING OCEAN LOFI)
+       LUXURY FLOATING MUSIC PLAYER (LOFI OCEAN CHILL)
        ========================================================= -->
   <div class="music-player-bar" id="musicPlayerBar">
     <div class="vinyl-disc" id="vinylDisc" onclick="toggleMusic()" title="Nhấn để bật / tạm dừng nhạc">
@@ -2168,7 +2630,6 @@
 
   <!-- Audio Element with High Quality Playlist -->
   <audio id="bgAudio" preload="auto">
-    <!-- Local file first, falls back to stable CDN chill track -->
     <source src="music.mp3" type="audio/mpeg">
     <source src="https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/1.mp3" type="audio/mpeg">
   </audio>
@@ -2191,23 +2652,35 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="imageLightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightbox()" title="Đóng">&times;</button>
+      <img src="" alt="Xem ảnh lớn" id="lightboxImg" class="lightbox-img">
+      <div class="lightbox-caption">
+        <h3 id="lightboxTitle">Tiêu đề ảnh</h3>
+        <p id="lightboxDesc">Mô tả chi tiết ảnh hoạt động.</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Luxury Toast Alert -->
   <div class="luxury-toast" id="luxuryToast">
     <i class="fas fa-circle-check toast-icon"></i>
-    <span id="toastMessage">Đã sao chép thành công!</span>
+    <span id="toastMessage">Đã thực hiện thành công!</span>
   </div>
 
   <!-- =========================================================
        JAVASCRIPT LOGIC & INTERACTIONS
        ========================================================= -->
   <script>
-    // --- 1. DYNAMIC TYPEWRITER EFFECT ---
+    // --- 1. DYNAMIC TYPEWRITER EFFECT (CÁN BỘ CÔNG TÁC CHUYÊN NGHIỆP) ---
     const roles = [
-      "IT Support Specialist",
-      "Network Administrator",
-      "System Administrator",
-      "Kỹ sư CNTT tương lai",
-      "Tech & Hardware Enthusiast"
+      "Chuyên viên Quản trị Thiết bị & CSVC",
+      "IT Support & Network Specialist",
+      "Cán bộ Kỹ thuật - CĐ Bách Khoa Nam Sài Gòn",
+      "Cử nhân Công nghệ Thông tin",
+      "Quản trị Hệ thống & Mạng máy tính"
     ];
     let roleIdx = 0;
     let charIdx = 0;
@@ -2222,7 +2695,7 @@
         charIdx++;
         if (charIdx === currentRole.length) {
           isDeleting = true;
-          setTimeout(handleTyping, 2200); // Dừng lại đọc
+          setTimeout(handleTyping, 2200);
           return;
         }
       } else {
@@ -2235,11 +2708,30 @@
           return;
         }
       }
-      setTimeout(handleTyping, isDeleting ? 45 : 90);
+      setTimeout(handleTyping, isDeleting ? 40 : 85);
     }
     handleTyping();
 
-    // --- 2. INTERACTIVE OCEAN AMBIENT CANVAS ---
+    // --- 2. MOBILE MENU DRAWER TOGGLE ---
+    const menuToggleBtn = document.getElementById("menuToggleBtn");
+    const mobileMenuDrawer = document.getElementById("mobileMenuDrawer");
+    const menuToggleIcon = document.getElementById("menuToggleIcon");
+
+    if (menuToggleBtn && mobileMenuDrawer) {
+      menuToggleBtn.addEventListener("click", () => {
+        const isOpen = mobileMenuDrawer.classList.toggle("open");
+        menuToggleIcon.className = isOpen ? "fas fa-xmark" : "fas fa-bars";
+      });
+    }
+
+    function closeMobileMenu() {
+      if (mobileMenuDrawer) {
+        mobileMenuDrawer.classList.remove("open");
+        if (menuToggleIcon) menuToggleIcon.className = "fas fa-bars";
+      }
+    }
+
+    // --- 3. INTERACTIVE OCEAN AMBIENT CANVAS ---
     const canvas = document.getElementById("ambient-canvas");
     const ctx = canvas.getContext("2d");
     let particles = [];
@@ -2260,7 +2752,7 @@
         this.y = Math.random() * canvas.height;
         this.size = Math.random() * 2.2 + 0.6;
         this.speedX = (Math.random() - 0.5) * 0.4;
-        this.speedY = - (Math.random() * 0.6 + 0.2); // Bay nhẹ lên trên
+        this.speedY = - (Math.random() * 0.6 + 0.2);
         this.alpha = Math.random() * 0.6 + 0.2;
       }
       update() {
@@ -2290,7 +2782,6 @@
     function animateParticles() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Vẽ các đường nối nhẹ (constellation effect)
       for (let i = 0; i < particles.length; i++) {
         particles[i].update();
         particles[i].draw();
@@ -2314,13 +2805,12 @@
     }
     animateParticles();
 
-    // --- 3. SCROLL REVEAL & PROGRESS BAR ANIMATION ---
+    // --- 4. SCROLL REVEAL & PROGRESS BAR ANIMATION ---
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
           
-          // Animate Skill bars
           const progressBars = entry.target.querySelectorAll(".progress-fill");
           progressBars.forEach(bar => {
             const targetWidth = bar.getAttribute("data-progress");
@@ -2336,7 +2826,53 @@
 
     document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
 
-    // --- 4. LUXURY MUSIC PLAYER ---
+    // --- 5. GALLERY FILTER & LIGHTBOX MODAL ---
+    function filterGallery(category, btnElement) {
+      document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
+      btnElement.classList.add("active");
+
+      const items = document.querySelectorAll(".gallery-item");
+      items.forEach(item => {
+        if (category === "all" || item.getAttribute("data-category") === category) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+    const lightbox = document.getElementById("imageLightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const lightboxTitle = document.getElementById("lightboxTitle");
+    const lightboxDesc = document.getElementById("lightboxDesc");
+
+    function openLightbox(src, title, desc) {
+      if (!lightbox) return;
+      lightboxImg.src = src;
+      lightboxTitle.textContent = title;
+      lightboxDesc.textContent = desc;
+      lightbox.classList.add("active");
+    }
+
+    function closeLightbox() {
+      if (lightbox) {
+        lightbox.classList.remove("active");
+      }
+    }
+
+    if (lightbox) {
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeLightbox();
+    });
+
+    // --- 6. LUXURY MUSIC PLAYER ---
     const audio = document.getElementById("bgAudio");
     const vinylDisc = document.getElementById("vinylDisc");
     const playBtn = document.getElementById("playBtn");
@@ -2408,7 +2944,7 @@
       nextTrack();
     });
 
-    // --- 5. TOAST NOTIFICATION UTILITY ---
+    // --- 7. TOAST NOTIFICATION UTILITY ---
     const toast = document.getElementById("luxuryToast");
     const toastMessage = document.getElementById("toastMessage");
     let toastTimeout;
@@ -2432,7 +2968,7 @@
       });
     }
 
-    // --- 6. SCROLL TO TOP & TIME DISPLAY ---
+    // --- 8. SCROLL TO TOP & LIVE TIME ---
     const scrollTopBtn = document.getElementById("scrollTopBtn");
     window.addEventListener("scroll", () => {
       if (window.scrollY > 400) {
@@ -2446,11 +2982,9 @@
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    // Update Current Year
     const yearEl = document.getElementById("currentYear");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // Live Clock Vietnam Time
     function updateLiveTime() {
       const timeEl = document.getElementById("localTimeDisplay");
       if (!timeEl) return;
