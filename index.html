@@ -25,32 +25,66 @@
   <meta name="twitter:description" content="Hồ sơ cá nhân, quá trình công tác và các hoạt động chuyên môn của Nguyễn Trọng Nghĩa.">
   <meta name="twitter:image" content="https://www.trongnghia.pro.vn/avatar.jpg">
 
-  <!-- Structured Data JSON-LD Schema (Google Rich Snippets) -->
+  <!-- Structured Data JSON-LD Schema (WordPress / Yoast SEO Ultra Standards) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "url": "https://www.trongnghia.pro.vn/",
-    "mainEntity": {
-      "@type": "Person",
-      "@id": "https://www.trongnghia.pro.vn/#person",
-      "name": "Nguyễn Trọng Nghĩa",
-      "url": "https://www.trongnghia.pro.vn/",
-      "image": "https://www.trongnghia.pro.vn/avatar.jpg",
-      "jobTitle": "Chuyên viên Quản trị Thiết bị và Cơ sở vật chất",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Trường Cao đẳng Bách khoa Nam Sài Gòn",
-        "url": "https://namsaigon.edu.vn/"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.trongnghia.pro.vn/#website",
+        "url": "https://www.trongnghia.pro.vn/",
+        "name": "Nguyễn Trọng Nghĩa | Website cá nhân",
+        "description": "Website cá nhân, hồ sơ và hoạt động chuyên môn của Nguyễn Trọng Nghĩa.",
+        "inLanguage": "vi-VN"
       },
-      "knowsAbout": [
-        "Công nghệ thông tin",
-        "Quản trị mạng",
-        "Quản trị thiết bị",
-        "Chuyển đổi số",
-        "Hỗ trợ kỹ thuật"
-      ]
-    }
+      {
+        "@type": "ProfilePage",
+        "@id": "https://www.trongnghia.pro.vn/#webpage",
+        "url": "https://www.trongnghia.pro.vn/",
+        "name": "Nguyễn Trọng Nghĩa | Chuyên viên CNTT - Nam Sài Gòn",
+        "isPartOf": {
+          "@id": "https://www.trongnghia.pro.vn/#website"
+        },
+        "about": {
+          "@id": "https://www.trongnghia.pro.vn/#person"
+        },
+        "description": "Nguyễn Trọng Nghĩa - Chuyên viên Phòng Quản trị Thiết bị và Cơ sở vật chất, Trường Cao đẳng Bách khoa Nam Sài Gòn.",
+        "inLanguage": "vi-VN"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.trongnghia.pro.vn/#person",
+        "name": "Nguyễn Trọng Nghĩa",
+        "url": "https://www.trongnghia.pro.vn/",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://www.trongnghia.pro.vn/#primaryimage",
+          "url": "https://www.trongnghia.pro.vn/avatar.jpg",
+          "caption": "Nguyễn Trọng Nghĩa"
+        },
+        "jobTitle": "Chuyên viên / Giảng viên",
+        "worksFor": {
+          "@type": "CollegeOrUniversity",
+          "name": "Trường Cao đẳng Bách khoa Nam Sài Gòn",
+          "url": "https://namsaigon.edu.vn/"
+        },
+        "sameAs": [
+          "https://www.facebook.com/NguyenTrongNghia.Official/",
+          "https://www.tiktok.com/@trongnghiansg",
+          "https://nghiasieunhandz.blogspot.com/"
+        ],
+        "knowsAbout": [
+          "Công nghệ thông tin",
+          "Quản trị mạng",
+          "Quản trị thiết bị",
+          "Cơ sở vật chất",
+          "Chuyển đổi số",
+          "Hỗ trợ kỹ thuật",
+          "Tin học ứng dụng"
+        ]
+      }
+    ]
   }
   </script>
 
