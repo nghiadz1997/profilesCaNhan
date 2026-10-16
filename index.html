@@ -1003,7 +1003,8 @@
       display: none;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
+      padding: 1.5rem;
+      cursor: zoom-out;
     }
 
     .lightbox-modal.active {
@@ -1011,50 +1012,54 @@
     }
 
     .lightbox-content {
-      max-width: 900px;
-      width: 100%;
-      background: rgba(8, 17, 38, 0.95);
-      border: 1px solid var(--border-color);
+      max-width: 90vw;
+      max-height: 90vh;
+      width: auto;
+      background: transparent;
+      border: 1px solid rgba(0, 242, 254, 0.35);
       border-radius: var(--radius-lg);
       overflow: hidden;
       position: relative;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.9), 0 0 45px rgba(0, 242, 254, 0.25);
+      cursor: default;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .lightbox-img {
-      width: 100%;
-      max-height: 65vh;
-      object-fit: cover;
-    }
-
-    .lightbox-caption {
-      padding: 1.5rem 2rem;
-    }
-
-    .lightbox-caption h3 {
-      font-size: 1.35rem;
-      color: #fff;
-      margin-bottom: 0.35rem;
-    }
-
-    .lightbox-caption p {
-      color: var(--text-muted);
+      max-width: 100%;
+      max-height: 85vh;
+      object-fit: contain;
+      display: block;
+      border-radius: var(--radius-lg);
     }
 
     .lightbox-close {
       position: absolute;
-      top: 15px;
-      right: 15px;
-      width: 40px;
-      height: 40px;
+      top: 14px;
+      right: 14px;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
-      background: rgba(0, 0, 0, 0.7);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(3, 7, 18, 0.8);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       color: #fff;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      transition: var(--transition-fast);
+      z-index: 10;
+    }
+
+    .lightbox-close:hover {
+      background: var(--primary);
+      color: #030712;
+      border-color: var(--primary);
+      transform: scale(1.1);
     }
 
     /* =========================================================
@@ -1447,7 +1452,7 @@
           </div>
 
           <p class="bio-lead">
-            Tôi là <strong class="gradient-cyan">Nguyễn Trọng Nghĩa</strong> – Cán bộ chuyên môn công nghệ thông tin, hiện đang công tác chính thức tại <strong>Phòng Quản trị Thiết bị – Cơ sở vật chất của Trường Cao Đẳng Bách Khoa Nam Sài Gòn</strong>. Đã hoàn thành chương trình đào tạo Cử nhân Công nghệ Thông tin tại Trường Đại học Trà Vinh và Cao đẳng Tin học ứng dụng tại Trường Cao Đẳng Bách Khoa Nam Sài Gòn.
+            Tôi là <strong class="gradient-cyan">Nguyễn Trọng Nghĩa</strong> – Chuyên viên công nghệ thông tin, hiện đang công tác chính thức tại <strong>Phòng Quản trị Thiết bị – Cơ sở vật chất của Trường Cao Đẳng Bách Khoa Nam Sài Gòn</strong>. Đã hoàn thành chương trình đào tạo Cử nhân Công nghệ Thông tin tại Trường Đại học Trà Vinh và Cao đẳng Tin học ứng dụng tại Trường Cao Đẳng Bách Khoa Nam Sài Gòn.
           </p>
 
           <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.8; margin-bottom: 1.5rem;">
@@ -1636,54 +1641,54 @@
       <div class="gallery-masonry-grid" id="galleryGrid">
         
         <!-- Hàng 1 (3 ảnh) -->
-        <div class="photo-card" onclick="openLightbox('images/truong_nam_sai_gon.jpg', 'Khuôn viên CĐ Bách Khoa Nam Sài Gòn', 'Khuôn viên trường khang trang, hiện đại và năng động.')">
+        <div class="photo-card" onclick="openLightbox('images/truong_nam_sai_gon.jpg')">
           <img src="images/truong_nam_sai_gon.jpg" alt="Trường CĐ Bách Khoa Nam Sài Gòn" loading="lazy">
         </div>
 
-        <div class="photo-card" onclick="openLightbox('images/ky_thuat_mang.jpg', 'Quản trị Mạng & Hạ tầng Server', 'Theo dõi, cấu hình và bảo trì tủ cáp mạng và máy chủ.')">
+        <div class="photo-card" onclick="openLightbox('images/ky_thuat_mang.jpg')">
           <img src="images/ky_thuat_mang.jpg" alt="Quản trị mạng & Server" loading="lazy">
         </div>
 
-        <div class="photo-card" onclick="openLightbox('images/phong_may_tinh.jpg', 'Phòng thực hành máy tính sinh viên', 'Kiểm tra máy móc, phần mềm phục vụ thực hành và thi cử.')">
+        <div class="photo-card" onclick="openLightbox('images/phong_may_tinh.jpg')">
           <img src="images/phong_may_tinh.jpg" alt="Phòng máy tính" loading="lazy">
         </div>
 
         <!-- Hàng 2 (3 ảnh) -->
-        <div class="photo-card" onclick="openLightbox('images/ho_tro_ky_thuat.jpg', 'Bảo trì thiết bị giảng đường', 'Kiểm tra máy chiếu, dàn âm thanh và thiết bị số lớp học.')">
+        <div class="photo-card" onclick="openLightbox('images/ho_tro_ky_thuat.jpg')">
           <img src="images/ho_tro_ky_thuat.jpg" alt="Bảo trì máy chiếu" loading="lazy">
         </div>
 
-        <div class="photo-card" onclick="openLightbox('images/su_kien_co_quan.jpg', 'Hội nghị & Sự kiện nhà trường', 'Trực kỹ thuật âm thanh, đường truyền cho các sự kiện lớn.')">
+        <div class="photo-card" onclick="openLightbox('images/su_kien_co_quan.jpg')">
           <img src="images/su_kien_co_quan.jpg" alt="Sự kiện trường" loading="lazy">
         </div>
 
-        <div class="photo-card" onclick="openLightbox('images/hoat_dong_ca_nhan.jpg', 'Nghiên cứu công nghệ & Sáng tạo số', 'Chia sẻ kiến thức công nghệ trên Blog và kênh truyền thông cá nhân.')">
+        <div class="photo-card" onclick="openLightbox('images/hoat_dong_ca_nhan.jpg')">
           <img src="images/hoat_dong_ca_nhan.jpg" alt="Nghiên cứu công nghệ" loading="lazy">
         </div>
 
         <!-- Hàng 3 (3 ảnh) -->
-        <div class="photo-card" onclick="openLightbox('images/hoi_truong_giang_duong.jpg', 'Hội trường & Giảng đường sự kiện', 'Không gian tổ chức các hội nghị và lễ lớn của trường.')">
+        <div class="photo-card" onclick="openLightbox('images/hoi_truong_giang_duong.jpg')">
           <img src="images/hoi_truong_giang_duong.jpg" alt="Hội trường & Giảng đường lớn" loading="lazy">
         </div>
 
-        <div class="photo-card" onclick="openLightbox('images/kiem_tra_thiet_bi.jpg', 'Kiểm tra & Bảo dưỡng phần cứng', 'Bảo dưỡng định kỳ linh kiện, máy móc và thiết bị văn phòng.')">
+        <div class="photo-card" onclick="openLightbox('images/kiem_tra_thiet_bi.jpg')">
           <img src="images/kiem_tra_thiet_bi.jpg" alt="Kiểm tra & Bảo dưỡng phần cứng" loading="lazy">
         </div>
 
-        <div class="photo-card" onclick="openLightbox('images/tap_the_co_quan.jpg', 'Hoạt động gắn kết tập thể cơ quan', 'Gắn kết cùng tập thể cán bộ, giảng viên trong các phong trào nhà trường.')">
+        <div class="photo-card" onclick="openLightbox('images/tap_the_co_quan.jpg')">
           <img src="images/tap_the_co_quan.jpg" alt="Hoạt động tập thể cơ quan" loading="lazy">
         </div>
 
-        <!-- Hàng 4 (3 ảnh mới) -->
-        <div class="photo-card" onclick="openLightbox('images/ha_tang_cntt.jpg', 'Hạ tầng kết nối mạng & Trung tâm dữ liệu', 'Hạ tầng kết nối cáp mạng và máy chủ tốc độ cao.')">
+        <!-- Hàng 4 (3 ảnh) -->
+        <div class="photo-card" onclick="openLightbox('images/ha_tang_cntt.jpg')">
           <img src="images/ha_tang_cntt.jpg" alt="Hạ tầng kết nối mạng" loading="lazy">
         </div>
 
-        <div class="photo-card" onclick="openLightbox('images/thiet_bi_van_phong.jpg', 'Không gian làm việc & Trang thiết bị văn phòng', 'Bảo đảm thiết bị công nghệ hỗ trợ làm việc liên tục.')">
+        <div class="photo-card" onclick="openLightbox('images/thiet_bi_van_phong.jpg')">
           <img src="images/thiet_bi_van_phong.jpg" alt="Không gian làm việc & Thiết bị" loading="lazy">
         </div>
 
-        <div class="photo-card" onclick="openLightbox('images/hoi_thao_chuyen_de.jpg', 'Hội thảo chuyên môn & Chuyển đổi số', 'Tham gia và hỗ trợ kỹ thuật các buổi hội thảo chuyển đổi số.')">
+        <div class="photo-card" onclick="openLightbox('images/hoi_thao_chuyen_de.jpg')">
           <img src="images/hoi_thao_chuyen_de.jpg" alt="Hội thảo chuyên môn" loading="lazy">
         </div>
 
@@ -1780,15 +1785,11 @@
     </svg>
   </a>
 
-  <!-- Lightbox Modal -->
-  <div class="lightbox-modal" id="imageLightbox">
-    <div class="lightbox-content">
-      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-      <img src="" alt="Xem ảnh lớn" id="lightboxImg" class="lightbox-img">
-      <div class="lightbox-caption">
-        <h3 id="lightboxTitle">Tiêu đề ảnh</h3>
-        <p id="lightboxDesc">Mô tả ảnh.</p>
-      </div>
+  <!-- Lightbox Modal (Chỉ xem ảnh thuần túy) -->
+  <div class="lightbox-modal" id="imageLightbox" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()" title="Đóng">&times;</button>
+      <img src="" alt="Xem ảnh phóng to" id="lightboxImg" class="lightbox-img">
     </div>
   </div>
 
@@ -1967,19 +1968,19 @@
 
     const lightbox = document.getElementById("imageLightbox");
     const lightboxImg = document.getElementById("lightboxImg");
-    const lightboxTitle = document.getElementById("lightboxTitle");
-    const lightboxDesc = document.getElementById("lightboxDesc");
 
-    function openLightbox(src, title, desc) {
-      if (!lightbox) return;
+    function openLightbox(src) {
+      if (!lightbox || !lightboxImg) return;
       lightboxImg.src = src;
-      lightboxTitle.textContent = title;
-      lightboxDesc.textContent = desc;
       lightbox.classList.add("active");
+      document.body.style.overflow = "hidden";
     }
 
     function closeLightbox() {
-      if (lightbox) lightbox.classList.remove("active");
+      if (lightbox) {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+      }
     }
 
     if (lightbox) {
