@@ -1623,7 +1623,7 @@
          HÌNH ẢNH HOẠT ĐỘNG CÔNG TÁC & CƠ QUAN
          ========================================================= -->
     <section id="gallery" class="gallery-section">
-      <div class="card-header-flex" style="margin-bottom: 1.5rem;">
+      <div class="card-header-flex" style="margin-bottom: 1.75rem;">
         <div>
           <h2 style="font-size: 1.8rem; color: #fff;">
             <i class="fas fa-images" style="color: var(--primary); margin-right: 10px;"></i>
@@ -1631,54 +1631,60 @@
           </h2>
           <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 4px;">Những khoảnh khắc thực tế tại Trường Cao Đẳng Bách Khoa Nam Sài Gòn</p>
         </div>
-
-        <div class="gallery-filter-nav">
-          <button class="filter-btn active" onclick="filterGallery('all', this)">Tất cả</button>
-          <button class="filter-btn" onclick="filterGallery('truong', this)">Nhà trường</button>
-          <button class="filter-btn" onclick="filterGallery('kythuat', this)">Kỹ thuật</button>
-          <button class="filter-btn" onclick="filterGallery('sukien', this)">Sự kiện</button>
-        </div>
       </div>
 
       <div class="gallery-masonry-grid" id="galleryGrid">
         
         <!-- Hàng 1 (3 ảnh) -->
-        <div class="photo-card" data-category="truong" onclick="openLightbox('images/truong_nam_sai_gon.jpg', 'Khuôn viên CĐ Bách Khoa Nam Sài Gòn', 'Khuôn viên trường khang trang, hiện đại và năng động.')">
+        <div class="photo-card" onclick="openLightbox('images/truong_nam_sai_gon.jpg', 'Khuôn viên CĐ Bách Khoa Nam Sài Gòn', 'Khuôn viên trường khang trang, hiện đại và năng động.')">
           <img src="images/truong_nam_sai_gon.jpg" alt="Trường CĐ Bách Khoa Nam Sài Gòn" loading="lazy">
         </div>
 
-        <div class="photo-card" data-category="kythuat" onclick="openLightbox('images/ky_thuat_mang.jpg', 'Quản trị Mạng & Hạ tầng Server', 'Theo dõi, cấu hình và bảo trì tủ cáp mạng và máy chủ.')">
+        <div class="photo-card" onclick="openLightbox('images/ky_thuat_mang.jpg', 'Quản trị Mạng & Hạ tầng Server', 'Theo dõi, cấu hình và bảo trì tủ cáp mạng và máy chủ.')">
           <img src="images/ky_thuat_mang.jpg" alt="Quản trị mạng & Server" loading="lazy">
         </div>
 
-        <div class="photo-card" data-category="truong" onclick="openLightbox('images/phong_may_tinh.jpg', 'Phòng thực hành máy tính sinh viên', 'Kiểm tra máy móc, phần mềm phục vụ thực hành và thi cử.')">
+        <div class="photo-card" onclick="openLightbox('images/phong_may_tinh.jpg', 'Phòng thực hành máy tính sinh viên', 'Kiểm tra máy móc, phần mềm phục vụ thực hành và thi cử.')">
           <img src="images/phong_may_tinh.jpg" alt="Phòng máy tính" loading="lazy">
         </div>
 
         <!-- Hàng 2 (3 ảnh) -->
-        <div class="photo-card" data-category="kythuat" onclick="openLightbox('images/ho_tro_ky_thuat.jpg', 'Bảo trì thiết bị giảng đường', 'Kiểm tra máy chiếu, dàn âm thanh và thiết bị số lớp học.')">
+        <div class="photo-card" onclick="openLightbox('images/ho_tro_ky_thuat.jpg', 'Bảo trì thiết bị giảng đường', 'Kiểm tra máy chiếu, dàn âm thanh và thiết bị số lớp học.')">
           <img src="images/ho_tro_ky_thuat.jpg" alt="Bảo trì máy chiếu" loading="lazy">
         </div>
 
-        <div class="photo-card" data-category="sukien" onclick="openLightbox('images/su_kien_co_quan.jpg', 'Hội nghị & Sự kiện nhà trường', 'Trực kỹ thuật âm thanh, đường truyền cho các sự kiện lớn.')">
+        <div class="photo-card" onclick="openLightbox('images/su_kien_co_quan.jpg', 'Hội nghị & Sự kiện nhà trường', 'Trực kỹ thuật âm thanh, đường truyền cho các sự kiện lớn.')">
           <img src="images/su_kien_co_quan.jpg" alt="Sự kiện trường" loading="lazy">
         </div>
 
-        <div class="photo-card" data-category="sukien" onclick="openLightbox('images/hoat_dong_ca_nhan.jpg', 'Nghiên cứu công nghệ & Sáng tạo số', 'Chia sẻ kiến thức công nghệ trên Blog và kênh truyền thông cá nhân.')">
+        <div class="photo-card" onclick="openLightbox('images/hoat_dong_ca_nhan.jpg', 'Nghiên cứu công nghệ & Sáng tạo số', 'Chia sẻ kiến thức công nghệ trên Blog và kênh truyền thông cá nhân.')">
           <img src="images/hoat_dong_ca_nhan.jpg" alt="Nghiên cứu công nghệ" loading="lazy">
         </div>
 
-        <!-- Hàng 3 (3 ảnh mới bổ sung) -->
-        <div class="photo-card" data-category="truong" onclick="openLightbox('images/hoi_truong_giang_duong.jpg', 'Hội trường & Giảng đường sự kiện', 'Không gian tổ chức các hội nghị và lễ lớn của trường.')">
+        <!-- Hàng 3 (3 ảnh) -->
+        <div class="photo-card" onclick="openLightbox('images/hoi_truong_giang_duong.jpg', 'Hội trường & Giảng đường sự kiện', 'Không gian tổ chức các hội nghị và lễ lớn của trường.')">
           <img src="images/hoi_truong_giang_duong.jpg" alt="Hội trường & Giảng đường lớn" loading="lazy">
         </div>
 
-        <div class="photo-card" data-category="kythuat" onclick="openLightbox('images/kiem_tra_thiet_bi.jpg', 'Kiểm tra & Bảo dưỡng phần cứng', 'Bảo dưỡng định kỳ linh kiện, máy móc và thiết bị văn phòng.')">
+        <div class="photo-card" onclick="openLightbox('images/kiem_tra_thiet_bi.jpg', 'Kiểm tra & Bảo dưỡng phần cứng', 'Bảo dưỡng định kỳ linh kiện, máy móc và thiết bị văn phòng.')">
           <img src="images/kiem_tra_thiet_bi.jpg" alt="Kiểm tra & Bảo dưỡng phần cứng" loading="lazy">
         </div>
 
-        <div class="photo-card" data-category="sukien" onclick="openLightbox('images/tap_the_co_quan.jpg', 'Hoạt động gắn kết tập thể cơ quan', 'Gắn kết cùng tập thể cán bộ, giảng viên trong các phong trào nhà trường.')">
+        <div class="photo-card" onclick="openLightbox('images/tap_the_co_quan.jpg', 'Hoạt động gắn kết tập thể cơ quan', 'Gắn kết cùng tập thể cán bộ, giảng viên trong các phong trào nhà trường.')">
           <img src="images/tap_the_co_quan.jpg" alt="Hoạt động tập thể cơ quan" loading="lazy">
+        </div>
+
+        <!-- Hàng 4 (3 ảnh mới) -->
+        <div class="photo-card" onclick="openLightbox('images/ha_tang_cntt.jpg', 'Hạ tầng kết nối mạng & Trung tâm dữ liệu', 'Hạ tầng kết nối cáp mạng và máy chủ tốc độ cao.')">
+          <img src="images/ha_tang_cntt.jpg" alt="Hạ tầng kết nối mạng" loading="lazy">
+        </div>
+
+        <div class="photo-card" onclick="openLightbox('images/thiet_bi_van_phong.jpg', 'Không gian làm việc & Trang thiết bị văn phòng', 'Bảo đảm thiết bị công nghệ hỗ trợ làm việc liên tục.')">
+          <img src="images/thiet_bi_van_phong.jpg" alt="Không gian làm việc & Thiết bị" loading="lazy">
+        </div>
+
+        <div class="photo-card" onclick="openLightbox('images/hoi_thao_chuyen_de.jpg', 'Hội thảo chuyên môn & Chuyển đổi số', 'Tham gia và hỗ trợ kỹ thuật các buổi hội thảo chuyển đổi số.')">
+          <img src="images/hoi_thao_chuyen_de.jpg" alt="Hội thảo chuyên môn" loading="lazy">
         </div>
 
       </div>
