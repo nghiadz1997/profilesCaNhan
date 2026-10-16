@@ -194,9 +194,14 @@
       z-index: 1000;
       backdrop-filter: blur(24px);
       -webkit-backdrop-filter: blur(24px);
-      background: rgba(3, 7, 18, 0.82);
+      background: rgba(3, 7, 18, 0.88);
       border-bottom: 1px solid var(--border-color);
       transition: var(--transition-fast);
+    }
+
+    .navbar .container {
+      max-width: 1340px;
+      padding: 0 1.25rem;
     }
 
     .nav-inner {
@@ -204,49 +209,57 @@
       align-items: center;
       justify-content: space-between;
       height: 74px;
+      gap: 15px;
     }
 
     .brand-logo {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       text-decoration: none;
       color: var(--text-main);
       font-family: var(--font-heading);
       font-weight: 800;
-      font-size: 1.25rem;
+      font-size: 1.18rem;
       letter-spacing: 0.5px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .brand-badge {
-      width: 40px;
-      height: 40px;
-      border-radius: 12px;
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
       background: linear-gradient(135deg, #0284c7, #00f2fe);
       display: flex;
       align-items: center;
       justify-content: center;
       color: #030712;
       font-weight: 800;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       box-shadow: 0 0 18px rgba(0, 242, 254, 0.4);
+      flex-shrink: 0;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 1.8rem;
+      gap: clamp(0.75rem, 1.4vw, 1.45rem);
       list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
     .nav-link {
       color: var(--text-muted);
       text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
+      font-size: 0.92rem;
+      font-weight: 600;
       transition: var(--transition-fast);
       position: relative;
       padding: 6px 0;
+      white-space: nowrap;
+      letter-spacing: 0.2px;
     }
 
     .nav-link:hover, .nav-link.active {
@@ -272,15 +285,16 @@
     .nav-cta {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
+      flex-shrink: 0;
     }
 
     .btn-quick-contact {
       background: linear-gradient(135deg, #0284c7 0%, #00f2fe 100%);
       color: #030712;
       font-weight: 700;
-      font-size: 0.88rem;
-      padding: 9px 20px;
+      font-size: 0.86rem;
+      padding: 8px 18px;
       border-radius: var(--radius-full);
       text-decoration: none;
       transition: var(--transition-fast);
@@ -288,6 +302,7 @@
       align-items: center;
       gap: 8px;
       box-shadow: 0 4px 18px rgba(0, 242, 254, 0.35);
+      white-space: nowrap;
     }
 
     .btn-quick-contact:hover {
@@ -1505,14 +1520,16 @@
       border: 1px solid var(--border-color);
       color: var(--primary);
       font-weight: 600;
-      font-size: 0.88rem;
-      padding: 8px 16px;
+      font-size: 0.85rem;
+      padding: 7px 14px;
       border-radius: var(--radius-full);
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
       cursor: pointer;
       transition: var(--transition-fast);
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .btn-nav-music:hover {
@@ -1721,8 +1738,17 @@
       }
     }
 
-    /* iPad & Tablet Landscape / Portrait (<= 992px) */
-    @media (max-width: 992px) {
+    /* iPad, Tablets & Màn hình laptop vừa (<= 1024px) */
+    @media (max-width: 1024px) {
+      .nav-links {
+        display: none;
+      }
+      .menu-toggle {
+        display: flex;
+      }
+      .mobile-menu-drawer {
+        display: block;
+      }
       .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1753,15 +1779,6 @@
 
     /* Tablet nhỏ & Điện thoại màn hình rộng (<= 768px) */
     @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-      }
-      .menu-toggle {
-        display: flex;
-      }
-      .mobile-menu-drawer {
-        display: block;
-      }
       .hero-card {
         padding: 2.5rem 1.5rem;
       }
@@ -1876,7 +1893,7 @@
         <li><a href="#about" class="nav-link">Giới thiệu</a></li>
         <li><a href="#experience" class="nav-link">Công tác</a></li>
         <li><a href="#education" class="nav-link">Bằng cấp</a></li>
-        <li><a href="#gallery" class="nav-link">Hình ảnh hoạt động</a></li>
+        <li><a href="#gallery" class="nav-link">Hoạt động</a></li>
         <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
         <li><a href="#projects" class="nav-link">Dự án</a></li>
         <li><a href="#contact" class="nav-link">Liên hệ</a></li>
@@ -1933,7 +1950,7 @@
             id="userAvatar"
             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80';"
           >
-          <div class="vip-verified-badge" title="Cán bộ công tác chính thức">
+          <div class="vip-verified-badge" title="Chuyên viên công tác chính thức">
             <i class="fas fa-check"></i>
           </div>
         </div>
@@ -1942,7 +1959,7 @@
         <div class="hero-info">
           <div class="status-pill">
             <span class="status-dot"></span>
-            <span>CÁN BỘ CÔNG TÁC TẠI CĐ BÁCH KHOA NAM SÀI GÒN</span>
+            <span>CHUYÊN VIÊN TRƯỜNG CAO ĐẲNG BÁCH KHOA NAM SÀI GÒN</span>
           </div>
 
           <h1 class="hero-name">
